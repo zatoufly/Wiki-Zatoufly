@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-11-30T21:12:39.690Z
+date: 2021-11-30T21:13:43.633Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
