@@ -2,13 +2,13 @@
 title: WikiJS
 description: 
 published: 1
-date: 2021-11-30T22:34:36.497Z
+date: 2021-11-30T22:38:19.774Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:24:49.010Z
 ---
 
-![wikijs-logo.png](/wikijs-logo.png){.align-center}
+![wikijs-logo.png](/wiki-assets/wikijs-logo.png)
 
 # Présentation
 **Wiki.js** comme son nom l’indique est une solution pour créer un wiki open source coder en javascript. Il est très moderne et facile d’utilisation. Avec quelques compétences en Markdown et en CSS on peux faire de très jolie wiki, et facile d'utilisation que se soit pour le lecteur mais également pour l'administrateur.
