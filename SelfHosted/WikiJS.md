@@ -2,7 +2,7 @@
 title: WikiJS
 description: 
 published: 1
-date: 2021-11-30T22:16:21.470Z
+date: 2021-11-30T22:17:04.144Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:24:49.010Z
@@ -62,7 +62,7 @@ Il vous faudra créer un repository sur votre compte github, ainsi qu'un token a
 
 ![wikijs-git-config.jpg](/wiki-assets/wikijs-git-config.jpg)
 
-## Enlever le table des matières
+## Enlever la table des matières
 
 Pour enlever la table des matières d'une page, éditer la page en question et cliquez sur le bouton "page" en haut à droite, dans l'onglet "styles" insérez le code CSS ci-dessous :
 
