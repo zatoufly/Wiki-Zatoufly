@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-01T08:55:17.047Z
+date: 2021-12-01T08:55:28.589Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -13,5 +13,4 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 
 - [WikiJS *Le plus puissant des Wiki open source*](/SelfHosted/WikiJS)
 - [Nginx-Proxy-Manager *Exposez vos services facilement, en toute sécurité*](/SelfHosted/Nginx-Proxy-Manager)
-- [Nginx-Proxy-Manager](/SelfHosted/Nginx-Proxy-Manager)
 {.links-list}
