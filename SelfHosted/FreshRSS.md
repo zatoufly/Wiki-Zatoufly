@@ -2,13 +2,13 @@
 title: FreshRSS
 description: 
 published: 1
-date: 2021-12-01T09:22:34.676Z
+date: 2021-12-01T09:44:49.189Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T09:10:33.180Z
 ---
 
-![wikijs-logo.png](/wiki-assets/wikijs-logo.png)
+![freshrss-logo.png](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreshrss.github.io%2FFreshRSS%2Fen%2Fimg%2Flogo_freshrss.png&f=1&nofb=1)
 
 # Présentation
 **FreshRSS** est un agrégateur de Flux RSS à l'instar du celèbre Feedly. C'est un excellente solution pour faire votre vieille technologique. Fresh RSS est rapide, responsive pour une utilisation sur smartphone.
@@ -19,98 +19,39 @@ Site officiel : [freshrss.org](https://www.freshrss.org/)
 
 # Installation
 ## Bare Metal
-[Tuto sur mon Blog](https://zatoufly.fr/installer-freshrss-sur-debian/)
-[Tuto en vidéo](https://www.youtube.com/watch?v=VXPtwcxRf1E)
-
-Tuto en vidéo : 
-
-[![IMAGE ALT TEXT](data:image/jpeg;base64,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)](https://www.youtube.com/watch?v=VXPtwcxRf1E "Installer FreshRSS [en local]")
-
-
-
+- [:memo: Tuto sur mon blog *zatoufly.fr*](https://zatoufly.fr/installer-freshrss-sur-debian)
+- [:camera: Tuto en vidéo *sur youtube*](https://www.youtube.com/watch?v=VXPtwcxRf1E)
+{.links-list}
 ## Docker-Compose ([Plus d'informations](https://docs.linuxserver.io/general/docker-compose))
-```
+```yaml
+---
 version: "2.1"
 services:
-  wikijs:
-    image: lscr.io/linuxserver/wikijs
-    container_name: wikijs
+  freshrss:
+    image: lscr.io/linuxserver/freshrss
+    container_name: freshrss
     environment:
       - PUID=1000
       - PGID=100
       - TZ=Europe/Paris
     volumes:
       - <path to config>:/config
-      - <path to data>:/data
     ports:
-      - 3000:3000
+      - 3001:80
     restart: unless-stopped
 ```
 ## Docker cli ([Plus d'informations](https://docs.docker.com/engine/reference/commandline/cli/))
-```
+```bash
 docker run -d \
-  --name=wikijs \
+  --name=freshrss \
   -e PUID=1000 \
   -e PGID=100 \
   -e TZ=Europe/Paris \
-  -p 3000:3000 \
+  -p 3001:80 \
   -v <path to config>:/config \
-  -v <path to data>:/data \
   --restart unless-stopped \
-  lscr.io/linuxserver/wikijs
+  lscr.io/linuxserver/freshrss
 ```
 # Configurations
-## Github en stockage
+Si vous avez effectuer une installation via Docker, séléctionnez LiteSQL lors de la configuration de la base de données.  
 
-Vous pouvez stocker toutes vos pages, images sur Github. Pour ce faire allez dans le panneau d'administration de WikiJS puis dans stockage séléctionnez git. Oubliez pas d'appliquer une fois la configuration terminer
-
-Il vous faudra créer un repository sur votre compte github, ainsi qu'un token avec les permissions repo uniquement. [Comment créer un token sur github](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-
-![wikijs-git-config.jpg](/wiki-assets/wikijs-git-config.jpg)
-
-## Enlever la table des matières
-
-Pour enlever la table des matières d'une page, éditer la page en question et cliquez sur le bouton "page" en haut à droite, dans l'onglet "styles" insérez le code CSS ci-dessous :
-
-![wikijs-table-des-matieres.jpg](/wiki-assets/wikijs-table-des-matieres.jpg)
-
-Pour enlever la table des matières :
-
-```
-.page-col-sd {
-  margin-top: 0;
-  align-self: flex-start;
-  position: sticky;
-  top: 64px;
-  max-height: calc(100vh - 64px);
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  display: none
-}
-.flex.lg9 {
-  flex-basis: 100%!important;
-  flex-grow: 0;
-  max-width: 100%!important
-}
-```
-Pour enlever la table des matières et le bandeau de titre :
-```
-.page-col-sd {
-  margin-top: 0;
-  align-self: flex-start;
-  position: sticky;
-  top: 64px;
-  max-height: calc(100vh - 64px);
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  display: none
-}
-.flex.lg9 {
-  flex-basis: 100%!important;
-  flex-grow: 0;
-  max-width: 100%!important
-}
-.row.no-gutters.align-content-center {
-  display: none
-}
-```
