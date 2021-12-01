@@ -2,7 +2,7 @@
 title: Accueil
 description: 
 published: 1
-date: 2021-12-01T21:38:56.527Z
+date: 2021-12-01T22:46:29.176Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T19:38:41.597Z
@@ -14,7 +14,7 @@ dateCreated: 2021-11-30T19:38:41.597Z
 Bonjour ! Moi c'est Jérémy, vous me connaissez sûrement sous mon pseudo Zatoufly.
 IRL je suis Technicien supérieur systèmes et réseaux depuis mes 18 ans.
 
-J'ai commencé à créer des vidéos youtube en aôut 2020 dans le but de partagez mes compétences en IT. Le 12 septembre on a atteint la première barre des 100 abonnés.
+J'ai commencé à créer des vidéos Youtube en aôut 2020 dans le but de partagez mes compétences en IT. Le 12 septembre on a atteint la première barre des 100 abonnés.
 
 J'ai pour volonté à travers mes vidéos, mes articles, et ce wiki de créer des tutos explicites pour les passionnés d'informatiques.
 
