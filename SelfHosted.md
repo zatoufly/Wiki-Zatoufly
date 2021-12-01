@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-01T16:10:53.594Z
+date: 2021-12-01T22:01:05.603Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -15,4 +15,5 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [Nginx-Proxy-Manager *Exposez vos services facilement, en toute sécurité*](/SelfHosted/Nginx-Proxy-Manager)
 - [FreshRSS *Un agrégateur gratuit, auto-hébergeable... probablement le meilleur!*](/SelfHosted/FreshRSS)
 - [Uptime Kuma *Monitoring simple et complet*](/SelfHosted/Uptime-Kuma)
+- [Wordpress *Le CMS le plus populaire*](/SelfHosted/Wordpress)
 {.links-list}
