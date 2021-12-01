@@ -2,7 +2,7 @@
 title: WikiJS
 description: 
 published: 1
-date: 2021-12-01T09:56:54.618Z
+date: 2021-12-01T09:57:22.131Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:24:49.010Z
@@ -37,8 +37,8 @@ services:
       - PGID=100
       - TZ=Europe/Paris
     volumes:
-      - <path to config>:/config
-      - <path to data>:/data
+      - /path/to/config:/config
+      - /path/to/data:/data
     ports:
       - 3000:3000
     restart: unless-stopped
