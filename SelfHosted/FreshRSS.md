@@ -2,7 +2,7 @@
 title: FreshRSS
 description: 
 published: 1
-date: 2021-12-01T09:47:11.318Z
+date: 2021-12-01T10:00:04.618Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T09:10:33.180Z
@@ -35,7 +35,7 @@ services:
       - PGID=100
       - TZ=Europe/Paris
     volumes:
-      - <path to config>:/config
+      - /path/to/config:/config
     ports:
       - 3001:80
     restart: unless-stopped
@@ -48,7 +48,7 @@ docker run -d \
   -e PGID=100 \
   -e TZ=Europe/Paris \
   -p 3001:80 \
-  -v <path to config>:/config \
+  -v /path/to/config:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/freshrss
 ```
