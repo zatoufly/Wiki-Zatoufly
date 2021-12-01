@@ -2,7 +2,7 @@
 title: Nginx Proxy Manager
 description: 
 published: 1
-date: 2021-12-01T08:50:36.145Z
+date: 2021-12-01T09:58:16.657Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T08:50:36.145Z
@@ -23,7 +23,7 @@ Site officiel : [nginxproxymanager.com](https://nginxproxymanager.com/)
 # Installation
 
 ## Docker-Compose ([Plus d'informations](https://docs.linuxserver.io/general/docker-compose))
-```
+```yaml
 version: '3'
 services:
   nginx:
