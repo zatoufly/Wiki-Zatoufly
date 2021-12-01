@@ -2,7 +2,7 @@
 title: WikiJS
 description: 
 published: 1
-date: 2021-11-30T22:38:19.774Z
+date: 2021-12-01T09:56:54.618Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:24:49.010Z
@@ -22,9 +22,11 @@ Site officiel : [js.wiki](https://js.wiki/)
 
 # Installation
 ## Bare Metal
-[Tuto sur mon Google Drive](https://docs.google.com/document/d/11n0kihAdnHiP9TcSGYlQ7kkr-uPkxYXdMSNBxt8mILM/edit?usp=sharing)
+- [:cloud:Tuto sur mon Drive *avec Google Doc*](https://docs.google.com/document/d/11n0kihAdnHiP9TcSGYlQ7kkr-uPkxYXdMSNBxt8mILM/edit?usp=sharing)
+{.links-list}
+
 ## Docker-Compose ([Plus d'informations](https://docs.linuxserver.io/general/docker-compose))
-```
+```yaml
 version: "2.1"
 services:
   wikijs:
@@ -42,15 +44,15 @@ services:
     restart: unless-stopped
 ```
 ## Docker cli ([Plus d'informations](https://docs.docker.com/engine/reference/commandline/cli/))
-```
+```bash
 docker run -d \
   --name=wikijs \
   -e PUID=1000 \
   -e PGID=100 \
   -e TZ=Europe/Paris \
   -p 3000:3000 \
-  -v <path to config>:/config \
-  -v <path to data>:/data \
+  -v /path/to/config:/config \
+  -v /path/to/data:/data \
   --restart unless-stopped \
   lscr.io/linuxserver/wikijs
 ```
