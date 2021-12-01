@@ -2,7 +2,7 @@
 title: FreshRSS
 description: 
 published: 1
-date: 2021-12-01T09:44:49.189Z
+date: 2021-12-01T09:46:15.914Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T09:10:33.180Z
