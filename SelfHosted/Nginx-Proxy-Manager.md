@@ -2,7 +2,7 @@
 title: Nginx Proxy Manager
 description: 
 published: 1
-date: 2021-12-01T09:58:16.657Z
+date: 2021-12-01T09:59:30.785Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T08:50:36.145Z
@@ -41,8 +41,8 @@ services:
       DB_MYSQL_PASSWORD: "mdp"
       DB_MYSQL_NAME: "nginx"
     volumes:
-      - <path to data>:/data
-      - < path to letsencrypt>:/etc/letsencrypt
+      - /path/to/data:/data
+      - /path/to/letsencrypt:/etc/letsencrypt
     depends_on:
       - db
   db:
@@ -55,7 +55,7 @@ services:
       MYSQL_USER: 'utilisateur'
       MYSQL_PASSWORD: 'mdp'
     volumes:
-      - <path to mysql>:/var/lib/mysql
+      - /path/to/mysql:/var/lib/mysql
 ```
 
 > N'oubliez pas de changer les paramètres MYSQL pour des raisons de sécurité
