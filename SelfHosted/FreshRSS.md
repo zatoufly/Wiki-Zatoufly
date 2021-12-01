@@ -2,7 +2,7 @@
 title: FreshRSS
 description: 
 published: 1
-date: 2021-12-01T09:46:15.914Z
+date: 2021-12-01T09:46:42.183Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T09:10:33.180Z
@@ -11,7 +11,7 @@ dateCreated: 2021-12-01T09:10:33.180Z
 ![freshrss-logo.png](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreshrss.github.io%2FFreshRSS%2Fen%2Fimg%2Flogo_freshrss.png&f=1&nofb=1)
 
 # Présentation
-**FreshRSS** est un agrégateur de Flux RSS à l'instar du celèbre Feedly. C'est un excellente solution pour faire votre vieille technologique. Fresh RSS est rapide, responsive pour une utilisation sur smartphone.
+**FreshRSS** est un agrégateur de Flux RSS à l'instar du celèbre Feedly. C'est une excellente solution pour faire votre vieille technologique. Fresh RSS est rapide, responsive pour une utilisation sur smartphone.
 
 C'est la solution que j'utilise au quotidien, le mien est d'ailleur public : news.zatoufly.fr
 
