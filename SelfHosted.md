@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-01T22:44:40.064Z
+date: 2021-12-02T22:13:36.767Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -12,6 +12,7 @@ dateCreated: 2021-11-30T21:12:39.690Z
 Ici vous trouverez des procédures d'installations de diverses solutions SelfHosted (héberger chez soit). Installation en Bare Metal, Docker, Docker Compose. Ainsi que quelques manipulations, configurations, astuces pour bien prendre en main l'outil en question, avec des liens vers mes vidéos Youtube.
 
 - [FreshRSS *Un agrégateur gratuit, auto-hébergeable... probablement le meilleur!*](/SelfHosted/FreshRSS)
+- [Funkwhale *Une plateforme sociale pour apprécier et partager la musique*](/SelfHosted/Funkwhale)
 - [Nginx-Proxy-Manager *Exposez vos services facilement, en toute sécurité*](/SelfHosted/Nginx-Proxy-Manager)
 - [Uptime Kuma *Monitoring simple et complet*](/SelfHosted/Uptime-Kuma)
 - [WatchTower *Vos conteneurs à jours*](/SelfHosted/WatchTower)
