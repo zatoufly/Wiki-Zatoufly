@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-02T22:13:36.767Z
+date: 2021-12-04T14:54:50.566Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -18,4 +18,5 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [WatchTower *Vos conteneurs à jours*](/SelfHosted/WatchTower)
 - [WikiJS *Le plus puissant des Wiki open source*](/SelfHosted/WikiJS)
 - [Wordpress *Le CMS le plus populaire*](/SelfHosted/Wordpress)
+- [Portainer *Docker avec une interface web*](/SelfHosted/Portainer)
 {.links-list}
