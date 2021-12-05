@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-04T14:54:50.566Z
+date: 2021-12-05T09:40:19.198Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -19,4 +19,5 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [WikiJS *Le plus puissant des Wiki open source*](/SelfHosted/WikiJS)
 - [Wordpress *Le CMS le plus populaire*](/SelfHosted/Wordpress)
 - [Portainer *Docker avec une interface web*](/SelfHosted/Portainer)
+- [Pihole *Le DNS bloqueur de pub*](/SelfHosted/Pihole)
 {.links-list}
