@@ -2,7 +2,7 @@
 title: Configurer Réseaux
 description: 
 published: 1
-date: 2021-12-08T13:10:12.941Z
+date: 2021-12-08T13:12:02.311Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-08T12:33:09.747Z
@@ -21,7 +21,7 @@ Voici un exemple de configuration en IP statique :
 ```
 allow-hotplug ens18
 iface ens18 inet static
-    address 192.168.20.1/24
+  address 192.168.20.1/24
   gateway 192.168.20.254
 ```
 
@@ -30,7 +30,7 @@ OU
 ```
 allow-hotplug ens18
 iface ens18 inet static
-    address 192.168.20.1
+  address 192.168.20.1
   netmask 255.255.255.0
   gateway 192.168.20.254
 ```
