@@ -2,58 +2,71 @@
 title: Configurer Réseaux
 description: 
 published: 1
-date: 2021-12-08T13:01:52.425Z
+date: 2021-12-08T13:02:46.115Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-08T12:33:09.747Z
 ---
 
 # Debian et dérivées
+
 ## Changer IP
+
 ### IP statique
-Pour connaitre son adresse ip utiliser : `ip a`
-Pour modifier son ip éditer le fichier `/etc/network/interfaces`
+
+Pour connaitre son adresse ip utiliser : `ip a`  
+Pour modifier son ip éditer le fichier `/etc/network/interfaces`  
 Voici un exemple de configuration en IP statique :
+
 ```
 allow-hotplug ens18
 iface ens18 inet static
-	address 192.168.20.1/24
+    address 192.168.20.1/24
   gateway 192.168.20.254
 ```
+
 OU
+
 ```
 allow-hotplug ens18
 iface ens18 inet static
-	address 192.168.20.1
+    address 192.168.20.1
   netmask 255.255.255.0
   gateway 192.168.20.254
 ```
 
 ### DHCP
+
 Voici un exemple de configuration en DHCP :
+
 ```
 allow-hotplug ens18
 iface ens18 inet dhcp
 ```
 
 ## Changer DNS
-Pour changer le DNS ça se passe dans le fichier `/etc/resolv.conf`
+
+Pour changer le DNS ça se passe dans le fichier `/etc/resolv.conf`  
 Voici un exemple de configuration :
+
 ```bash
 nameserver 192.168.10.2 # DNS Principal
 nameserver 8.8.8.8 # DNS secondaire
 ```
 
 ## Changer Hostname
-Pour voir quel est son hostname effectué la commande suivante : `hostnamectl`
+
+Pour voir quel est son hostname effectué la commande suivante : `hostnamectl`  
 Pour le changez, il suffit de faire : `hostnamectl -set nom-hostname`
 
-- [En vidéo *sur youtube*](/Linux/Configurer-Réseaux)
-{.links-list}
+-   [En vidéo *sur youtube*](/Linux/Configurer-R%C3%A9seaux)
 
 # RedHat et dérivées
+
 ## Changer IP
+
 Le nom de votre carte réseau peut varier, pour connaître son nom utilisé : `ip a`
+
 ```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -72,28 +85,36 @@ Le nom de votre carte réseau peut varier, pour connaître son nom utilisé : `i
 Pour changez votre adresse ip, éditez le fichier `/etc/sysconfig/network-scripts/ifcfg-ens18` *à adapter selon le nom de votre carte*
 
 ### DHCP
-Pour mettre votre interface en dhcp, modifier le paramètre : `BOOTPROTO=dhcp`
+
+Pour mettre votre interface en dhcp, modifier le paramètre : `BOOTPROTO=dhcp`  
 Oubliez pas de commenter ou supprimer les lignes qui servent à l'ip static : `IPADDR`, `NETMASK`, `GATEWAY`, `DNS1`
 
 Relancez votre carte réseau : `ifdown ens18` puis `ifup ens18`
 
 ### IP static
-Pour affecter une adresse ip static à votre interface modifier le paramètre `BOOTPROTO=static`
+
+Pour affecter une adresse ip static à votre interface modifier le paramètre `BOOTPROTO=static`  
 Ajoutez également ces 3 lignes :
+
 ```
 IPADDR=192.168.10.10
 NETMASK=255.255.255.0
 GATEWAY=192.168.10.1
 ```
+
 ## Changer DNS
-Pour changer votre DNS ça se passe également dans `/etc/sysconfig/network-scripts/ifcfg-ens18`
-Ajoutez à la fin du fichier : 
+
+Pour changer votre DNS ça se passe également dans `/etc/sysconfig/network-scripts/ifcfg-ens18`  
+Ajoutez à la fin du fichier :
+
 ```
 DNS1=192.168.10.2
 DNS2=1.1.1.1
 ```
+
 Relancez votre carte réseau : `ifdown ens18` puis `ifup ens18`
 
 ## Changer Hostname
-Pour voir quel est son hostname effectué la commande suivante : `hostnamectl`
+
+Pour voir quel est son hostname effectué la commande suivante : `hostnamectl`  
 Pour le changez, il suffit de faire : `hostnamectl -set nom-hostname`
