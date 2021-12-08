@@ -1,0 +1,84 @@
+<!--
+title: Configurer Réseaux
+description: 
+published: 1
+date: 2021-12-08T13:02:08.614Z
+tags: 
+editor: code
+dateCreated: 2021-12-08T12:33:09.747Z
+-->
+
+<h1 class="toc-header" id="debian-et-dérivées"> Debian et dérivées</h1><div>
+</div><h2 class="toc-header" id="changer-ip"> Changer IP</h2><div>
+</div><h3 class="toc-header" id="ip-statique"> IP statique</h3><div>
+</div><p>Pour connaitre son adresse ip utiliser : <code>ip a</code><br>
+Pour modifier son ip éditer le fichier <code>/etc/network/interfaces</code><br>
+Voici un exemple de configuration en IP statique :</p><div>
+</div><pre v-pre="true" class="prismjs line-numbers"><code class="language-">allow-hotplug ens18
+iface ens18 inet static
+    address 192.168.20.1/24
+  gateway 192.168.20.254
+</code></pre><div>
+</div><p>OU</p><div>
+</div><pre v-pre="true" class="prismjs line-numbers"><code class="language-">allow-hotplug ens18
+iface ens18 inet static
+    address 192.168.20.1
+  netmask 255.255.255.0
+  gateway 192.168.20.254
+</code></pre><div>
+</div><h3 class="toc-header" id="dhcp"> DHCP</h3><div>
+</div><p>Voici un exemple de configuration en DHCP :</p><div>
+</div><pre v-pre="true" class="prismjs line-numbers"><code class="language-">allow-hotplug ens18
+iface ens18 inet dhcp
+</code></pre><div>
+</div><h2 class="toc-header" id="changer-dns"> Changer DNS</h2><div>
+</div><p>Pour changer le DNS ça se passe dans le fichier <code>/etc/resolv.conf</code><br>
+Voici un exemple de configuration :</p><div>
+</div><pre v-pre="true" class="prismjs line-numbers"><code class="language-bash">nameserver 192.168.10.2 # DNS Principal
+nameserver 8.8.8.8 # DNS secondaire
+</code></pre><div>
+</div><h2 class="toc-header" id="changer-hostname"> Changer Hostname</h2><div>
+</div><p>Pour voir quel est son hostname effectué la commande suivante : <code>hostnamectl</code><br>
+Pour le changez, il suffit de faire : <code>hostnamectl -set nom-hostname</code></p><div>
+</div><ul class="links-list">
+<li><a class="is-internal-link is-valid-page" href="/Linux/Configurer-R%C3%A9seaux">En vidéo <em>sur youtube</em></a></li>
+</ul><div>
+</div><h1 class="toc-header" id="redhat-et-dérivées"> RedHat et dérivées</h1><div>
+</div><h2 class="toc-header" id="changer-ip-1"> Changer IP</h2><div>
+</div><p>Le nom de votre carte réseau peut varier, pour connaître son nom utilisé : <code>ip a</code></p><div>
+</div><pre v-pre="true" class="prismjs line-numbers"><code class="language-">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: ens18: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 2a:1b:a2:5b:09:bd brd ff:ff:ff:ff:ff:ff
+    inet 192.168.10.204/24 brd 192.168.10.255 scope global noprefixroute ens18
+       valid_lft forever preferred_lft forever
+    inet6 fe80::281b:a2ff:fe5b:9bd/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+</code></pre><div>
+</div><p>Pour changez votre adresse ip, éditez le fichier <code>/etc/sysconfig/network-scripts/ifcfg-ens18</code> <em>à adapter selon le nom de votre carte</em></p><div>
+</div><h3 class="toc-header" id="dhcp-1"> DHCP</h3><div>
+</div><p>Pour mettre votre interface en dhcp, modifier le paramètre : <code>BOOTPROTO=dhcp</code><br>
+Oubliez pas de commenter ou supprimer les lignes qui servent à l'ip static : <code>IPADDR</code>, <code>NETMASK</code>, <code>GATEWAY</code>, <code>DNS1</code></p><div>
+</div><p>Relancez votre carte réseau : <code>ifdown ens18</code> puis <code>ifup ens18</code></p><div>
+</div><h3 class="toc-header" id="ip-static"> IP static</h3><div>
+</div><p>Pour affecter une adresse ip static à votre interface modifier le paramètre <code>BOOTPROTO=static</code><br>
+Ajoutez également ces 3 lignes :</p><div>
+</div><pre v-pre="true" class="prismjs line-numbers"><code class="language-">IPADDR=192.168.10.10
+NETMASK=255.255.255.0
+GATEWAY=192.168.10.1
+</code></pre><div>
+</div><h2 class="toc-header" id="changer-dns-1"> Changer DNS</h2><div>
+</div><p>Pour changer votre DNS ça se passe également dans <code>/etc/sysconfig/network-scripts/ifcfg-ens18</code><br>
+Ajoutez à la fin du fichier :</p><div>
+</div><pre v-pre="true" class="prismjs line-numbers"><code class="language-">DNS1=192.168.10.2
+DNS2=1.1.1.1
+</code></pre><div>
+</div><p>Relancez votre carte réseau : <code>ifdown ens18</code> puis <code>ifup ens18</code></p><div>
+</div><h2 class="toc-header" id="changer-hostname-1"> Changer Hostname</h2><div>
+</div><p>Pour voir quel est son hostname effectué la commande suivante : <code>hostnamectl</code><br>
+Pour le changez, il suffit de faire : <code>hostnamectl -set nom-hostname</code></p><div>
+</div>
