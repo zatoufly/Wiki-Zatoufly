@@ -2,7 +2,7 @@
 title: Configurer Réseaux
 description: 
 published: 1
-date: 2021-12-08T13:12:02.311Z
+date: 2021-12-08T13:13:40.822Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-08T12:33:09.747Z
@@ -67,7 +67,7 @@ Pour le changez, il suffit de faire : `hostnamectl -set nom-hostname`
 
 ## Changer IP
 
-Le nom de votre carte réseau peut varier, pour connaître son nom utilisé : `ip a`
+Le nom de votre carte réseau peux varier, pour connaître son nom utilisé : `ip a`
 
 ```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
