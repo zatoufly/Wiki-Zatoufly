@@ -2,7 +2,7 @@
 title: Configurer Réseaux
 description: 
 published: 1
-date: 2021-12-08T12:56:20.076Z
+date: 2021-12-08T12:58:49.760Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-08T12:33:09.747Z
@@ -30,15 +30,15 @@ iface ens18 inet static
 ```
 
 ### DHCP
-Voici un exemple de confifuration en DHCP :
+Voici un exemple de configuration en DHCP :
 ```
 allow-hotplug ens18
 iface ens18 inet dhcp
 ```
 
 ## Changer DNS
-Pour changez le DNS ça se passe dans le fichier `/etc/resolv.conf`
-Voici un exemple de configuratation :
+Pour changer le DNS ça se passe dans le fichier `/etc/resolv.conf`
+Voici un exemple de configuration :
 ```bash
 nameserver 192.168.10.2 # DNS Principal
 nameserver 8.8.8.8 # DNS secondaire
@@ -51,7 +51,7 @@ Pour le changez, il suffit de faire : `hostnamectl -set nom-hostname`
 
 # RedHat et dérivées
 ## Changer IP
-Le nom de votre carte réseau peut varié, pour connaitre son nom utilisé : `ip a`
+Le nom de votre carte réseau peut varier, pour connaître son nom utilisé : `ip a`
 ```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -71,12 +71,12 @@ Pour changez votre adresse ip, éditez le fichier `/etc/sysconfig/network-script
 
 ### DHCP
 Pour mettre votre interface en dhcp, modifier le paramètre : `BOOTPROTO=dhcp`
-Oubliez pas de commentez ou supprimer les lignes qui servent à l'ip static : `IPADDR`, `NETMASK`, `GATEWAY`, `DNS1`
+Oubliez pas de commenter ou supprimer les lignes qui servent à l'ip static : `IPADDR`, `NETMASK`, `GATEWAY`, `DNS1`
 
 Relancez votre carte réseau : `ifdown ens18` puis `ifup ens18`
 
 ### IP static
-Pour affecté une adresse ip static à votre interface modifier le paramètre `BOOTPROTO=static`
+Pour affecter une adresse ip static à votre interface modifier le paramètre `BOOTPROTO=static`
 Ajoutez également ces 3 lignes :
 ```
 IPADDR=192.168.10.10
@@ -84,7 +84,7 @@ NETMASK=255.255.255.0
 GATEWAY=192.168.10.1
 ```
 ## Changer DNS
-Pour changez votre DNS ça se passe également dans `/etc/sysconfig/network-scripts/ifcfg-ens18`
+Pour changer votre DNS ça se passe également dans `/etc/sysconfig/network-scripts/ifcfg-ens18`
 Ajoutez à la fin du fichier : 
 ```
 DNS1=192.168.10.2
