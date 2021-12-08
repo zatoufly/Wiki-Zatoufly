@@ -2,7 +2,7 @@
 title: Configurer Réseaux
 description: 
 published: 1
-date: 2021-12-08T12:58:49.760Z
+date: 2021-12-08T13:01:52.425Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-08T12:33:09.747Z
@@ -48,6 +48,8 @@ nameserver 8.8.8.8 # DNS secondaire
 Pour voir quel est son hostname effectué la commande suivante : `hostnamectl`
 Pour le changez, il suffit de faire : `hostnamectl -set nom-hostname`
 
+- [En vidéo *sur youtube*](/Linux/Configurer-Réseaux)
+{.links-list}
 
 # RedHat et dérivées
 ## Changer IP
