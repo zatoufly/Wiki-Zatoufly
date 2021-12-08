@@ -2,7 +2,7 @@
 title: Configurer Réseaux
 description: 
 published: 1
-date: 2021-12-08T13:13:40.822Z
+date: 2021-12-08T13:18:23.292Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-08T12:33:09.747Z
@@ -34,6 +34,7 @@ iface ens18 inet static
   netmask 255.255.255.0
   gateway 192.168.20.254
 ```
+
 
 ### DHCP
 
@@ -85,14 +86,6 @@ Le nom de votre carte réseau peux varier, pour connaître son nom utilisé : `i
 ```
 
 Pour changez votre adresse ip, éditez le fichier `/etc/sysconfig/network-scripts/ifcfg-ens18` *à adapter selon le nom de votre carte*
-
-### DHCP
-
-Pour mettre votre interface en dhcp, modifier le paramètre : `BOOTPROTO=dhcp`  
-Oubliez pas de commenter ou supprimer les lignes qui servent à l'ip static : `IPADDR`, `NETMASK`, `GATEWAY`, `DNS1`
-
-Relancez votre carte réseau : `ifdown ens18` puis `ifup ens18`
-
 ### IP static
 
 Pour affecter une adresse ip static à votre interface modifier le paramètre `BOOTPROTO=static`  
@@ -103,6 +96,20 @@ IPADDR=192.168.10.10
 NETMASK=255.255.255.0
 GATEWAY=192.168.10.1
 ```
+> Après avoir sauvegarder le fichier de configuration, 
+relancez votre carte réseau : <kbd>ifdown ens18</kbd> puis <kbd>ifup ens18</kbd>
+{.is-warning}
+
+### DHCP
+
+Pour mettre votre interface en dhcp, modifier le paramètre : `BOOTPROTO=dhcp`  
+Oubliez pas de commenter ou supprimer les lignes qui servent à l'ip static : `IPADDR`, `NETMASK`, `GATEWAY`, `DNS1`
+
+> Après avoir sauvegarder le fichier de configuration, 
+relancez votre carte réseau : <kbd>ifdown ens18</kbd> puis <kbd>ifup ens18</kbd>
+{.is-warning}
+
+
 
 ## Changer DNS
 
@@ -114,7 +121,9 @@ DNS1=192.168.10.2
 DNS2=1.1.1.1
 ```
 
-Relancez votre carte réseau : `ifdown ens18` puis `ifup ens18`
+> Après avoir sauvegarder le fichier de configuration, 
+relancez votre carte réseau : <kbd>ifdown ens18</kbd> puis <kbd>ifup ens18</kbd>
+{.is-warning}
 
 ## Changer Hostname
 
