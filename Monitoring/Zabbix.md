@@ -2,14 +2,17 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T12:39:18.434Z
+date: 2021-12-10T12:40:11.703Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
 ---
 
-# Présentation
+BANNER
 
+# Présentation
+**Zabbix** est une solution de supervision open source
+ 
 # Installation
 Pour ce tutoriel j'utilise une j'installe zabbix 5.4 sur une Debian 11, j'utilise un serveur web apache2 ainsi que mariadb pour le serveur de base de données.
 > Ce tutoriel présente des failles de sécuriter, merci de l'utiliser uniquement pour effectuer des tests ou pour un réseau local.
