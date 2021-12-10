@@ -2,7 +2,7 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T16:06:29.013Z
+date: 2021-12-10T16:08:28.957Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
@@ -155,19 +155,6 @@ Une fois que mon agent est installé, je peux configurer mon serveur sur l'inter
 ---
 
 # Tabs {.tabset}
-## Via agent
-
-Any content here will go into the first tab...
-
-## Via snmp
-
-Any content here will go into the second tab...
-
-## Third Tab
-
-Any content here will go into the third tab...
-
----
 
 ## Via agent
 Pour ajoutez un client je vais dans l'onglet configuration puis groupes d'hôtes
@@ -194,3 +181,7 @@ Maintenant si je vais dans l'onglet Surveillance puis Dernières  données et qu
 
 > Félicitations, vous avez configuré votre client !
 {.is-success}
+
+## Via snmp
+
+Bientôt disponible ...
