@@ -2,7 +2,7 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T15:57:58.027Z
+date: 2021-12-10T16:02:45.495Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
@@ -144,7 +144,7 @@ Je télécharge l'exécutable de l'agent pour Windows, et je l'installe sur mon 
 
 Ici je laisse tout par défaut, j'indique juste l'ip de mon serveur Zabbix
 
-MEDIA
+![zabbix-agent-windows-1.jpg](/monitoring/zabbix-agent-windows-1.jpg)
 
 Et je continue, en laisser tous les paramètres par défaut
 
@@ -156,21 +156,23 @@ Pour ajoutez un client je vais dans l'onglet configuration puis groupes d'hôtes
 
 Je créer un nouveau groupe d'hôtes, pour ma part nommé Windows.
 
-MEDIA
+![zabbix-ajoutez-agent-1.jpg](/monitoring/zabbix-ajoutez-agent-1.jpg)
 
 Ensuite je vais dans Configuration -> Hôtes et je créer un hôte.
 
 J'indique le nom d'hôte et je sélectionne le groupe Windows. J'ajoute une interface "Agent" et j'indique son IP, on peut également le faire via enregistrement DNS.
 
-MEDIA
+![zabbix-ajoutez-agent-2.jpg](/monitoring/zabbix-ajoutez-agent-2.jpg)
 
 Maintenant que le client est ajouté, je peux lui appliquer une template.
 
 Allez dans l'onglet "Modèles" puis sélectionnez la template "Windows by Zabbix agent".
 
-MEDIA
+![zabbix-ajoutez-agent-3.jpg](/monitoring/zabbix-ajoutez-agent-3.jpg)
 
 Maintenant si je vais dans l'onglet Surveillance puis Dernières  données et que je sélectionne mon hôte SRV-R310 on peut voir les données récolté par l'agent.
+
+![zabbix-ajoutez-agent-4.jpg](/monitoring/zabbix-ajoutez-agent-4.jpg)
 
 > Félicitations, vous avez configuré votre client !
 {.is-success}
