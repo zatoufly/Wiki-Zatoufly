@@ -2,7 +2,7 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T17:41:09.140Z
+date: 2021-12-10T17:42:17.767Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
@@ -154,7 +154,7 @@ Une fois que mon agent est installé, je peux configurer mon serveur sur l'inter
 
 Connecter vous sur la machine client
 
-On va ajoutez les dépôts de zabbix : 
+Ajoutez les dépôts de zabbix : 
 
 ```bash
 wget https://repo.zabbix.com/zabbix/5.4/debian/pool/main/z/zabbix-release/zabbix-release_5.4-1+debian11_all.deb
@@ -162,7 +162,7 @@ dpkg -i zabbix-release_5.4-1+debian11_all.deb
 apt update
 ```
 
-Puis on installe l'agent :
+Puis installé l'agent :
 
 ```bash
 apt install zabbix-agent
