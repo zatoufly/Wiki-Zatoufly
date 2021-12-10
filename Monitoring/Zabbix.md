@@ -2,20 +2,20 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T13:58:48.438Z
+date: 2021-12-10T15:57:58.027Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
 ---
 
-BANNER
+![zabbix-banner.jpg](/monitoring/zabbix-banner.jpg){.align-center}
 
 # Présentation
 **Zabbix** est une solution de supervision open source
  
 # Installation
 Pour ce tutoriel j'utilise une j'installe zabbix 5.4 sur une Debian 11, j'utilise un serveur web apache2 ainsi que mariadb pour le serveur de base de données.
-> Ce tutoriel présente des failles de sécuriter, merci de l'utiliser uniquement pour effectuer des tests ou pour un réseau local.
+> Ce tutoriel présente des failles de sécurité, merci de l'utiliser uniquement pour effectuer des tests ou pour un réseau local.
 {.is-danger}
 
 > __Prérequis__
@@ -24,28 +24,28 @@ Pour ce tutoriel j'utilise une j'installe zabbix 5.4 sur une Debian 11, j'utilis
 
 ---
 
-Bien, pour commencer on met à jour notre système d'exploitation puis on installe quelques dépendances : apache2, mariadb, php etc..
+Pour commencer on met à jour notre système d'exploitation puis on installe quelques dépendances : apache2, mariadb, php etc..
 
 ```bash
 apt update && apt upgrade
 apt install apache2 php php-mysql php-mysqlnd php-ldap php-bcmath php-mbstring php-gd php-pdo php-xml libapache2-mod-php mariadb-server mariadb-client
 ```
 
-Ensuite je télécharger le dépo officiel de zabbix.
+Ensuite je télécharge le dépôt officiel de zabbix.
 
 ```bash
 cd /tmp
 wget https://repo.zabbix.com/zabbix/5.4/debian/pool/main/z/zabbix-release/zabbix-release_5.4-1+debian11_all.deb
 ```
 
-Une fois télécharger on installe les dépots zabbix et on met à jour la liste des dépots.
+Une fois téléchargé on installe les dépôts zabbix et on met à jour la liste des dépôts.
 
 ```bash
 dpkg -i zabbix-release_5.4-1+debian11_all.deb
 apt update
 ```
 
-> Si vous avez une erreur à cette étape, éxécuter ces 3 commandes, puis recommancer l'étape précédente.
+> Si vous avez une erreur à cette étape, exécuter ces 3 commandes, puis recommencer l'étape précédente.
 {.is-warning}
 
 ```bash
@@ -60,7 +60,7 @@ Nous pouvons installer maintenant notre serveur zabbix :
 apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
 ```
 
-On va maintenant créer une base de données ainsi que sont utilisateur : 
+On va maintenant créer une base de données ainsi que son utilisateur : 
 
 ```bash
 mysql -uroot
@@ -73,7 +73,7 @@ grant all privileges on zabbix.* to zabbix@localhost;
 exit
 ```
 
-Nous pouvons importez le schéma et les données initial de la base de données. Il faudra entrer le  mot de passe récemment créé.
+Nous pouvons importer le schéma et les données initiales de la base de données. Il faudra entrer le  mot de passe récemment créé.
 
 ```bash
 zcat /usr/share/doc/zabbix-sql-scripts/mysql/create.sql.gz | mysql -uzabbix -p zabbix
@@ -102,35 +102,36 @@ systemctl restart zabbix-server zabbix-agent apache2
 systemctl enable zabbix-server zabbix-agent apache2
 ```
 
-Sur votre navigateur tappez `http://server_ip/zabbix` pour finaliser l'installation de zabbix.
+Sur votre navigateur tapez `http://server_ip/zabbix` pour finaliser l'installation de zabbix.
 
-Séléctionnez la langue souhaitez :
+Sélectionnez la langue souhaitez :
 
-MEDIA
+![zabbix-installation-1.jpg](/monitoring/zabbix-installation-1.jpg)
 
 Zabbix vérifie si tous les prérequis sont présent : 
 
-MEDIA
+![zabbix-installation-2.jpg](/monitoring/zabbix-installation-2.jpg)
 
-Configurer votre base de données avec le mot de passe créer antérieurement :
+Configurer votre base de données avec le mot de passe créés antérieurement :
 
-MEDIA
+![zabbix-installation-3.jpg](/monitoring/zabbix-installation-3.jpg)
 
-Insérez le nom que vous souhaitez donné à votre serveur : 
+Insérez le nom que vous souhaitez donner à votre serveur : 
 
-MEDIA
+![zabbix-installation-4.jpg](/monitoring/zabbix-installation-4.jpg)
 
 Indiquer l'UTC où est situé le serveur, vous pouvez aussi modifier le thème de l'interface web :
 
-MEDIA
+![zabbix-installation-5.jpg](/monitoring/zabbix-installation-5.jpg)
 
 Il nous reste plus qu'à valider l'installation : 
 
-MEDIAx2
+![zabbix-installation-6.jpg](/monitoring/zabbix-installation-6.jpg)
+![zabbix-installation-7.jpg](/monitoring/zabbix-installation-7.jpg)
 
 Maintenant nous pouvons nous connecter à zabbix avec le nom d'utilisateur `Admin` et le mdp `zabbix`
 
-> Félicitation, Zabbix est maintenant installer sur votre serveur ! 
+> Félicitation, Zabbix est maintenant installé sur votre serveur ! 
 {.is-success}
 
 # Installation Agent
@@ -139,7 +140,7 @@ Tous les agent sont disponible en téléchargement ici : https://www.zabbix.com/
 
 ## Windows
 
-Je télécharge l'éxécutable de l'agent pour Windows, et je l'installe sur mon serveur Windows
+Je télécharge l'exécutable de l'agent pour Windows, et je l'installe sur mon serveur Windows
 
 Ici je laisse tout par défaut, j'indique juste l'ip de mon serveur Zabbix
 
@@ -147,35 +148,29 @@ MEDIA
 
 Et je continue, en laisser tous les paramètres par défaut
 
-Une fois que mon agent est installer, je peux configurer mon serveur sur l'interface web de mon serveur zabbix.
+Une fois que mon agent est installé, je peux configurer mon serveur sur l'interface web de mon serveur zabbix.
 
 # Ajoutez un client
 ## Via agent
 Pour ajoutez un client je vais dans l'onglet configuration puis groupes d'hôtes
 
-Je créer un nouveau groupe d'hôte, pour ma part nommé Windows.
+Je créer un nouveau groupe d'hôtes, pour ma part nommé Windows.
 
 MEDIA
 
-Ensuite je vais dans Configuration -> Hotes et je créer un hôte.
+Ensuite je vais dans Configuration -> Hôtes et je créer un hôte.
 
-J'indique le nom d'hôte et je séléctionne le groupe Windows. J'ajoute une interface "Agent" et j'indique son IP, on peut également le faire via enregistrement DNS.
-
-MEDIA
-
-Maintenant que le client est ajouter, je peux lui appliquer une template.
-
-Allez dans l'onglet "Modèles" puis séléctionnez la template "Windows by Zabbix agent".
+J'indique le nom d'hôte et je sélectionne le groupe Windows. J'ajoute une interface "Agent" et j'indique son IP, on peut également le faire via enregistrement DNS.
 
 MEDIA
 
-Maintenant si je vais dans l'onglet Surveillance puis Dernières  données et qie je séléctionnez mon hôte SRV-R310 on peut voir les données récolté par l'agent.
+Maintenant que le client est ajouté, je peux lui appliquer une template.
 
-> Félictitation, vous avez configurer votre client !
+Allez dans l'onglet "Modèles" puis sélectionnez la template "Windows by Zabbix agent".
+
+MEDIA
+
+Maintenant si je vais dans l'onglet Surveillance puis Dernières  données et que je sélectionne mon hôte SRV-R310 on peut voir les données récolté par l'agent.
+
+> Félicitations, vous avez configuré votre client !
 {.is-success}
-
-
-
-
-
-
