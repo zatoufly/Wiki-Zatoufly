@@ -2,7 +2,7 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T12:15:17.533Z
+date: 2021-12-10T12:27:49.444Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
@@ -89,10 +89,40 @@ DBUser=zabbix
 DBPassword=mon-mdp
 ```
 
-Il nous reste qu'à redémarrer quelques services et les activer au démarrage de la machine
+Il nous reste qu'à redémarrer quelques services et les activer au démarrage de la machine.
 
 ```bash
 systemctl restart zabbix-server zabbix-agent apache2
 systemctl enable zabbix-server zabbix-agent apache2
 ```
 
+Sur votre navigateur tappez `http://server_ip/zabbix` pour finaliser l'installation de zabbix.
+
+Séléctionnez la langue souhaitez :
+
+MEDIA
+
+Zabbix vérifie si tous les prérequis sont présent : 
+
+MEDIA
+
+Configurer votre base de données avec le mot de passe créer antérieurement :
+
+MEDIA
+
+Insérez le nom que vous souhaitez donné à votre serveur : 
+
+MEDIA
+
+Indiquer l'UTC où est situé le serveur, vous pouvez aussi modifier le thème de l'interface web :
+
+MEDIA
+
+Il nous reste plus qu'à valider l'installation : 
+
+MEDIAx2
+
+Maintenant nous pouvons nous connecter à zabbix avec le nom d'utilisateur `Admin` et le mdp `zabbix`
+
+> Félicitation, Zabbix est maintenant installer sur votre serveur ! 
+{.is-success}
