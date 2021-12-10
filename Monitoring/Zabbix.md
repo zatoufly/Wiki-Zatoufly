@@ -2,7 +2,7 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T16:02:45.495Z
+date: 2021-12-10T16:06:29.013Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
@@ -151,6 +151,24 @@ Et je continue, en laisser tous les paramètres par défaut
 Une fois que mon agent est installé, je peux configurer mon serveur sur l'interface web de mon serveur zabbix.
 
 # Ajoutez un client
+
+---
+
+# Tabs {.tabset}
+## Via agent
+
+Any content here will go into the first tab...
+
+## Via snmp
+
+Any content here will go into the second tab...
+
+## Third Tab
+
+Any content here will go into the third tab...
+
+---
+
 ## Via agent
 Pour ajoutez un client je vais dans l'onglet configuration puis groupes d'hôtes
 
