@@ -2,7 +2,7 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T18:43:52.120Z
+date: 2021-12-10T18:44:14.842Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
@@ -172,7 +172,7 @@ Une fois fait, éditez le fichier `/etc/zabbix/zabbix_agentd.conf`
 
 à la ligne 121, indiquez l'ip de votre serveur zabbix, pour moi : `Server=192.168.10.20`
 
-redémarrer l'agent
+redémarrer l'agent :
 
 ```bash
 systemctl restart zabbix-agent
