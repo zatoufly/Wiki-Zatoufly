@@ -2,7 +2,7 @@
 title: Zabbix
 description: 
 published: 1
-date: 2021-12-10T16:08:28.957Z
+date: 2021-12-10T17:40:15.783Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T11:32:30.444Z
@@ -137,7 +137,7 @@ Maintenant nous pouvons nous connecter à zabbix avec le nom d'utilisateur `Admi
 # Installation Agent
 
 Tous les agent sont disponible en téléchargement ici : https://www.zabbix.com/download_agents
-
+# Tabs {.tabset}
 ## Windows
 
 Je télécharge l'exécutable de l'agent pour Windows, et je l'installe sur mon serveur Windows
@@ -150,12 +150,30 @@ Et je continue, en laisser tous les paramètres par défaut
 
 Une fois que mon agent est installé, je peux configurer mon serveur sur l'interface web de mon serveur zabbix.
 
+## Debian 
+
+Connecter vous sur la machine client
+
+On va ajoutez les dépôts de zabbix : 
+
+```bash
+wget https://repo.zabbix.com/zabbix/5.4/debian/pool/main/z/zabbix-release/zabbix-release_5.4-1+debian11_all.deb
+dpkg -i zabbix-release_5.4-1+debian11_all.deb
+apt update
+```
+
+Puis on installe l'agent :
+
+```bash
+apt install zabbix-agent
+```
+
+Une fois fait, éditez le fichier `/etc/zabbix/zabbix_agentd.conf`
+
+à la ligne 121, indiquez l'ip de votre serveur zabbix, pour moi : `Server=192.168.10.20`
+
 # Ajoutez un client
-
----
-
 # Tabs {.tabset}
-
 ## Via agent
 Pour ajoutez un client je vais dans l'onglet configuration puis groupes d'hôtes
 
