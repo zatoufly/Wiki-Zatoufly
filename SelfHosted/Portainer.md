@@ -2,7 +2,7 @@
 title: Portainer
 description: 
 published: 1
-date: 2021-12-04T15:05:07.327Z
+date: 2021-12-11T23:30:35.985Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-04T14:50:20.934Z
@@ -36,8 +36,8 @@ services:
 ```bash
 docker run -d \
 	--name portainer \
-	-p 9000:9000 \ # port http
-	-p 9443:9443 \ # port https
+	-p 9000:9000 `# port http` \ 
+	-p 9443:9443 `# port https` \ 
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v /path/to/data:/data \
 	--restart=unless-stopped \
