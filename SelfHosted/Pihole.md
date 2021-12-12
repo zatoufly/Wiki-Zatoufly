@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: 1
-date: 2021-12-12T09:47:23.302Z
+date: 2021-12-12T09:49:52.195Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-05T09:39:39.388Z
@@ -36,7 +36,7 @@ curl -sSL https://install.pi-hole.net | bash
 
 Le script devrait automatiquement s'éxécute. Plus tard pihole affiche un message d'avertissement puis un autre pour vous donner un lien si vous souhaiter effectuer des donation au projet.
 
-![pihole-installation-1.jpg](/self-hosted/pihole/pihole-installation-1.jpg)
+![pihole-installation-1.jpg](/self-hosted/pihole/pihole-installation-1.jpg =50%x)
 
 ![pihole-installation-2.jpg](/self-hosted/pihole/pihole-installation-2.jpg)
 
@@ -73,13 +73,14 @@ Pihole va terminer sa configuration et vous affichera quelques informations util
 ![pihole-installation-10.jpg](/self-hosted/pihole/pihole-installation-10.jpg)
 
 Maintenant rendez vous sur votre navigateur pour accéder à l'interface web de pihole à l'addresse http://ip-serveur/admin
+
 ![pihole-installation-11.jpg](/self-hosted/pihole/pihole-installation-11.jpg)
 
 > Félicitations, vous avez installer pi-hole sur votre réseau !
 {.is-success}
 
 
-## Docker-Compose ([Plus d'informations](https://docs.linuxserver.io/general/docker-compose))
+## Docker-Compose
 ```yaml
 version: "3"
 
@@ -102,7 +103,10 @@ services:
       - NET_ADMIN
     restart: unless-stopped
 ```
-## Docker cli ([Plus d'informations](https://docs.docker.com/engine/reference/commandline/cli/))
+> Pour des raisons de sécurité, changer le port de l'interface web ainsi que le mot de passe.
+> Si vous comptez pas utiliser pihole en tant que dhcp, enlever le port 67 de la configuration
+{.is-warning}
+## Docker cli
 ```bash
 docker run -d \
   --name pihole \
