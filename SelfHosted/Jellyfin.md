@@ -2,7 +2,7 @@
 title: Jellyfin
 description: 
 published: 1
-date: 2021-12-12T10:58:54.306Z
+date: 2021-12-12T10:59:09.002Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-12T10:56:23.231Z
@@ -17,7 +17,7 @@ Site officiel : [jellyfin.org](https://jellyfin.org/)
 # Tabs {.tabset}
 ## Bare Metal
 
-- [:memo: zatoufly.fr *Sur zatoufly.fr*](https://zatoufly.fr/comment-installer-jellyfin-sur-debian/)
+- [:memo: Tuto sur mon site *zatoufly.fr*](https://zatoufly.fr/comment-installer-jellyfin-sur-debian/)
 {.links-list}
 
 ## Docker-Compose
