@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: 1
-date: 2021-12-12T09:45:06.347Z
+date: 2021-12-12T09:45:59.311Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-05T09:39:39.388Z
@@ -72,7 +72,6 @@ Pihole va terminer sa configuration et vous affichera quelques informations util
 ![pihole-installation-10.jpg](/self-hosted/pihole/pihole-installation-10.jpg)
 
 Maintenant rendez vous sur votre navigateur pour accéder à l'interface web de pihole à l'addresse http://ip-serveur/admin
-
 ![pihole-installation-11.jpg](/self-hosted/pihole/pihole-installation-11.jpg)
 
 > Félicitations, vous avez installer pi-hole sur votre réseau !
