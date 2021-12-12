@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: 1
-date: 2021-12-12T09:50:13.888Z
+date: 2021-12-12T09:51:02.442Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-05T09:39:39.388Z
@@ -38,43 +38,43 @@ Le script devrait automatiquement s'éxécute. Plus tard pihole affiche un messa
 
 ![pihole-installation-1.jpg](/self-hosted/pihole/pihole-installation-1.jpg =60%x)
 
-![pihole-installation-2.jpg](/self-hosted/pihole/pihole-installation-2.jpg)
+![pihole-installation-2.jpg](/self-hosted/pihole/pihole-installation-2.jpg =60%x)
 
 Un message pour vous avertir que pihole à besoin d'une adresse ip static pour correctement fonctionner. 
 
-![pihole-installation-3.jpg](/self-hosted/pihole/pihole-installation-3.jpg)
+![pihole-installation-3.jpg](/self-hosted/pihole/pihole-installation-3.jpg =60%x)
 
 Ensuite séléctionnez quel provider DNS vous souhaitez utilisén pour ma part je prend Quad9
 
-![pihole-installation-4.jpg](/self-hosted/pihole/pihole-installation-4.jpg)
+![pihole-installation-4.jpg](/self-hosted/pihole/pihole-installation-4.jpg =60%x)
 
 Pihole vous fournit une blacklist de DNS par défaut, garder là pour filtrer les pubs de votre réseau.
 
-![pihole-installation-5.jpg](/self-hosted/pihole/pihole-installation-5.jpg)
+![pihole-installation-5.jpg](/self-hosted/pihole/pihole-installation-5.jpg =60%x)
 
 Activer ou non l'interface web, je vous conseille de l'activer.
 
-![pihole-installation-6.jpg](/self-hosted/pihole/pihole-installation-6.jpg)
+![pihole-installation-6.jpg](/self-hosted/pihole/pihole-installation-6.jpg =60%x)
 
 Installer le serveur web lighttpd pour que l'interface web fonctionne.
 
-![pihole-installation-7.jpg](/self-hosted/pihole/pihole-installation-7.jpg)
+![pihole-installation-7.jpg](/self-hosted/pihole/pihole-installation-7.jpg =60%x)
 
 Ici séléctionnez si vous souhaitez avoir les log ou non, je vous conseille de les désactiver si vous avez installer pihole sur une carte SD, pour éviter de trop l'user à terme
 
-![pihole-installation-8.jpg](/self-hosted/pihole/pihole-installation-8.jpg)
+![pihole-installation-8.jpg](/self-hosted/pihole/pihole-installation-8.jpg =60%x)
 
 Séléctionnez la politique de "vie privée" que vous souhaiter donner à pihole.
 
-![pihole-installation-9.jpg](/self-hosted/pihole/pihole-installation-9.jpg)		
+![pihole-installation-9.jpg](/self-hosted/pihole/pihole-installation-9.jpg =60%x)		
 
 Pihole va terminer sa configuration et vous affichera quelques informations utiles comme le mot de passe de l'interface web.
 
-![pihole-installation-10.jpg](/self-hosted/pihole/pihole-installation-10.jpg)
+![pihole-installation-10.jpg](/self-hosted/pihole/pihole-installation-10.jpg =60%x)
 
 Maintenant rendez vous sur votre navigateur pour accéder à l'interface web de pihole à l'addresse http://ip-serveur/admin
 
-![pihole-installation-11.jpg](/self-hosted/pihole/pihole-installation-11.jpg)
+![pihole-installation-11.jpg](/self-hosted/pihole/pihole-installation-11.jpg =80%x)
 
 > Félicitations, vous avez installer pi-hole sur votre réseau !
 {.is-success}
