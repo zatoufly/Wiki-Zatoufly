@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: 1
-date: 2021-12-12T09:51:02.442Z
+date: 2021-12-12T09:53:27.889Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-05T09:39:39.388Z
@@ -11,9 +11,9 @@ dateCreated: 2021-12-05T09:39:39.388Z
 ![pihole-banner.png](/wiki-assets/pihole-banner.png){.align-center}
 
 # Présentation
-**Pihole** est un serveur de DNS avec une interface web, son principal atout est le filtrage de domaine, en d'autre termes il permet de bloquer les pubs, trackeurs, etc .. Vous pouvez y ajoutez des enregistrements de type A, AAAA et CNAME. 
+**Pihole** est un serveur de DNS avec une interface web, son principal atout est le filtrage de domaine, en d'autre termes il permet de bloquer les pubs, trackers, etc .. Vous pouvez y ajouter des enregistrements de type A, AAAA et CNAME. 
 
-Il peut être aussi utilisez comme serveur DHCP.
+Il peut aussi être utilisé comme serveur DHCP.
 
 Site officiel : [pi-hole.net](https://pi-hole.net/)
 
@@ -21,7 +21,7 @@ Site officiel : [pi-hole.net](https://pi-hole.net/)
 # Tabs {.tabset}
 ## Bare Metal
 
-Connecetez vous au serveur et installer l'outils curl pour récupèrer le script d'installation officiel de pihole
+Connectez vous au serveur et installer l'outils curl pour récupèrer le script d'installation officiel de pihole
 
 ```bash
 apt install curl -y
@@ -34,7 +34,7 @@ cd /tmp
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-Le script devrait automatiquement s'éxécute. Plus tard pihole affiche un message d'avertissement puis un autre pour vous donner un lien si vous souhaiter effectuer des donation au projet.
+Le script devrait automatiquement s'exécuter. Plus tard, pihole affiche un message d'avertissement puis un autre pour vous donner un lien si vous souhaitez effectuer des donations au projet.
 
 ![pihole-installation-1.jpg](/self-hosted/pihole/pihole-installation-1.jpg =60%x)
 
@@ -44,7 +44,7 @@ Un message pour vous avertir que pihole à besoin d'une adresse ip static pour c
 
 ![pihole-installation-3.jpg](/self-hosted/pihole/pihole-installation-3.jpg =60%x)
 
-Ensuite séléctionnez quel provider DNS vous souhaitez utilisén pour ma part je prend Quad9
+Ensuite sélectionnez quel provider DNS vous souhaitez utiliser pour ma part je prend Quad 9
 
 ![pihole-installation-4.jpg](/self-hosted/pihole/pihole-installation-4.jpg =60%x)
 
@@ -60,11 +60,11 @@ Installer le serveur web lighttpd pour que l'interface web fonctionne.
 
 ![pihole-installation-7.jpg](/self-hosted/pihole/pihole-installation-7.jpg =60%x)
 
-Ici séléctionnez si vous souhaitez avoir les log ou non, je vous conseille de les désactiver si vous avez installer pihole sur une carte SD, pour éviter de trop l'user à terme
+Ici sélectionnez si vous souhaitez avoir les log ou non, je vous conseille de les désactiver si vous avez installé pihole sur une carte SD, pour éviter de trop l'user à terme
 
 ![pihole-installation-8.jpg](/self-hosted/pihole/pihole-installation-8.jpg =60%x)
 
-Séléctionnez la politique de "vie privée" que vous souhaiter donner à pihole.
+Sélectionnez la politique de "vie privée" que vous souhaitez donner à pihole.
 
 ![pihole-installation-9.jpg](/self-hosted/pihole/pihole-installation-9.jpg =60%x)		
 
@@ -76,7 +76,7 @@ Maintenant rendez vous sur votre navigateur pour accéder à l'interface web de 
 
 ![pihole-installation-11.jpg](/self-hosted/pihole/pihole-installation-11.jpg =80%x)
 
-> Félicitations, vous avez installer pi-hole sur votre réseau !
+> Félicitations, vous avez installé pi-hole sur votre réseau !
 {.is-success}
 
 
@@ -129,7 +129,7 @@ docker run -d \
 
 ## Changer mot de passe
 
-Pour changer de mot de passe tappez la commande suivante sur le serveur où est installer pihole :
+Pour changer de mot de passe tapez la commande suivante sur le serveur où est installer pihole :
 
 ```bash
 pihole -a -p
