@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: 1
-date: 2021-12-12T09:49:52.195Z
+date: 2021-12-12T09:50:13.888Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-05T09:39:39.388Z
@@ -36,7 +36,7 @@ curl -sSL https://install.pi-hole.net | bash
 
 Le script devrait automatiquement s'éxécute. Plus tard pihole affiche un message d'avertissement puis un autre pour vous donner un lien si vous souhaiter effectuer des donation au projet.
 
-![pihole-installation-1.jpg](/self-hosted/pihole/pihole-installation-1.jpg =50%x)
+![pihole-installation-1.jpg](/self-hosted/pihole/pihole-installation-1.jpg =60%x)
 
 ![pihole-installation-2.jpg](/self-hosted/pihole/pihole-installation-2.jpg)
 
