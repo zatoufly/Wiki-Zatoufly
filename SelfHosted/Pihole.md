@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: 1
-date: 2021-12-12T09:45:59.311Z
+date: 2021-12-12T09:47:23.302Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-05T09:39:39.388Z
@@ -18,6 +18,7 @@ Il peut être aussi utilisez comme serveur DHCP.
 Site officiel : [pi-hole.net](https://pi-hole.net/)
 
 # Installation
+# Tabs {.tabset}
 ## Bare Metal
 
 Connecetez vous au serveur et installer l'outils curl pour récupèrer le script d'installation officiel de pihole
