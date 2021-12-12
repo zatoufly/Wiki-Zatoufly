@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: 1
-date: 2021-12-12T09:37:51.660Z
+date: 2021-12-12T09:45:06.347Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-05T09:39:39.388Z
@@ -35,45 +35,45 @@ curl -sSL https://install.pi-hole.net | bash
 
 Le script devrait automatiquement s'éxécute. Plus tard pihole affiche un message d'avertissement puis un autre pour vous donner un lien si vous souhaiter effectuer des donation au projet.
 
-MEDIA
+![pihole-installation-1.jpg](/self-hosted/pihole/pihole-installation-1.jpg)
 
-MEDIA
+![pihole-installation-2.jpg](/self-hosted/pihole/pihole-installation-2.jpg)
 
 Un message pour vous avertir que pihole à besoin d'une adresse ip static pour correctement fonctionner. 
 
-MEDIA
+![pihole-installation-3.jpg](/self-hosted/pihole/pihole-installation-3.jpg)
 
 Ensuite séléctionnez quel provider DNS vous souhaitez utilisén pour ma part je prend Quad9
 
-MEDIA
+![pihole-installation-4.jpg](/self-hosted/pihole/pihole-installation-4.jpg)
 
 Pihole vous fournit une blacklist de DNS par défaut, garder là pour filtrer les pubs de votre réseau.
 
-MEDIA
+![pihole-installation-5.jpg](/self-hosted/pihole/pihole-installation-5.jpg)
 
 Activer ou non l'interface web, je vous conseille de l'activer.
 
-MEDIA
+![pihole-installation-6.jpg](/self-hosted/pihole/pihole-installation-6.jpg)
 
 Installer le serveur web lighttpd pour que l'interface web fonctionne.
 
-MEDIA
+![pihole-installation-7.jpg](/self-hosted/pihole/pihole-installation-7.jpg)
 
 Ici séléctionnez si vous souhaitez avoir les log ou non, je vous conseille de les désactiver si vous avez installer pihole sur une carte SD, pour éviter de trop l'user à terme
 
-MEDIA
+![pihole-installation-8.jpg](/self-hosted/pihole/pihole-installation-8.jpg)
 
 Séléctionnez la politique de "vie privée" que vous souhaiter donner à pihole.
 
-MEDIA		
+![pihole-installation-9.jpg](/self-hosted/pihole/pihole-installation-9.jpg)		
 
 Pihole va terminer sa configuration et vous affichera quelques informations utiles comme le mot de passe de l'interface web.
 
-MEDIA
+![pihole-installation-10.jpg](/self-hosted/pihole/pihole-installation-10.jpg)
 
 Maintenant rendez vous sur votre navigateur pour accéder à l'interface web de pihole à l'addresse http://ip-serveur/admin
 
-MEDIA
+![pihole-installation-11.jpg](/self-hosted/pihole/pihole-installation-11.jpg)
 
 > Félicitations, vous avez installer pi-hole sur votre réseau !
 {.is-success}
