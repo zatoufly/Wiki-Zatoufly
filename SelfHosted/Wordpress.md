@@ -2,7 +2,7 @@
 title: Wordpress
 description: 
 published: 1
-date: 2021-12-20T22:06:31.272Z
+date: 2021-12-20T22:06:55.181Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T21:59:11.694Z
@@ -131,7 +131,7 @@ Et je renseigne quelques informations, et je retiens bien de mdp fournis, il nou
 ![wordpress-2.png](/self-hosted/wordpress/wordpress-2.png)
 
 
-## Docker-Compose ([Plus d'informations](https://docs.linuxserver.io/general/docker-compose))
+## Docker-Compose 
 ```yaml
 ---
 version: "2"
