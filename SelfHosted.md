@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-20T21:49:07.893Z
+date: 2021-12-20T21:49:32.385Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -25,5 +25,5 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 {.links-list}
 
 ---
-- [Astuces](/SelfHosted/Astuces)
+- [Astuces *HTTPS*](/SelfHosted/Astuces)
 {.links-list}
