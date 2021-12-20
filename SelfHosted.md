@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-12T11:00:19.155Z
+date: 2021-12-20T21:49:07.893Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -21,4 +21,9 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [Portainer *Docker avec une interface web*](/SelfHosted/Portainer)
 - [Pihole *Le DNS bloqueur de pub*](/SelfHosted/Pihole)
 - [Jellyfin *Le système multimédia du logiciel libre*](/SelfHosted/Jellyfin)
+- [Nextcloud *Le cloud chez soi*](/SelfHosted/Nextcloud)
+{.links-list}
+
+---
+- [Astuces](/SelfHosted/Astuces)
 {.links-list}
