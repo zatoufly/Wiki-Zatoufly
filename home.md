@@ -2,13 +2,13 @@
 title: Accueil
 description: 
 published: 1
-date: 2021-12-01T22:46:52.436Z
+date: 2021-12-21T20:59:56.603Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T19:38:41.597Z
 ---
 
-![wiki-banner.png](/wiki-banner.png)
+![wiki-banner.png](/wiki-banner.png){.align-center}
 
 # Présentation
 Bonjour ! Moi c'est Jérémy, vous me connaissez sûrement sous mon pseudo Zatoufly.
