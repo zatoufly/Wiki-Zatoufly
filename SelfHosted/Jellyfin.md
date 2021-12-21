@@ -2,7 +2,7 @@
 title: Jellyfin
 description: 
 published: 1
-date: 2021-12-12T10:59:09.002Z
+date: 2021-12-21T20:55:28.068Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-12T10:56:23.231Z
@@ -17,7 +17,27 @@ Site officiel : [jellyfin.org](https://jellyfin.org/)
 # Tabs {.tabset}
 ## Bare Metal
 
-- [:memo: Tuto sur mon site *zatoufly.fr*](https://zatoufly.fr/comment-installer-jellyfin-sur-debian/)
+L'installation est effectué sur une Debian 11 en utilisateur root.
+### Prérequis
+- IP fixe
+### Mettre à jour Debian
+```bash
+apt update && apt full-upgrade -y
+```
+### Ajoutez le dépot de Jellyfin
+```bash
+apt install extrepo -y
+extrepo enable jellyfin
+apt update
+```
+### Installer Jellyfin
+```bash
+apt install jellyfin -y
+```
+> Votre serveur Jellyfin est installer. Il est disponible à l'adresse : http://ip_serveur:8096
+{.is-success}
+
+- [:memo: Plus de détaille ici *zatoufly.fr*](https://zatoufly.fr/comment-installer-jellyfin-sur-debian/)
 {.links-list}
 
 ## Docker-Compose
