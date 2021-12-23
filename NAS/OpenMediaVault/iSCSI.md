@@ -2,7 +2,7 @@
 title: Open Media Vault - iSCSI
 description: 
 published: 1
-date: 2021-12-21T19:01:36.042Z
+date: 2021-12-23T10:36:10.599Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-21T19:01:36.042Z
@@ -50,11 +50,9 @@ Dans le Backing Store mettez `/dev/mapper/` suivi de : `volume_group-logical_vol
  
 Pour moi ça donne : `/dev/mapper/LVM_GRP-LVM_STORAGE`
  
-Vous pouvez également mettre l'adresse d'un initiateur iSCSI. Pour ma part je vais connecter ma cible à un NAS QNAP donc je n'en met pas.
+Vous pouvez également mettre l'adresse d'un initiateur iSCSI.
  
 ![omv-cible-iscsi-4.png](/nas/omv/omv-cible-iscsi-4.png)
- 
-Si vous connectez votre cible à un client ou serveur Windows, utiliser l'outil intégrée à ce dernier "initiateur iSCSI"
  
 > Félicitation, vous avez créer une cible iSCSI
 {.is-success}
