@@ -2,7 +2,7 @@
 title: QNAP - iSCSI
 description: 
 published: 1
-date: 2021-12-21T19:18:19.265Z
+date: 2021-12-23T10:37:46.556Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-21T19:18:19.265Z
@@ -17,7 +17,7 @@ Allez dans l'onglet "Disque Distant" puis cliquez sur "Ajouter un disque virtuel
  
 Mettez y l'ip du serveur qui possède la cible iSCSI (dans mon cas mon open media vault) ainsi que le port du protocole, 3260 par défaut.
  
-Cliquez sur "Obtenir le disque distant", il devrait trouver le nom de la cible iSCSI par lui-même.
+Cliquez sur "Obtenir le disque distant", il devrait trouver le nom de la cible iSCSI par lui-même. Il vous donnera l'IQN initiateur que vous devrait fournir à votre cible iSCSI.
  
 ![qnap-connecter-iscsi-2.png](/nas/qnap/qnap-connecter-iscsi-2.png)
  
