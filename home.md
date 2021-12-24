@@ -2,7 +2,7 @@
 title: Accueil
 description: 
 published: 1
-date: 2021-12-22T21:33:13.353Z
+date: 2021-12-24T10:30:44.701Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T19:38:41.597Z
@@ -11,12 +11,11 @@ dateCreated: 2021-11-30T19:38:41.597Z
 ![wiki-banner.png](/wiki-banner.png){.align-center}
 
 # Présentation
-Bonjour ! Moi c'est Jérémy, vous me connaissez sûrement sous mon pseudo Zatoufly.
-IRL je suis Technicien supérieur systèmes et réseaux depuis mes 18 ans.
+Bonjour ! Moi c’est Jérémy, vous me connaissez sûrement par mon pseudo Zatoufly.
 
-J'ai commencé à créer des vidéos Youtube en aôut 2020 dans le but de partagez mes compétences en IT.
+Je suis Technicien supérieur systèmes & réseaux depuis mes 18 ans, et également créateur de contenue sur la plateforme youtube pour aider les notives de l’informatique à découvrir de nouvelles technologie avec des tutoriels.
 
-J'ai pour volonté à travers mes vidéos, mes articles, et ce wiki de créer des tutos explicites pour les passionnés d'informatiques.
+J’ai pour volonté que ce soit à travers mes vidéos, ce blog et mon wiki de créer des tutos simples pour toutes personnes passionnés d’informatique.
 
 Ici vous êtes sur mon wiki, **bienvenue** !
 
