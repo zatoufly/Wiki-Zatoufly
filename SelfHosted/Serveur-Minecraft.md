@@ -2,7 +2,7 @@
 title: Serveur Minecraft
 description: 
 published: 1
-date: 2021-12-26T09:54:34.409Z
+date: 2021-12-26T13:18:21.401Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-26T09:27:00.078Z
@@ -26,14 +26,13 @@ apt update && apt full-upgrade -y
 ```
 ### Installer Java
 ```bash
-apt install openjdk-17-jdk
+apt install openjdk-17-jdk -y
 ```
  
 ### Créer un utilisateur minecraft
 ```bash
-useradd minecraft
+adduser minecraft
 usermod -aG sudo minecraft
-su - minecraft
 ```
  
 ### Créer un répertoire pour y stocker le serveur
