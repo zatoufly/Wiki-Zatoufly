@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-20T21:49:32.385Z
+date: 2021-12-26T10:19:16.299Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -22,6 +22,7 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [Pihole *Le DNS bloqueur de pub*](/SelfHosted/Pihole)
 - [Jellyfin *Le système multimédia du logiciel libre*](/SelfHosted/Jellyfin)
 - [Nextcloud *Le cloud chez soi*](/SelfHosted/Nextcloud)
+- [Serveur-Minecraft](/SelfHosted/Serveur-Minecraft)
 {.links-list}
 
 ---
