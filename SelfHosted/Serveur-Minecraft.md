@@ -2,7 +2,7 @@
 title: Serveur Minecraft
 description: 
 published: 1
-date: 2021-12-26T13:18:21.401Z
+date: 2021-12-26T13:18:53.736Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-26T09:27:00.078Z
@@ -83,4 +83,5 @@ vim eula.txt
 |     |     |
 | --- | --- |
 | `stop` | Arrête le serveur minecraft |
+| `restart` | Redémarre le serveur minecraft |
 | `op zatoufly` | donne les droit administrateur à l'utilisateur zatoufly |
