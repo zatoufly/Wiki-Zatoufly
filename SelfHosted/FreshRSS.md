@@ -2,7 +2,7 @@
 title: FreshRSS
 description: 
 published: 1
-date: 2021-12-31T12:58:46.861Z
+date: 2021-12-31T13:43:59.351Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T09:10:33.180Z
@@ -25,20 +25,21 @@ Site officiel : [freshrss.org](https://www.freshrss.org/)
 ## Docker-Compose ([Plus d'informations](https://docs.linuxserver.io/general/docker-compose))
 ```yaml
 ---
-version: "2.1"
+version: '3.3'
 services:
-  freshrss:
-    image: freshrss/freshrss
-    container_name: freshrss
-    environment:
-      - PUID=1000
-      - PGID=100
-      - TZ=Europe/Paris
-    volumes:
-      - /path/to/config:/config
-    ports:
-      - 3001:80
-    restart: unless-stopped
+    freshrss:
+        container_name: freshrss
+        environment:
+            - PUID=1000
+            - PGID=100
+            - TZ=Europe/Paris
+        ports:
+            - '3001:80'
+        volumes:
+            - 'path/to/data:/var/www/FreshRSS/data'
+            - 'extensions:/var/www/FreshRSS/extensions'
+        restart: unless-stopped
+        image: freshrss/freshrss
 ```
 ## Docker cli ([Plus d'informations](https://docs.docker.com/engine/reference/commandline/cli/))
 ```bash
@@ -48,7 +49,8 @@ docker run -d \
   -e PGID=100 \
   -e TZ=Europe/Paris \
   -p 3001:80 \
-  -v /path/to/config:/config \
+  -v path/to/data:/var/www/FreshRSS/data \
+  -v extensions:/var/www/FreshRSS/extensions \
   --restart unless-stopped \
   freshrss/freshrss
 ```
