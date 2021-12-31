@@ -2,7 +2,7 @@
 title: FreshRSS
 description: 
 published: 1
-date: 2021-12-01T10:00:04.618Z
+date: 2021-12-31T12:58:46.861Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T09:10:33.180Z
@@ -28,7 +28,7 @@ Site officiel : [freshrss.org](https://www.freshrss.org/)
 version: "2.1"
 services:
   freshrss:
-    image: lscr.io/linuxserver/freshrss
+    image: freshrss/freshrss
     container_name: freshrss
     environment:
       - PUID=1000
@@ -50,7 +50,7 @@ docker run -d \
   -p 3001:80 \
   -v /path/to/config:/config \
   --restart unless-stopped \
-  lscr.io/linuxserver/freshrss
+  freshrss/freshrss
 ```
 # Configurations
 Si vous avez effectuer une installation via Docker, séléctionnez LiteSQL lors de la configuration de la base de données.  
