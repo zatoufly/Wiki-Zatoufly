@@ -2,7 +2,7 @@
 title: Jellyfin
 description: 
 published: 1
-date: 2021-12-21T20:55:28.068Z
+date: 2022-01-02T10:26:20.381Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-12T10:56:23.231Z
@@ -46,12 +46,13 @@ version: '3.3'
 services:
   jellyfin:
       container_name: jellyfin
+      ports:
+          - 8096:8096
       volumes:
           - '/path/to/config:/config'
           - '/path/to/cache:/cache'
           - '/path/to/media:/media'
-      network_mode: host
-      restart: unless-stopped
+      restart: always
       image: jellyfin/jellyfin
 ```
 Pour la configuration sur l'interface web :
@@ -61,13 +62,13 @@ Pour la configuration sur l'interface web :
 ## Docker cli
 ```bash
 docker run -d \
---name=jellyfin \
+--name jellyfin \
 --user 1000:100 \
+-p 8096:8096
 -v /path/to/config:/config \
 -v /path/to/cache:/cache \
 -v /path/to/media:/media \
---net="host" \
---restart=unless-stopped \
+--restart always \
 jellyfin/jellyfin
 ```
 Pour la configuration sur l'interface web :
