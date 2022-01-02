@@ -2,7 +2,7 @@
 title: WikiJS
 description: 
 published: 1
-date: 2021-12-01T09:57:22.131Z
+date: 2022-01-02T11:35:25.100Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:24:49.010Z
@@ -21,11 +21,74 @@ Site officiel : [js.wiki](https://js.wiki/)
 
 
 # Installation
+# Tabs {.tabset}
 ## Bare Metal
-- [:cloud:Tuto sur mon Drive *avec Google Doc*](https://docs.google.com/document/d/11n0kihAdnHiP9TcSGYlQ7kkr-uPkxYXdMSNBxt8mILM/edit?usp=sharing)
-{.links-list}
+> Ce tutoriel est effectué sur une Debian 11
+{.is-info}
 
-## Docker-Compose ([Plus d'informations](https://docs.linuxserver.io/general/docker-compose))
+### Prérequis
+- Adresse IP fixe
+
+### Installation des paquets requis
+```bash
+apt update && full-upgrade -y
+apt install nodejs apache2 postgresql -y
+```
+### Configuration de PostgreSQL
+```bash
+su - postgres
+createuser -d -P wikijsuser
+createdb -O wikijsuser wikijs
+su - root
+```
+### Installation de Wiki.js
+```bash
+> Vous pouvez trouver la dernière version ici : https://github.com/Requarks/wiki/releases
+{.is-info}
+
+cd /tmp
+wget https://github.com/Requarks/wiki/releases/download/2.5.201/wiki-js.tar.gz
+mkdir /var/www/wikijs
+tar xzf wiki-js.tar.gz -C /var/www/wikijs
+rm wiki-js.tar.gz
+
+cd /var/www/wikijs
+mv config.sample.yml config.yml
+vim config.yml
+```
+Dans le fichier config.yml renseignez :
+- user: wikijsuser
+- pass: le mot de passe créer précédemment
+- db: wikijs
+
+```bash
+cd /var/www/wikijs/data
+mkdir cache
+mkdir uploads
+chmod -R 777 ./cache
+chmod -R 777 ./uploads
+```
+### Créer un service systemd
+```bash
+vim /etc/systemd/system/wiki.service
+```
+![wikijs-1.jpg](/self-hosted/wikijs/wikijs-1.jpg)
+
+```bash
+systemctl daemon-reload
+systemctl start wiki
+systemctl enable wiki
+```
+
+> WikiJS est installé, vous pouvez y accéder à l'adresse : http://votre_ip:3000
+{.is-success}
+
+> Pour avoir un certificat SSL, vous pouvez utiliser un reverse proxy.
+{.is-info}
+
+
+
+## Docker-Compose
 ```yaml
 version: "2.1"
 services:
@@ -43,7 +106,7 @@ services:
       - 3000:3000
     restart: unless-stopped
 ```
-## Docker cli ([Plus d'informations](https://docs.docker.com/engine/reference/commandline/cli/))
+## Docker cli 
 ```bash
 docker run -d \
   --name=wikijs \
