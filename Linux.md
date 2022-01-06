@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: 1
-date: 2022-01-02T10:57:27.080Z
+date: 2022-01-06T09:58:20.609Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-08T12:13:51.368Z
@@ -12,4 +12,5 @@ dateCreated: 2021-12-08T12:13:51.368Z
 - [SSH *Installation et configuration*](/Linux/SSH)
 - [Serveur DHCP *RedHat et dérivés*](/Linux/Serveur_DHCP)
 - [Divers *variables PATH*](/Linux/Divers)
+- [phpMyAdmin *Interface web pour BDD SQL*](/Linux/phpMyAdmin)
 {.links-list}
