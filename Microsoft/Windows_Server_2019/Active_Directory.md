@@ -2,7 +2,7 @@
 title: Windows Server 2019 - Active Directory
 description: 
 published: 1
-date: 2022-01-06T09:25:41.300Z
+date: 2022-01-06T09:37:17.986Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T09:25:41.300Z
@@ -49,3 +49,35 @@ Il permet également l'application de stratégie (GPO)
  
 > Félicitation, votre service AD DS est configurée et fonctionnel
 {.is-success}
+ 
+# Configurations
+## Ajoutez un client Windows 10/11 dans un AD
+ 
+# Tabs {.tabset}
+## Méthode graphique (W10)
+ 
+1. Allez dans les paramètres -> systèmes -> à propos de -> paramètres avancés du système
+![winserv19-ad_add_client_01.jpg](/microsoft/windows_server_2019/adds/winserv19-ad_add_client_01.jpg)
+ 
+2. Allez dans l'onglet "Nom de l'ordinateur"
+![winserv19-ad_add_client_02.jpg](/microsoft/windows_server_2019/adds/winserv19-ad_add_client_02.jpg)
+ 
+3. Cliquez sur modifier
+![winserv19-ad_add_client_03.jpg](/microsoft/windows_server_2019/adds/winserv19-ad_add_client_03.jpg)
+ 
+4. Renseignez un nom pour l'ordinateur et renseignez votre domaine
+![winserv19-ad_add_client_04.jpg](/microsoft/windows_server_2019/adds/winserv19-ad_add_client_04.jpg)
+ 
+5. Authentifiez vous avec un utilisateur LDAP
+![winserv19-ad_add_client_05.jpg](/microsoft/windows_server_2019/adds/winserv19-ad_add_client_05.jpg)
+ 
+6. redémarrez votre machine
+ 
+## En Powershell
+ 
+1. Ouvez powershell en tant qu'administrateur, effectuer cette commande (avec votre nom DNS)
+```powershell
+Add-Computer -DomainName zatoufly.lan
+```
+ 
+2. Une page s'affiche pour vous connecter, puis redémarrer votre machine
