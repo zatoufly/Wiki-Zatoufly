@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: 1
-date: 2021-12-26T10:19:16.299Z
+date: 2022-01-06T19:10:13.553Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-30T21:12:39.690Z
@@ -23,6 +23,7 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [Jellyfin *Le système multimédia du logiciel libre*](/SelfHosted/Jellyfin)
 - [Nextcloud *Le cloud chez soi*](/SelfHosted/Nextcloud)
 - [Serveur-Minecraft](/SelfHosted/Serveur-Minecraft)
+- [LibreSpeed *Tester votre connexion*](/SelfHosted/LibreSpeed)
 {.links-list}
 
 ---
