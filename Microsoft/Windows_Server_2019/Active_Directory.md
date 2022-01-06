@@ -2,7 +2,7 @@
 title: Windows Server 2019 - Active Directory
 description: 
 published: 1
-date: 2022-01-06T09:46:26.403Z
+date: 2022-01-06T09:47:08.308Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T09:25:41.300Z
@@ -81,51 +81,33 @@ Add-Computer -DomainName zatoufly.lan
 ```
  
 2. Une page s'affiche pour vous connecter, puis redémarrer votre machine
-
+ 
 # Créer une GPO
 ## Désactiver le CMD
-
-### Séléctionnez l'outil "Gestion de stratégie de groupe"
+ 
+### Sélectionnez l'outil "Gestion de stratégie de groupe"
 ![winserv19-gpo_bloquer_cmd_01.jpg](/microsoft/windows_server_2019/adds/winserv19-gpo_bloquer_cmd_01.jpg)
-
+ 
 ### Créer une GPO sur le domaine
 ![winserv19-gpo_bloquer_cmd_02.jpg](/microsoft/windows_server_2019/adds/winserv19-gpo_bloquer_cmd_02.jpg)
-
+ 
 ### Nommez votre GPO
 ![winserv19-gpo_bloquer_cmd_03.jpg](/microsoft/windows_server_2019/adds/winserv19-gpo_bloquer_cmd_03.jpg)
-
+ 
 ### Modifier la GPO
 ![winserv19-gpo_bloquer_cmd_04.jpg](/microsoft/windows_server_2019/adds/winserv19-gpo_bloquer_cmd_04.jpg)
-
+ 
 ### Recherche "Désactiver l'accès à l'invite de commandes"
 ![winserv19-gpo_bloquer_cmd_05.jpg](/microsoft/windows_server_2019/adds/winserv19-gpo_bloquer_cmd_05.jpg)
-
+ 
 ### Activer la GPO
 ![winserv19-gpo_bloquer_cmd_06.jpg](/microsoft/windows_server_2019/adds/winserv19-gpo_bloquer_cmd_06.jpg)
-
+ 
 ### Faite un clic droit sur le GPO puis Appliquer
-
+ 
 ### Mettez à jour la stratégie de l'ordinateur 
 ```powershell
 gpupdate /force
 ```
-
+ 
 ![winserv19-gpo_bloquer_cmd_08.jpg](/microsoft/windows_server_2019/adds/winserv19-gpo_bloquer_cmd_08.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
