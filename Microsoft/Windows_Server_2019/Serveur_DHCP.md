@@ -2,7 +2,7 @@
 title: Windows Server 2019 - Serveur DHCP
 description: 
 published: 1
-date: 2022-01-06T09:02:52.293Z
+date: 2022-01-06T09:06:01.904Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-05T12:47:14.657Z
@@ -12,42 +12,65 @@ dateCreated: 2022-01-05T12:47:14.657Z
  
  
 # Présentation
-Le service de routage permet de connecter plusieurs réseaux entre eux.
+Le protocole DHCP permet de fournir des adresses IP à des machines sur une plage d'ip définie par le serveur DHCP. Le Serveur DHCP fournit des adresses IP à des machines clientes sur un réseau.
+ 
+> Faites attention à ne pas avoir deux serveurs DHCP sur votre réseau.
+{.is-warning}
  
  
 # Prérequis
 - Machine sous Windows Server 2019
-- Une interface WAN et une interface LAN au minimum
 - Une adresse IP fixe
  
 # Installation
  
-### Ajoutez un rôle à votre serveur
-![winserv19-routage_01.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_01.jpg)
+### Ajoutez le rôle DHCP sur votre serveur
+![winserv19-serveur-dhcp(1).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(1).jpg)
  
-### Ajoutez le rôle "Accès à distance"
-![winserv19-routage_02.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_02.jpg)
+### Cliquez sur "terminer la configuration DHCP"
+![winserv19-serveur-dhcp(2).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(2).jpg)
  
-### Sélectionnez le rôle Routage
-![winserv19-routage_03.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_03.jpg)
+### Valider la post-installation DHCP
+![winserv19-serveur-dhcp(3).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(3).jpg)
  
-### Sélectionnez l'outil "Routage et accès distant"
-![winserv19-routage_04.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_04.jpg)
+### Sélectionnez l'outil DHCP
+![winserv19-serveur-dhcp(4).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(4).jpg)
  
-### Configurez et activer le routage et l'accès à distance
-![winserv19-routage_05.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_05.jpg)
+### Créer une nouvelle étendue IPv4
+![winserv19-serveur-dhcp(5).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(5).jpg)
  
-### Sélectionnez le mode NAT
-![winserv19-routage_06.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_06.jpg)
+### Nommez votre étendue
+![winserv19-serveur-dhcp(6).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(6).jpg)
  
-### Sélectionnez votre interface WAN
-![winserv19-routage_07.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_07.jpg)
+### Renseignez une plage d'IP ainsi que le masque de sous-réseau souhaité
+![winserv19-serveur-dhcp(7).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(7).jpg)
  
-### Valider la configuration
-![winserv19-routage_08.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_08.jpg)
+### Ajoutez des exclusions si besoin
+![winserv19-serveur-dhcp(8).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(8).jpg)
  
-### Votre service de routage est opérationnel
-![winserv19-routage_09.jpg](/microsoft/windows_server_2019/routage/winserv19-routage_09.jpg)
+### Définissez la durée du bail DHCP
+![winserv19-serveur-dhcp(9).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(9).jpg)
  
-> Félicitation, votre service de routage est configurée et fonctionnel
+### Configurez le serveur maintenant
+![winserv19-serveur-dhcp(10).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(10).jpg)
+ 
+### Renseignez votre passerelle 
+![winserv19-serveur-dhcp(11).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(11).jpg)
+ 
+### Renseignez vos serveur DNS
+![winserv19-serveur-dhcp(12).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(12).jpg)
+ 
+### Renseignez des serveurs WINS si besoin
+![winserv19-serveur-dhcp(13).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(13).jpg)
+ 
+### Activer votre étendu
+![winserv19-serveur-dhcp(14).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(14).jpg)
+ 
+### Vérifier le fonctionnement de votre serveur DHCP avec une machine cliente
+![winserv19-serveur-dhcp(15).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(15).jpg)
+ 
+### Vérifier qu'un bail à été enregistrés pour la machine cliente 
+![winserv19-serveur-dhcp(16).jpg](/microsoft/windows_server_2019/dhcp/winserv19-serveur-dhcp(16).jpg)
+ 
+> Félicitation, votre serveur DHCP est configurée et fonctionnel
 {.is-success}
