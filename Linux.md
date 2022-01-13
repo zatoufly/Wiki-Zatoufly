@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: 1
-date: 2022-01-13T12:15:57.747Z
+date: 2022-01-13T12:28:42.435Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-08T12:13:51.368Z
@@ -18,4 +18,5 @@ dateCreated: 2021-12-08T12:13:51.368Z
 - [Apache2 *Virtual Host, HTTPS, certbot*](/Linux/Apache2)
 - [MariaDB](/Linux/MariaDB)
 - [apt *Gestionnaire de paquet Debian*](/Linux/apt)
+- [NFS](/Linux/NFS)
 {.links-list}
