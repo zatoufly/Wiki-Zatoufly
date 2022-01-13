@@ -2,7 +2,7 @@
 title: Nextcloud
 description: 
 published: 1
-date: 2021-12-20T21:35:31.512Z
+date: 2022-01-13T11:47:35.138Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-20T21:35:31.512Z
@@ -126,4 +126,11 @@ systemctl reload apache2
 
 ## Docker cli
 
-# Configurations
+# Astuces
+En cas de perte d'un mot de passe, vous pouvez réinitialiser avec cette commande : 
+```bash
+sudo -u www-data php /var/www/nextcloud/occ user:resetpassword utilisateur
+```
+
+
+
