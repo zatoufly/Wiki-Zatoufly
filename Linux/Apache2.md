@@ -2,7 +2,7 @@
 title: Apache 2
 description: 
 published: 1
-date: 2022-01-13T11:27:54.562Z
+date: 2022-01-13T11:28:13.247Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-13T10:57:01.707Z
@@ -22,7 +22,7 @@ apt install apache2
  
 ## RHEL
 ```bash
-dns install apache2
+dnf install apache2
 ```
 # Configuration
 Le fichier de configuration se trouve dans `/etc/apache2/apache2.conf`
