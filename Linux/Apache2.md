@@ -2,7 +2,7 @@
 title: Apache 2
 description: 
 published: 1
-date: 2022-01-13T11:28:13.247Z
+date: 2022-01-13T11:31:35.978Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-13T10:57:01.707Z
@@ -90,4 +90,25 @@ Oubliez pas de recharger apache2
                 Deny from all
         </Directory>
 </VirtualHost>
+```
+
+# Let's Encrypt / HTTPS
+Let's Encrypt vous permet de mettre n'importe quel virtual host d'apache en https gratuitement et simplement.
+
+On peut l'installer comme ceci :
+
+```bash
+apt install certbot python3-certbot-apache
+```
+
+On peut réclamer à let's encrypt notre certificat SSL :
+
+```bash
+certbot --apache --agree-tos --redirect --staple-ocsp --email votre-email@example.com -d subdomain.example.com
+```
+
+N'oubliez pas de recharger la configuration d'apache :
+
+```bash
+systemctl reload apache2
 ```
