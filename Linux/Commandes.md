@@ -2,7 +2,7 @@
 title: Commandes de bases
 description: 
 published: 1
-date: 2022-01-14T10:52:02.172Z
+date: 2022-01-14T10:52:44.735Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-14T10:52:02.172Z
@@ -71,7 +71,7 @@ dateCreated: 2022-01-14T10:52:02.172Z
 | `tar -xzvf archive.tgz` | Décompresse l'archine dans le répertoire courant |
 | `-z` | décompresse avec gzip |
 
-## 3. La Recherche
+# 3. La Recherche
 ### find
 | --- | --- |
 | `find -name "fichier.txt"` | recherche un fichier dans le répertoire courant |
@@ -92,7 +92,7 @@ dateCreated: 2022-01-14T10:52:02.172Z
 | `whereis` | which mais avec le manuel/source |
 
 
-### 4. Le Réseau
+# 4. Le Réseau
 | --- | --- |
 | `ip a` | affiche la liste des interface réseau |
 | `ip route` | affiche les routes disponibles |
@@ -106,7 +106,7 @@ dateCreated: 2022-01-14T10:52:02.172Z
 | `ssh [user]@[ip ou dns]` | se connecter en ssh |
 | `-p` | spécifier le port |
 
-### 5. Processus
+# 5. Processus
 | --- | --- |
 | `ps` | affiche les processus en cours |
 | `ps aux` | affiche tout les processus |
@@ -116,7 +116,7 @@ dateCreated: 2022-01-14T10:52:02.172Z
 | `kill [PID] [PID]` | tue plusieurs processus |
 | `killall [galculator]` | tue tous les processus dont le nom contient galculator |
 
-### 6. Informations systèmes
+# 6. Informations systèmes
 ```bash
 date # affiche la date
 cal # afficher le calendrier du mois
@@ -148,7 +148,7 @@ reboot # redémarre la machine
 shutdown -now # éteint sans délai
 ```
 
-### 7. Utilisateurs et Groupes
+# 7. Utilisateurs et Groupes
 > Les utilisateurs sont stockés dans /etc/passwd
 {.is-info}
 
@@ -163,7 +163,7 @@ userdel [user] # supprime un utilisateur
 passwd [user] # créer/modifie le mot de passe
 ```
 
-### 8. Permissions
+# 8. Permissions
 On peux voir les permissions avec la commande <kbd>ls -l</kbd>
 
 example : 
