@@ -2,7 +2,7 @@
 title: Wordpress
 description: 
 published: 1
-date: 2022-01-13T11:52:16.219Z
+date: 2022-01-14T11:14:34.244Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-01T21:59:11.694Z
@@ -176,4 +176,23 @@ services:
 Vous pouvez donner des permissions plus restrictives sur wordpress.
 ```bash
 chmod 400 /var/www/html/wordpress/config.php
+```
+ 
+# Astuces
+## Masquer le badge recaptcha
+Si vous utilisez le service ReCaptcha v3 de google qui permet de se prémunir des spam sur les formulaires de contact, vous avez un badge qui s’affiche.
+ 
+Il est possible de le faire disparaître selon les règles émissent par google :
+ 
+- Avoir une mention visible dans la page du formulaire le lien vers la politique de confidentialité et les conditions d'utilisations :
+Vous pouvez ajoutez ce texte par exemple avec les liens hypertextes :
+ 
+Ce site est protégé par reCAPTCHA. La politique de confidentialité et les conditions d'utilisation de Google s'appliquent.
+ 
++ Mettre le lien suivant sur "politique de confidentialité" : https://policies.google.com/privacy
++ Mettre le lien suivant sur "conditions d'utilisation" : https://policies.google.com/terms
+ 
+Pour faire disparaître le badge, ajouté ce code CSS dans votre thème :
+```bash
+.grecaptcha-badge { opacity:0;}
 ```
