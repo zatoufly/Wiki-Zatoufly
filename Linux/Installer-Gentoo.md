@@ -2,7 +2,7 @@
 title: Installer Gentoo
 description: 
 published: false
-date: 2022-01-16T13:16:14.942Z
+date: 2022-01-16T14:13:01.441Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-16T13:16:14.942Z
@@ -146,6 +146,8 @@ chroot /mnt/gentoo /bin/bash
 
 met à jour les variables d'env et en change notre prompt
 ```bash
+mkdir /etc/portage/package.license 
+echo "*/* *" >> /etc/portage/package.license/custom
 env-update && source /etc/profile
 export PS1="[chroot] $PS1"
 source /etc/profile
