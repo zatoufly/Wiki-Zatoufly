@@ -1,11 +1,11 @@
 ---
 title: Accueil
 description: 
-published: 1
-date: 2022-01-14T18:35:10.463Z
+published: true
+date: 2022-01-16T17:10:40.640Z
 tags: 
 editor: markdown
-dateCreated: 2021-11-30T19:38:41.597Z
+dateCreated: 2022-01-14T20:20:26.256Z
 ---
 
 ![wiki-banner.png](/wiki-banner.png){.align-center}
@@ -21,8 +21,12 @@ Ici vous êtes sur mon wiki, **bienvenue** !
  
 > En cas d'erreur dans un tutoriel, faites le moi savoir !
 {.is-warning}
- 
- 
+
+## Nos rédacteus
+ - Zatoufly https://zatoufly.fr
+ - Tenchigreed https://tenchigreed.fr
+ {.grid-list}
+
 ## Mes autres sites
 - [Zatoufly.fr *Mon site officiel*](https://zatoufly.fr)
 - [FreshRSS *Les actualités tech*](https://news.zatoufly.fr)
