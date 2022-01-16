@@ -2,8 +2,8 @@
 title: Installation Docker sur OMV
 description: Installation Docker sur OMV
 published: true
-date: 2022-01-16T20:54:54.117Z
-tags: docker, openmediavault, portainer
+date: 2022-01-16T20:58:37.997Z
+tags: docker, portainer, openmediavault, omv-extras
 editor: markdown
 dateCreated: 2022-01-15T09:41:27.367Z
 ---
