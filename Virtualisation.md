@@ -2,7 +2,7 @@
 title: Virtualisation
 description: 
 published: true
-date: 2022-01-16T20:24:11.484Z
+date: 2022-01-16T20:46:00.733Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-14T20:20:22.215Z
@@ -17,6 +17,7 @@ dateCreated: 2022-01-14T20:20:22.215Z
 {.links-list}
 
 # XenServer / XCP-ng
-- [Installation *+ Contrôleur*](/Virtualisation/XenServer/Installation)
+- [Installation *+ Contrôleur (XenCenter)*](/Virtualisation/XenServer/Installation)
 - [Gestion des VMs *Créer, Templates, Copier, Déplacer, Supprimer*](/Virtualisation/XenServer/XenServer_Gestion_VM)
+- [Cluster *Installation*](/Virtualisation/XenServer/XenServer_Cluster)
 {.links-list}
