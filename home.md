@@ -2,7 +2,7 @@
 title: Accueil
 description: 
 published: true
-date: 2022-01-16T17:10:40.640Z
+date: 2022-01-16T20:22:34.265Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-14T20:20:26.256Z
@@ -22,7 +22,7 @@ Ici vous êtes sur mon wiki, **bienvenue** !
 > En cas d'erreur dans un tutoriel, faites le moi savoir !
 {.is-warning}
 
-## Nos rédacteus
+## Nos rédacteurs
  - Zatoufly https://zatoufly.fr
  - Tenchigreed https://tenchigreed.fr
  {.grid-list}
