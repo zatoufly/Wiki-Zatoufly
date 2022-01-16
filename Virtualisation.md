@@ -1,11 +1,11 @@
 ---
 title: Virtualisation
 description: 
-published: 1
-date: 2022-01-05T11:48:58.874Z
+published: true
+date: 2022-01-16T20:23:51.646Z
 tags: 
 editor: markdown
-dateCreated: 2022-01-05T09:50:12.322Z
+dateCreated: 2022-01-14T20:20:22.215Z
 ---
 
 # Proxmox
@@ -18,4 +18,5 @@ dateCreated: 2022-01-05T09:50:12.322Z
 
 # XenServer
 - [Installation *+ Contrôleur*](/Virtualisation/XenServer/Installation)
+- [Gestion des VMs *Créer, Templates, Copier, Déplacer, Supprimer*](/Virtualisation/XenServer/XenServer_Gestion_VM)
 {.links-list}
