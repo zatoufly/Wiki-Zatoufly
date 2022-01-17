@@ -2,8 +2,8 @@
 title: Dydns OVH sur Pfsense
 description: Configuration d'un Dydns OVH sur Pfsense
 published: true
-date: 2022-01-17T16:44:59.765Z
-tags: 
+date: 2022-01-17T16:45:31.845Z
+tags: ovh, pfsense, firewall, dydns, dns dynamique, ddns
 editor: markdown
 dateCreated: 2022-01-17T16:41:03.934Z
 ---
