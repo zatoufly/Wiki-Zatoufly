@@ -1,11 +1,11 @@
 ---
 title: Proxmox - Installation
 description: 
-published: 1
-date: 2022-01-05T10:49:48.342Z
+published: true
+date: 2022-01-17T11:56:40.112Z
 tags: 
 editor: markdown
-dateCreated: 2022-01-05T10:49:48.342Z
+dateCreated: 2022-01-14T20:23:08.673Z
 ---
 
 ![proxmox-banner.png](/virtualisation/proxmox/proxmox-banner.png)
@@ -21,45 +21,45 @@ Dans ce tutoriel, je l'installe en version 6. La procédure n'a pas changer pour
 
 # Installation de Proxmox
 
-### Faite booter votre machine sur l'image ISO
+Faite booter votre machine sur l'image ISO
 ![proxmox-installation-1.jpg](/virtualisation/proxmox/proxmox-installation-1.jpg)
 
-### Accepter la EULA
+Accepter la EULA
 ![proxmox-installation-2.jpg](/virtualisation/proxmox/proxmox-installation-2.jpg)
 
-### Séléctionnez le disque où sera installer proxmox
+Séléctionnez le disque où sera installer proxmox
 > Cliquez sur Options pour partitionnez votre disque et "gagnez" de l'espace de stockage
 {.is-info}
 
 ![proxmox-installation-3.jpg](/virtualisation/proxmox/proxmox-installation-3.jpg)
 
-### Séléctionnez ext4 et la taille de la partition
+Séléctionnez ext4 et la taille de la partition
 ![proxmox-installation-4.jpg](/virtualisation/proxmox/proxmox-installation-4.jpg)
 
-### Séléctionnez votre Timezone et la langue de votre clavier
+Séléctionnez votre Timezone et la langue de votre clavier
 ![proxmox-installation-5.jpg](/virtualisation/proxmox/proxmox-installation-5.jpg)
 
-### Créer un mot de passe
+Créer un mot de passe
 ![proxmox-installation-6.jpg](/virtualisation/proxmox/proxmox-installation-6.jpg)
 
-### Paramètrer l'interface réseau
+Paramètrer l'interface réseau
 ![proxmox-installation-7.jpg](/virtualisation/proxmox/proxmox-installation-7.jpg)
 
-### Confirmer l'installation
+Confirmer l'installation
 ![proxmox-installation-8.jpg](/virtualisation/proxmox/proxmox-installation-8.jpg)
 
-### Accéder à l'inferface web de proxmox
+Accéder à l'inferface web de proxmox
 ![proxmox-installation-9.jpg](/virtualisation/proxmox/proxmox-installation-9.jpg)
 
 > L'utilisateur par défaut est **root**
 {.is-info}
 
 
-> Félicitation, ESXi est maintenant installer !
-> Vous aurez accès à l'interface web sur l'ip attribué par votre DHCP. 
+> Félicitation, Proxmox est maintenant installer !
+> Vous aurez accès à l'interface web sur l'ip précédemment renseigner. 
 {.is-success}
 
-### Configurations
+# Configurations
 ## Mise à jour
 1. Connecter vous en SSH sur votre node proxmox
 
