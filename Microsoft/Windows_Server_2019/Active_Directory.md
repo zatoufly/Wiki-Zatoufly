@@ -2,7 +2,7 @@
 title: Windows Server 2019 - Active Directory
 description: 
 published: true
-date: 2022-01-17T14:16:55.072Z
+date: 2022-01-17T14:18:07.912Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-14T20:22:27.226Z
@@ -52,29 +52,29 @@ Il permet également l'application de stratégie (GPO)
  
 # Configurations
 ## Créer utilisateur
-Dans le centre d'administration de windows, dans outils séléctionnez "Utilisateurs et ordinateurs Active Directory"
-
+Dans le centre d'administration de windows, dans outils sélectionnez "Utilisateurs et ordinateurs Active Directory"
+ 
 Sélectionnez votre domaine, dans mon cas "zatoufly.lan" puis allez dans "Users"
-
+ 
 ![srvw19-createuser_01.jpg](/microsoft/windows_server_2019/adds/srvw19-createuser_01.jpg)
-
+ 
 Faite un clique droit sur le dossier "Users" et cliquez sur "nouveau" puis "Utilisateur"
-
+ 
 ![srvw19-createuser_02.jpg](/microsoft/windows_server_2019/adds/srvw19-createuser_02.jpg)
-
+ 
 Ici renseignez les informations de votre utilisateur
-
+ 
 ![srvw19-createuser_03.jpg](/microsoft/windows_server_2019/adds/srvw19-createuser_03.jpg)
-
+ 
 Créer un mot de passe pour l'utilisateur.
-Vous pouvez également séléctionnez quelques option qui peuvent e^tre intereessantes selon la politiques de sécurité de votre entreprise.
-
+Vous pouvez également sélectionner quelques options qui peuvent être intéressantes selon la politique de sécurité de votre entreprise.
+ 
 ![srvw19-createuser_04.jpg](/microsoft/windows_server_2019/adds/srvw19-createuser_04.jpg)
-
+ 
 Cliquez sur "Terminer" pour créer l'utilisateur
-
+ 
 ![srvw19-createuser_05.jpg](/microsoft/windows_server_2019/adds/srvw19-createuser_05.jpg)
-
+ 
 > Félicitations, vous avez créer votre utilisateur
 {.is-success}
 ## Ajoutez un client Windows 10/11 dans un AD
@@ -107,49 +107,49 @@ Add-Computer -DomainName zatoufly.lan
 ```
  
 Une page s'affiche pour vous connecter, puis redémarrer votre machine
-
+ 
 ## Fedora
-
+ 
 Il faudra que votre fedora puisse joindre votre domaine, vous pouvez vérifiez avec :
 ```bash
 ping -c2 zatoufly.lan
 ```
-
+ 
 Ouvrez un terminal et tapez la commande :
-vous pouvez utiliser le compte administrateur ou un compte pouvez faire adhérez un ordinateur à l'AD
+vous pouvez utiliser le compte administrateur ou un compte pouvez faire adhérer un ordinateur à l'AD
 ```bash
 realm join --user administrateur zatoufly.lan
 ```
 Il faudra insérez le mot de passe du compte administrateur.
-
-Si je regarde dans mon AD, j'ai bien ma Fedora qui s'est join au domaine.
-
+ 
+Si je regarde dans mon AD, j'ai bien ma Fedora qui s'est joint au domaine.
+ 
 ![winservjoinfedora_01.jpg](/microsoft/windows_server_2019/adds/winservjoinfedora_01.jpg)
-
-On peux également vérifiez avec la commande :
+ 
+On peut également vérifiez avec la commande :
 ```bash
 realm list
 ```
-
+ 
 ![winservjoinfedora_02.jpg](/microsoft/windows_server_2019/adds/winservjoinfedora_02.jpg)
-
-On peux maintenant se connecter avec un utilisateur de l'AD :
-
+ 
+On peut maintenant se connecter avec un utilisateur de l'AD :
+ 
 ```bash
 su - jean@zatoufly.lan
 ```
 Le mot de passe de l'utilisateur vous sera demandé.
-
+ 
 Et si on liste les répertoires homes, on peux voir qu'un répertoire à été créer pour l'utilisateur de l'AD
-
+ 
 ```bash
 ls /home
 ```
-
-
+ 
+ 
 ![winservjoinfedora_03.jpg](/microsoft/windows_server_2019/adds/winservjoinfedora_03.jpg)
-
-
+ 
+ 
 # Créer une GPO
 ## Désactiver le CMD
  
