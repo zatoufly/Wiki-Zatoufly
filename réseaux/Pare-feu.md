@@ -2,7 +2,7 @@
 title: Dydns OVH sur Pfsense
 description: Configuration d'un Dydns OVH sur Pfsense
 published: true
-date: 2022-01-17T16:41:03.934Z
+date: 2022-01-17T16:44:59.765Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-17T16:41:03.934Z
@@ -60,7 +60,7 @@ Cliquez sur "ajouter"
 ![10.png](/reseau/pare-feu/ovh-pfsense/10.png)
 
 Vous allez donc mettre , si elle n'est mise par defaut, votre interface Wan dans "interface à superviser", inquez egalement les informations que vous avez precedement configurer sur ovh.
-Donc dans "nom d'hote" , indiquez votre nom de domaine precedé du sous-domaine crée precedement, puis indiquer le "nom d'utilisateur" crée precedement ainci sur le "mot de passe" , deux fois.
+Donc dans "nom d'hote" , indiquez votre nom de domaine precedé du sous-domaine crée precedement, puis indiquer le "nom d'utilisateur" crée precedement ainsi sur le "mot de passe" , deux fois.
 Et pour finir, Enregistrer
 
 ![11.png](/reseau/pare-feu/ovh-pfsense/11.png)
