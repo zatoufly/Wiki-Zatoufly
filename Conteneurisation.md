@@ -2,7 +2,7 @@
 title: Conteneurisation
 description: 
 published: true
-date: 2022-01-17T09:27:23.500Z
+date: 2022-01-17T09:54:38.320Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-17T09:27:23.500Z
@@ -15,5 +15,5 @@ Les conteneurs se partage le même noyau de système d'exploitation et isolent l
 
 Un Hyperviseur virtualise du matérielle hardware avec un système d'exploitation tandis que la conteneurisation fait appel directement à l'OS de sa machine hôte
 
-- 
+- [:whale: Docker *Installation, Commandes, Docker-Compose*](/Conteneurisation/Docker)
 {.links-list}
