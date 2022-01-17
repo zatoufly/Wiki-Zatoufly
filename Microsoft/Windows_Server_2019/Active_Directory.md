@@ -2,7 +2,7 @@
 title: Windows Server 2019 - Active Directory
 description: 
 published: true
-date: 2022-01-17T14:18:07.912Z
+date: 2022-01-17T14:21:09.596Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-14T20:22:27.226Z
@@ -77,10 +77,12 @@ Cliquez sur "Terminer" pour créer l'utilisateur
  
 > Félicitations, vous avez créer votre utilisateur
 {.is-success}
-## Ajoutez un client Windows 10/11 dans un AD
- 
+
+## Intégrez un client 
+Pour intégrez un client Linux ou Windows à l'AD il faudra renseignez le Controleur de Domaine en tant que DNS du client.
+
 # Tabs {.tabset}
-## Méthode graphique (W10)
+## Win10 Méthode graphique
  
 Allez dans les paramètres -> systèmes -> à propos de -> paramètres avancés du système
 ![winserv19-ad_add_client_01.jpg](/microsoft/windows_server_2019/adds/winserv19-ad_add_client_01.jpg)
@@ -99,7 +101,7 @@ Authentifiez vous avec un utilisateur LDAP
  
 redémarrez votre machine
  
-## En Powershell
+## Win10/11 en Powershell
  
 Ouvez powershell en tant qu'administrateur, effectuer cette commande (avec votre nom DNS)
 ```powershell
