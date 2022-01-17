@@ -2,21 +2,22 @@
 title: Docker
 description: 
 published: true
-date: 2022-01-17T09:51:10.452Z
+date: 2022-01-17T09:51:49.156Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-17T09:51:10.452Z
 ---
 
-# Introduction
+# Docker
+## Introduction
 Docker est la solution de conteneurisation la plus populaire. Il permet d'isoler des applications de la machine hôte et fait preuve d'une grande facilité de déploiement et de gestion des conteneurs.
  
-# Installation
+## Installation
 ```bash
 apt install docker.io
 ```
  
-# Commandes
+## Commandes
 ```bash
 docker ps # liste les containers démarrer
 docker ps -a # liste tous les containers
