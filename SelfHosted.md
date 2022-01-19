@@ -1,11 +1,11 @@
 ---
 title: SelfHosted
 description: 
-published: 1
-date: 2022-01-06T19:10:13.553Z
+published: true
+date: 2022-01-19T11:18:11.084Z
 tags: 
 editor: markdown
-dateCreated: 2021-11-30T21:12:39.690Z
+dateCreated: 2022-01-18T11:58:00.614Z
 ---
 
 # SelfHosted
@@ -24,6 +24,7 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [Nextcloud *Le cloud chez soi*](/SelfHosted/Nextcloud)
 - [Serveur-Minecraft](/SelfHosted/Serveur-Minecraft)
 - [LibreSpeed *Tester votre connexion*](/SelfHosted/LibreSpeed)
+- [diun](/SelfHosted/diun)
 {.links-list}
 
 ---
