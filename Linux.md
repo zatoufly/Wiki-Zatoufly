@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: true
-date: 2022-01-19T16:50:06.680Z
+date: 2022-01-19T17:15:50.222Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:57:45.204Z
@@ -11,7 +11,7 @@ dateCreated: 2022-01-18T11:57:45.204Z
 # Linux
 
 - [Arborescence linux *Répertoires de la racine*](/Linux/Arborescence-linux)
-- [Commandes de bases *+ permissions*](/Linux/Commandes)
+- [Commandes de bases *Debian + permissions*](/Linux/Commandes)
 - [Configurer réseaux *IP Static, DHCP | DNS | Hostname*](/Linux/Configurer-Réseaux)
 - [SSH *Installation et configuration*](/Linux/SSH)
 - [Divers *variables PATH, Env de bureau, etc...*](/Linux/Divers)
