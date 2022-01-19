@@ -2,7 +2,7 @@
 title: diun
 description: 
 published: true
-date: 2022-01-19T11:16:25.902Z
+date: 2022-01-19T11:23:02.404Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T12:00:20.870Z
@@ -42,4 +42,12 @@ services:
       - "diun.enable=true"
       - "diun.watch_repo=true"
     restart: always
+```
+# Configuration
+
+Pour que diun "regarde" un conteneurs pour vous avertir d'une nouvelle version de l'image, il faudra ajoutez ce code dans le docker-compose qui le constitue.
+
+```yml
+        labels:
+            - diun.enable=true
 ```
