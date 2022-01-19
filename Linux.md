@@ -1,11 +1,11 @@
 ---
 title: Linux
 description: 
-published: 1
-date: 2022-01-14T11:07:37.283Z
+published: true
+date: 2022-01-19T16:50:06.680Z
 tags: 
 editor: markdown
-dateCreated: 2021-12-08T12:13:51.368Z
+dateCreated: 2022-01-18T11:57:45.204Z
 ---
 
 # Linux
@@ -16,7 +16,6 @@ dateCreated: 2021-12-08T12:13:51.368Z
 - [SSH *Installation et configuration*](/Linux/SSH)
 - [Divers *variables PATH, Env de bureau, etc...*](/Linux/Divers)
 - [snmp](/Linux/snmp)
-- [apt *Gestionnaire de paquet Debian*](/Linux/apt)
 - [NFS *SMB pour linux*](/Linux/NFS)
 {.links-list}
 
