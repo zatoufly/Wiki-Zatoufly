@@ -1,11 +1,11 @@
 ---
 title: Commandes de bases
 description: 
-published: 1
-date: 2022-01-14T11:17:31.628Z
+published: true
+date: 2022-01-19T16:49:04.860Z
 tags: 
 editor: markdown
-dateCreated: 2022-01-14T10:52:02.172Z
+dateCreated: 2022-01-18T11:58:32.113Z
 ---
 
 # 1. La Navigation
@@ -198,3 +198,29 @@ ils signifie respectivement les permissions attribuées aux propriétaire / grou
 5 -> r-x
 6 -> rw-
 7 -> rwx
+
+# 9. APT
+apt ou advanced packaging Tool est un gestionnaire de paquets utilisé sous Debian.
+
+|   commandes | |
+| --- | --- |
+| `apt update` | met à jour la liste des paquets disponibles |
+| `apt upgrade` | met à jour les paquet du systèmes |
+| `apt full-upgrade` | apt upgrade + supprimer les dépenses inutilisés / obsolètes |
+| `apt search [paquet]` | cherche les paquets |
+| `apt show [paquet]` | affiche les informations sur un paquet |
+| `dpkg -l` | liste tout les paquets installé sur le système |
+ 
+ 
+|  Installation de paquet   |     |
+| --- | --- |
+| `apt install [paquet]` | installer un paquet |
+| `dpkg -i [ficher .deb]` | installe un paquet en .deb |
+| `apt install -f` | installe les dépenses en cas d'erreur du fichier .deb |
+ 
+ 
+|  Désinstallation de paquet   |     |
+| --- | --- |
+| `apt remove [paquet]` | désinstalle le paquet |
+| `apt autoremove [paquet]` | désinstalle le paquet et ses dépendances |
+| `--purge` | supprime les fichier de configuration |
