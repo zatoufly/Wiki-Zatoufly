@@ -2,7 +2,7 @@
 title: umami
 description: 
 published: true
-date: 2022-01-20T12:46:57.482Z
+date: 2022-01-20T12:47:11.977Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-20T12:46:57.482Z
@@ -141,7 +141,7 @@ volumes:
 {.is-success}
  
 # Configuration
-## Ajoutez un script
+## Ajoutez un site
 Allez dans Settings, puis cliquez sur "Add Website"
  
 renseignez le nom DNS du site en question. Il vous faudra ensuite copier le code de trackage entre les balises `<head>` `</head>` de votre site.
