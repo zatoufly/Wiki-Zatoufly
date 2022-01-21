@@ -2,10 +2,10 @@
 title: Proxmox - Installation
 description: 
 published: true
-date: 2022-01-17T11:56:40.112Z
+date: 2022-01-21T10:16:24.996Z
 tags: 
 editor: markdown
-dateCreated: 2022-01-14T20:23:08.673Z
+dateCreated: 2022-01-18T12:01:20.532Z
 ---
 
 ![proxmox-banner.png](/virtualisation/proxmox/proxmox-banner.png)
@@ -94,3 +94,32 @@ swapon -a
 
 ## Ajouter des templates conteneurs
 Retrouvez le liste des templates que supporte proxmox ici : http://download.proxmox.com/images/system/
+
+## Importer CA
+https://pve.proxmox.com/wiki/Import_certificate_in_browser
+
+Par défaut proxmox propose une connexion https non valide à son interface web. Pour certifié la validité du certificat à notre navigateur, on peux importer sur certificat préinstaller sur proxmox dans notre machine.
+
+Connecter vous en SSH sur votre node proxmox. Et allez afficher le contenue du fichier pve-rrot-ca.pem :
+```bash
+cat /etc/pve/pve-root-ca.pem
+```
+
+Créer un fichier txt sur votre machine windows en le nommer `pve-root-ca.pem` (en changent bien l'extension .txt par .pem)
+
+Ensuite copier dedans tout le contenue qui à été afficher par la commande "cat".
+
+Enfin allez dans "option internet" sur windows et importer le certifiat .pem
+
+# Problèmes connue
+## Accès impossible à l'interface web après import de certificat
+Pour résoudre ce problème, connecter vous en ssh sur votre node proxmox.
+
+Supprimer les CA et regénérer les :
+```bash
+cd /etc/pve/nodes/$NODES
+rm pve-ssl.key pve-ssl.pem 
+pvecm updatecerts -f
+```
+
+redémarrer votre proxmox et le problème devrait être résolu. (supprimer les fichier CA proxy si celà fonctionne toujours pas)
