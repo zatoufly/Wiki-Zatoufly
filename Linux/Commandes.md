@@ -2,7 +2,7 @@
 title: Commandes de bases
 description: 
 published: true
-date: 2022-01-19T16:49:04.860Z
+date: 2022-01-31T10:42:49.926Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:32.113Z
@@ -28,11 +28,14 @@ dateCreated: 2022-01-18T11:58:32.113Z
 ## 2.1 Écrire et afficher des fichiers
  
 ### touch
+
+|     |     |
 | --- | --- |
 | `touch fichier` | créer un fichier |
  
 ### cat
  
+|     |     |
 | --- | --- |
 | `cat fichier.txt` | affiche le contenue du fichier |
 | `cat > fichier.txt` | écrire dans le fichier |
@@ -40,6 +43,7 @@ dateCreated: 2022-01-18T11:58:32.113Z
  
  
 ### head
+|     |     |
 | --- | --- |
 | `head fichier.txt` | affiche les 10 première ligne du fichier |
 | `head -n 4 fichier.txt` | affiche les 4 première ligne |
@@ -47,6 +51,7 @@ dateCreated: 2022-01-18T11:58:32.113Z
  
  
 ### tail
+|     |     |
 | --- | --- |
 | `tail fichier.txt` | affiche les 10 dernières lignes du fichier |
 | `tail -n 4 fichier.txt` | affiche les 4 dernières lignes |
@@ -55,6 +60,7 @@ dateCreated: 2022-01-18T11:58:32.113Z
  
 ## 2.2 Archivage
 ### tar
+|     |     |
 | --- | --- |
 | `tar -cvf archive1.tar dossier1 dossier2` | Créer une archive nommé archive1.tar |
 | `-c` | Créer une archive |
@@ -73,6 +79,7 @@ dateCreated: 2022-01-18T11:58:32.113Z
  
 # 3. La Recherche
 ### find
+|     |     |
 | --- | --- |
 | `find -name "fichier.txt"` | recherche un fichier dans le répertoire courant |
 | `find /usr/share -name "fichier.txt"` | recherche dans le répertoire indiqué |
@@ -80,6 +87,7 @@ dateCreated: 2022-01-18T11:58:32.113Z
  
  
 ### grep
+|     |     |
 | --- | --- |
 | `grep [mot à recherche] [fichier où il faut rechercher]` | recherche un contenue dans un fichier |
 | `-i` | ignore la casse |
@@ -87,12 +95,14 @@ dateCreated: 2022-01-18T11:58:32.113Z
  
  
 ### autres
+|     |     |
 | --- | --- |
 | `which [commande]` | recherche où est situé une commande |
 | `whereis` | which mais avec le manuel/source |
  
  
 # 4. Le Réseau
+|     |     |
 | --- | --- |
 | `ip a` | affiche la liste des interface réseau |
 | `ip route` | affiche les routes disponibles |
@@ -107,6 +117,7 @@ dateCreated: 2022-01-18T11:58:32.113Z
 | `-p` | spécifier le port |
  
 # 5. Processus
+|     |     |
 | --- | --- |
 | `ps` | affiche les processus en cours |
 | `ps aux` | affiche tous les processus |
@@ -152,16 +163,15 @@ shutdown -now # éteint sans délai
 > Les utilisateurs sont stockés dans /etc/passwd
 {.is-info}
  
-```bash
-useradd [user] # créer un utilisateur
--d /home/user # indiquer son répertoire home
- 
-usermod [option] [user] # modifier les propriétés d'un utilisateur
- 
-userdel [user] # supprime un utilisateur
- 
-passwd [user] # créer/modifier le mot de passe
-```
+|     |     |
+| --- | --- |
+| `useradd utilisateur` | créer un utilisateur |
+| `-d` | créer un répertoire home à l'utilisateur |
+| --------------- |  |
+| `userdel utilisateur` | supprimer un utilisaleur |
+| `usermod [option] [user]` | modifier un utilisateur |
+| `usermod -aG sudo utilisateur` | ajoute un utilisateur un groupe sudo |
+| `passwd utilisateur` | créer/modifier le mdp d'un utilisateur |
  
 # 8. Permissions
 On peut voir les permissions avec la commande <kbd>ls -l</kbd>
@@ -181,12 +191,14 @@ il y a 3 groupes de 3 lettres (rwx)
 ils signifie respectivement les permissions attribuées aux propriétaire / groupe propriétaire / autres
  
 ### chown
+|     |     |
 | --- | --- |
 | `chown utilisateur.groupe /mondossier` | change le propriétaire du répertoire |
 | `-R` | de manière récursive |
  
  
 ### chmod
+|     |     |
 | --- | --- |
 | `chmod 777 /mondossier` | change les droits du répertoire |
 | `-R` | de manière récursive |
