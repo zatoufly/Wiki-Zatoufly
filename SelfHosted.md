@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2022-01-20T12:53:25.056Z
+date: 2022-02-05T21:10:38.930Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -23,6 +23,7 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 
 # Website
 - [Wordpress *Le CMS le plus populaire*](/SelfHosted/Wordpress)
+- [Joomla *CMS*](/SelfHosted/Joomla)
 - [FreshRSS *Un agrégateur gratuit, auto-hébergeable... probablement le meilleur!*](/SelfHosted/FreshRSS)
 - [WikiJS *Le plus puissant des Wiki open source*](/SelfHosted/WikiJS)
 {.links-list}
