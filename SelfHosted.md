@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2022-02-05T21:10:38.930Z
+date: 2022-02-08T12:47:57.697Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -19,6 +19,7 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [LibreSpeed *Tester votre connexion*](/SelfHosted/LibreSpeed)
 - [WatchTower *Vos conteneurs à jours*](/SelfHosted/WatchTower)
 - [Diun *Mettre à jour vos conteneurs*](/SelfHosted/diun)
+- [DuckDNS *Le DDNS Domestique*](/SelfHosted/DuckDNS)
 {.links-list}
 
 # Website
