@@ -1,11 +1,11 @@
 ---
 title: Astuces
 description: 
-published: 1
-date: 2022-01-13T10:52:52.494Z
+published: true
+date: 2022-02-09T20:26:35.268Z
 tags: 
 editor: markdown
-dateCreated: 2022-01-13T10:47:24.398Z
+dateCreated: 2022-01-18T11:59:18.125Z
 ---
 
 # Activer Windows gratuitement
@@ -36,3 +36,11 @@ Voici une liste de clé selon la version du Windows :
 **Windows 11 Enterprise G N:** 44RPN-FTY23-9VTTB-MP9BX-T84FV
 **Windows 11 Enterprise LTSC 2019 key:** M7XTQ-FN8P6-TTKYV-9D4CC-J462D
 **Windows 11 Enterprise N LTSC 2019 key:** 92NFX-8DJQP-P6BBQ-THF9C-7CG2H
+
+# Désactiver le redémarrage automatique pour les mises à jours
+
+Pour Windows en version profesionnel uniquement, ouvrez l'éxécuter et tapez `gpedit.msc`
+
+Allez dans Configuration ordinateur -> Modèles d'administration -> Composants Windows -> Windows Update -> Gérer l'expérience utilisateur final.
+
+Modifier la GPO "Désactiver le redémarrage automatique pour les mises à jours" et activé là.
