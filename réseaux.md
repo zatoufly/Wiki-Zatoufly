@@ -2,7 +2,7 @@
 title: réseaux
 description: 
 published: true
-date: 2022-02-07T12:30:44.168Z
+date: 2022-02-12T19:24:11.455Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:12.341Z
@@ -21,3 +21,6 @@ dateCreated: 2022-01-18T11:58:12.341Z
 - [DyDns OVH *configuration d'un dns dynamique sur pfsense*](/réseaux/Pare-feu/DDNS-pfsense)
 {.links-list}
 
+# Proxy & Load Balancing
+- [HAProxy *Load Balancing*](/réseaux/Reverse-Proxy/HAProxy)
+{.links-list}
