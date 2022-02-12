@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-02-12T20:57:24.466Z
+date: 2022-02-12T21:21:22.385Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-12T19:23:12.893Z
@@ -75,4 +75,17 @@ frontend myapp_front
 
 backend load
         server srv_librespeed 192.168.10.5:5252
+```
+
+# Interface graphique
+
+accessible sur ip:9000/stats
+
+```bash
+listen stats
+        bind *:9000
+        stats enable
+        stats uri /stats
+        stats refresh 2s
+        stats auth zatoufly:password
 ```
