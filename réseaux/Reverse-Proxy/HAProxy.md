@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-02-12T19:23:12.893Z
+date: 2022-02-12T20:57:24.466Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-12T19:23:12.893Z
@@ -60,4 +60,19 @@ backend myapp_back
         balance roundrobin
         server srv_nginx 192.168.20.4:80
         server srv_apache 192.168.20.5:80
+```
+
+# ACL
+Les ACL dans HAproxy permettent de rediriger un nom de domaine dns vers un serveur. C'est la fonction reverse proxy pour faire simple.
+
+```bash
+frontend myapp_front
+        bind *:80
+        mode http
+
+        acl myapp_front hdr_dom(host) -i speed.local
+        use_backend load if myapp_front
+
+backend load
+        server srv_librespeed 192.168.10.5:5252
 ```
