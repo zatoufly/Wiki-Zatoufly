@@ -2,7 +2,7 @@
 title: Linux SSH
 description: 
 published: true
-date: 2022-02-12T10:53:59.204Z
+date: 2022-02-12T11:05:01.972Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:58.774Z
@@ -40,6 +40,7 @@ ssh utilisateur@192.168.1.2 -p 9056
 ssh-keygen -t ecdsa -b 521
 ```
 
+Copier la clé .pub sur le serveur distant
 ```bash
 ssh-copy-id -i /home/user/.ssh user@adrees_ip
 ```
