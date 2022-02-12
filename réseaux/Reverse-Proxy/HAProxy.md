@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-02-12T21:21:22.385Z
+date: 2022-02-12T21:27:15.107Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-12T19:23:12.893Z
@@ -89,3 +89,14 @@ listen stats
         stats refresh 2s
         stats auth zatoufly:password
 ```
+
+ajouter ces l'option pour activer les description dans les fronted/backend/global 
+```bash
+stats show-desc
+stats show-legends
+```
+ajoutez dans fronted :
+```bash
+description mon message
+```
+
