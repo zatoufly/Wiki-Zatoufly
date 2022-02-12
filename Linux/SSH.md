@@ -1,11 +1,11 @@
 ---
 title: Linux SSH
 description: 
-published: 1
-date: 2021-12-24T13:18:32.050Z
+published: true
+date: 2022-02-12T10:53:59.204Z
 tags: 
 editor: markdown
-dateCreated: 2021-12-24T13:07:21.233Z
+dateCreated: 2022-01-18T11:58:58.774Z
 ---
 
 # Présentation
@@ -30,8 +30,24 @@ Pour se connecter avec un port spécifique :
 ssh utilisateur@192.168.1.2 -p 9056
 ```
 
-# Installation
+# Se connecter via clefs
 
+**Clé public** : Elle permet de se connecter sur un serveur distant
+**Clé privée** : Elle est personnel, ne doit pas après divulgué à autri
+
+## Générer une clé ssh
+```bash
+ssh-keygen -t ecdsa -b 521
+```
+
+```bash
+ssh-copy-id -i /home/user/.ssh user@adrees_ip
+```
+
+
+
+# Installation
+## Serveur SSH
 # Tabs {.tabset}
 ## Debian
 ```bash
@@ -45,9 +61,23 @@ dnf install openssh-server
 ```bash
 emerge net-misc/openssh
 ```
-# Configuration
+#
+## Client SSH
+# Tabs {.tabset}
+## Debian
+```bash
+apt install openssh-client
+```
+## RedHat
+```bash
+dnf install openssh-client
+```
 
-Le fichier de configuration d'openssh ce situe : `/etc/ssh/sshd_config`
+
+
+# Configuration Serveur
+
+Le fichier de configuration d'openssh ce situe dans : `/etc/ssh/sshd_config`
 
 > Il faudra rechargez le configuration du fichier pour chaque modification apporté :
 > <kbd>systemctl reload sshd</kbd>
@@ -55,7 +85,6 @@ Le fichier de configuration d'openssh ce situe : `/etc/ssh/sshd_config`
 
 
 ## Désactiver les connexions root
-
 Décommenter et modifier la ligne **PermitRootLogin**
 
 ```bash
@@ -105,3 +134,10 @@ Banner /etc/banner
 ```
 
 Il faudra créer le fichier dans `/etc/banner` et y insérez notre bannière
+
+## Autres paramètres
+**ClientAliveCountMax** : nombre de connexion sans réponse avant la clouture de la connexion ssh
+**ClientAliveInterval** : durée de la connexionx ssh sans activité
+**ListenAddress** : indiquer l'interface / IP d'écoute
+**LoginGraceTime** : délai pour s'authentifier (120 secondes par défaut)
+**MaxSessions** : nombre de connexions simultanée permisses
