@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-02-12T21:27:15.107Z
+date: 2022-02-13T12:59:23.640Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-12T19:23:12.893Z
@@ -99,4 +99,10 @@ ajoutez dans fronted :
 ```bash
 description mon message
 ```
+
+pour ajoutez interface admin
+```bash
+stats admin if TRUE
+```
+
 
