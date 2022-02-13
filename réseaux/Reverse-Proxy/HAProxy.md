@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-02-13T13:00:49.017Z
+date: 2022-02-13T13:17:35.116Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-12T19:23:12.893Z
@@ -150,8 +150,14 @@ frontend myapp_front
         acl myapp_front hdr_dom(host) -i speed.local
         use_backend load if myapp_front
 
+        acl myapp_front2 hdr_dom(host) -i grafana.local
+        use_backend load2 if myapp_front2
+
 backend load
         server srv_librespeed 192.168.10.5:5252
+
+backend load2
+        server srv_grafana 192.168.10.5:3000
 ```
 
 # Interface graphique
