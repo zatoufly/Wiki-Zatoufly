@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: true
-date: 2022-01-19T17:15:50.222Z
+date: 2022-02-14T08:56:16.227Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:57:45.204Z
@@ -17,6 +17,7 @@ dateCreated: 2022-01-18T11:57:45.204Z
 - [Divers *variables PATH, Env de bureau, etc...*](/Linux/Divers)
 - [snmp](/Linux/snmp)
 - [NFS *SMB pour linux*](/Linux/NFS)
+- [OpenSSL *Cetificat*](/Linux/OpenSSL)
 {.links-list}
 
 # Services
