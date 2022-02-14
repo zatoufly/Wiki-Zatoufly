@@ -2,7 +2,7 @@
 title: Kubernetes
 description: 
 published: true
-date: 2022-02-14T11:31:27.185Z
+date: 2022-02-14T11:43:15.888Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T10:33:28.625Z
@@ -38,6 +38,8 @@ Kubernetes est un orchestrateur de conteneur docker.
 	- sous ensemble pour cloisonner dans K8S
   
 # Installation
+
+La machine doit avoir au minimum 2 cores CPU et 2Go de ram
 Désactiver le swap :
 ```bash
 swapoff -a
@@ -45,9 +47,10 @@ swapoff -a
 
 Mis en place des dépots : 
 ```bash
-apt-get update && apt-get install -y apt-transport-https curl sudo gnupg software-properties-common
+apt-get update && apt-get install -y docker.io apt-transport-https curl sudo gnupg software-properties-common
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 sudo add-apt-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+apt update
 ```
 
 Installation :
@@ -58,3 +61,10 @@ systemctl enable kubelet
 - kubeadm : installation du cluster
 - kubelet : service qui tourne sur les machines (lancement pods...)
 - kubectl : permet la communication avec le cluster
+
+# Installation du cluster
+
+initialisation sur le master :
+```bash
+kubeadm init --apiserver-advertise-address=192.168.20.10 --node-name $HOSTNAME --pod-network-cidr=10.244.0.0/16
+```
