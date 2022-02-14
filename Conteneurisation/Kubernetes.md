@@ -2,7 +2,7 @@
 title: Kubernetes
 description: 
 published: true
-date: 2022-02-14T17:17:48.343Z
+date: 2022-02-14T17:21:30.045Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T10:33:28.625Z
@@ -12,21 +12,19 @@ dateCreated: 2022-02-14T10:33:28.625Z
 Kubernetes ou k8s est un orchestrateur de conteneur gratuit et open source. Il est développé par Google et vous permet d'orchestrer des conteneurs sur plusieurs hôtes.
 
 # Notions
-Les noeuds sont des serveurs physiques ou virtuels.
+Les **noeuds** sont des serveurs physiques ou virtuels.
 Il existe les noeuds master (serveur maitre) et les worker (serveur d'éxécution)
 
-Les pods sont un ensemble de conteneurs, il peux contenir un au plusieurs conteneurs. C'est une instance de k8s
+Les **pods** sont un ensemble de conteneurs, il peux contenir un au plusieurs conteneurs.
   
-- service : abstraction des pods
-	- permet d'éviter la communication par ip
-  - service > ip/port > pods
-  - service = ip et port fixe
+Les **services** sont un moyen d'accéder à nos pods via (ip/port) c'est l'équivalent à l'exposition sur docker
   
 - volumes : persistens ou non
 	- leiux d"achanges entre pods
   - intérieur de pods = non persistent
   - extérieur = persistant
   
+Les **deployments** sont une représentation logique de un ou plusieurs pod.
 - deployments: objets de gestion des déploiments
 	- création/supprission
   - scaling: gestion de paramètres pour la montée en charge (ou réduction)
