@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-02-14T09:54:30.175Z
+date: 2022-02-14T09:57:15.983Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-12T19:23:12.893Z
@@ -39,6 +39,12 @@ Element du fichier de configuration :
 - Backend : où la requête est rediriger 
 - global : s'applique à haproxy lui même
 - default : s'applique au backend et fronted si ils sont pas configuré
+
+## Commandes
+|     |     |
+| --- | --- |
+| `haproxy -c -f /etc/haproxy/haproxy.cfg` | vérifier le fichier de configuration |
+
 
 # Backend & Frontend
 
