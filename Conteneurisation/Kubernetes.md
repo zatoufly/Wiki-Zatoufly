@@ -2,7 +2,7 @@
 title: Kubernetes
 description: 
 published: true
-date: 2022-02-14T17:21:30.045Z
+date: 2022-02-14T17:44:15.322Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T10:33:28.625Z
@@ -32,6 +32,13 @@ Les **deployments** sont une représentation logique de un ou plusieurs pod.
 - namespaces: cluster virtuel (ensemble de services)
 	- sous ensemble pour cloisonner dans K8S
   
+# Commandes
+|     |     |
+| --- | --- |
+| `txt` | txt |
+| `txt` | txt |
+
+
 # Installation
 
 Ce tuto est effectuer sur une Debian 11 en utilisateur root
@@ -336,3 +343,33 @@ pour supprimer les deployment
 ```bash
 kubectl delete deplay myshell
 ```
+
+# Services
+
+```bash
+kubectl create deploy mynginx --image nginx
+```
+
+équivalent à docker docker inspect
+```bash
+kubectl describe pod mynginx
+```
+
+On vient de créer un pod nginx, mais comment y accéder ?
+
+On va exposer les port comme pour docker sauf que dans k8s on utile les service pour remplir cette tâche.
+
+```bash
+kubectl create service nodeport mynginx --tcp=8080:80
+```
+nodeport est un type de service, il en existe plusieurs :
+- nodeport = exposition de port : rendre public notre pod via un port
+- Clusterip = exposition à l'interieur du clusteur uniquement (pas public)
+- loadBalancerIP = pour exposer via controler ingress ou dans le cloud
+- externalname = via une url
+
+Pour voir nos service : kubectl get svc
+
+Si on se rend sur l'ip de notre master suivi du port attribuer par kubernetes, on arrive sur nginx
+
+# Scaling
