@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-02-13T13:17:35.116Z
+date: 2022-02-14T09:54:30.175Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-12T19:23:12.893Z
@@ -230,9 +230,21 @@ frontend myapp_front
 Le serveur web gère lui même sont certificat
 
 ```bash
-frontend myapp_front
-        bind *:443
-        mode tcp
+frontend https
+       bind *:443
+       mode tcp
+       default_backend loadA
+
+       tcp-request inspect-delay 5s
+       tcp-request content accept if { req_ssl_hello_type 1 }
+
+       acl srv-web req_ssl_sni -i srv-web.zatoufly.local
+       use_backend loadA if srv-web
+        
+backend loadA
+       mode tcp
+       option ssl-hello-chk
+       server srv-web 192.168.10.8:80 check
 ```
 
 
@@ -242,12 +254,11 @@ Le serveur web gère son certificat et un deuxième certificat sur HAproxy
 ```bash
 frontend myapp_front
         bind *:80
-        bind *:443 ssl crt /etc/ssl/zatoufly/zatoufly.pem no-sslv3 #emplacement ssl
+        bind *:443 ssl crt /etc/ssl/zatoufly.pem no-sslv3 #emplacement ssl
         redirect scheme https if !{ ssl_fc } # rediction http -> https
         mode http
-        default_backend pool_load
+        default_backend load1
         
-backend pool_load
-				mode http
-        server srv1 192.168.10.1:443 check ssl verify none
+backend load1
+        server srv1 192.168.10.1:443 ssl verify none
 ```
