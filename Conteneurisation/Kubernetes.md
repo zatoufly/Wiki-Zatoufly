@@ -2,7 +2,7 @@
 title: Kubernetes
 description: 
 published: true
-date: 2022-02-14T16:52:11.992Z
+date: 2022-02-14T17:17:48.343Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T10:33:28.625Z
@@ -12,13 +12,10 @@ dateCreated: 2022-02-14T10:33:28.625Z
 Kubernetes ou k8s est un orchestrateur de conteneur gratuit et open source. Il est développé par Google et vous permet d'orchestrer des conteneurs sur plusieurs hôtes.
 
 # Notions
-- noeuds (serveurs) : physiques ou virtuels
-  - master ou simple noeud d'exécution 
-  
-- pods : pierre centrale de K8S
-	- ensemble cohérent de conteneurs
-  - un ou plusieurs conteneurs
-  - une instace de K8S
+Les noeuds sont des serveurs physiques ou virtuels.
+Il existe les noeuds master (serveur maitre) et les worker (serveur d'éxécution)
+
+Les pods sont un ensemble de conteneurs, il peux contenir un au plusieurs conteneurs. C'est une instance de k8s
   
 - service : abstraction des pods
 	- permet d'éviter la communication par ip
@@ -309,3 +306,35 @@ On peux voir les pods actif via la commande :
 kubectl get pods nginx-web -o wide
 ```
 
+# Déploier un Pod
+
+```bash
+kubectl run myshell -it --image busybox -- sh
+```
+kubectl run est un équivalent à docker run. Avec kubectl run on lance un pod qui contient un ou plusieurs conteneurs (un conteneur de ce cas)
+
+myshell est le nom du pod
+
+-it permet de ce connecter sur le pod
+--image busybox est l'image qui sera éxécuter
+-- sh pour passer la commande sh au pod
+
+pour voir les pods :
+```bash
+kubectl get pods
+```
+
+pour supprimer le pod :
+```bash
+kubectl delete pods myshell
+```
+
+pour voir les deployment :
+```bash
+kubectl get deploy
+```
+
+pour supprimer les deployment
+```bash
+kubectl delete deplay myshell
+```
