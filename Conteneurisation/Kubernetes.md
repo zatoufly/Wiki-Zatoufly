@@ -2,7 +2,7 @@
 title: Kubernetes
 description: 
 published: true
-date: 2022-02-14T17:44:15.322Z
+date: 2022-02-14T19:08:50.435Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T10:33:28.625Z
@@ -373,3 +373,38 @@ Pour voir nos service : kubectl get svc
 Si on se rend sur l'ip de notre master suivi du port attribuer par kubernetes, on arrive sur nginx
 
 # Scaling
+On déploye un deployment nginx
+```bash
+kubectl create deploy mynginx --image nginx
+```
+
+On éxécute un bash dans de conteneur
+```bash
+kubectl exec -ti mynginx-6b78685d4d-pvvd4 /bin/bash
+```
+dans le conteneur, on modifie nginx pour se repérer.
+```bash
+echo "Instance 1" > /usr/share/nginx/html/index.html
+```
+
+Maintenat on la scale :
+```bash
+kubectl scale deploy mynginx --replicas=2
+```
+
+On peux voit que le pod c'est dupliquer :
+```bash
+kubectl get pod
+```
+
+J'entre dans le nouveau pod et je modifie le contenue de nginx
+
+```bash
+kubectl exec -ti mynginx-6b78685d4d-thq2g /bin/bash
+```
+```bash
+echo "Instance 2" > /usr/share/nginx/html/index.html
+```
+
+
+
