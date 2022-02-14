@@ -2,7 +2,7 @@
 title: Kubernetes
 description: 
 published: true
-date: 2022-02-14T15:20:21.873Z
+date: 2022-02-14T16:37:51.451Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T10:33:28.625Z
@@ -167,3 +167,146 @@ sudo chown $(is -u):$(id -g) $HOME/.kube/config
 Pour joindre un serveurs worker au cluster, utiliser la commande kubeadm join fournit après l'initialisation du cluster.
 
 # Ajoutez un worker au cluster
+Si docker n'est pas démarrer, démarrer le :
+```bash
+systemctl start docker
+```
+
+
+j'ajoute mon serveur worker au cluster :
+```bash
+kubeadm join 192.168.20.10:6443 --token jw5fvt.9c51s6dp6qoixvqg \
+        --discovery-token-ca-cert-hash sha256:c5b9c0fe465e71d3a56df4f1c8efe509afd1a7c1630670af5dd798a1e125978d
+```
+
+La commande soit vous retourner :
+```bash
+This node has joined the cluster:
+* Certificate signing request was sent to apiserver and a response was received.
+* The Kubelet was informed of the new secure connection details.
+
+Run 'kubectl get nodes' on the control-plane to see this node join the cluster.
+```
+
+Vérifiez sur le serveur master, que le worker à bien été ajouté :
+```bash
+kubectl get nodes
+```
+
+Vous devriez voir vos deux serveurs :
+```bash
+NAME        STATUS     ROLES                  AGE   VERSION
+k8smaster   NotReady   control-plane,master   69m   v1.23.3
+k8snode     NotReady   <none>                 16m   v1.23.3
+```
+
+Toujours sur le serveur master, installer de module réseau Calico Pod :
+```bash
+kubectl apply -f https://docs.projectcalico.org/v3.16/manifests/calico.yaml
+```
+Vérifiez l'état des Pod avec cette commande :
+```bash
+kubectl get pods --all-namespaces
+
+```
+Elle devrait retourner :
+```bash
+NAMESPACE     NAME                                     READY   STATUS     RESTARTS      AGE
+kube-system   calico-kube-controllers-cdbb46f6-wnlvl   0/1     Pending    0             54s
+kube-system   calico-node-49gdj                        0/1     Init:1/3   0             54s
+kube-system   calico-node-db6lq                        0/1     Init:0/3   0             54s
+kube-system   coredns-64897985d-5h8w8                  0/1     Pending    0             94m
+kube-system   coredns-64897985d-gh7td                  0/1     Pending    0             94m
+kube-system   etcd-k8smaster                           1/1     Running    0             94m
+kube-system   kube-apiserver-k8smaster                 1/1     Running    0             94m
+kube-system   kube-controller-manager-k8smaster        1/1     Running    0             94m
+kube-system   kube-proxy-gbkkp                         1/1     Running    2 (30m ago)   41m
+kube-system   kube-proxy-vr7bc                         1/1     Running    0             94m
+kube-system   kube-scheduler-k8smaster                 1/1     Running    0             94m
+```
+
+Enfin nous allons tester si notre cluster fonctionne. Pour ce faire nous allons déployer Nginx.
+```bash
+kubectl create deployment nginx-web --image=nginx --port=80
+```
+
+Vérifiez le déploiement :
+```bash
+kubectl get deployments.apps  -o wide
+```
+
+La commande doit vous afficher :
+```bash
+NAME        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES   SELECTOR
+nginx-web   0/1     1            0           4s    nginx        nginx    app=nginx-web
+```
+
+Ensuite, on scale le deploiment à 3 :
+```bash
+kubectl scale --replicas=3 deployment nginx-web
+```
+
+On vérifie :
+```bash
+kubectl get deployments.apps nginx-web
+```
+
+La commande doit retourner : 
+```bash
+NAME        READY   UP-TO-DATE   AVAILABLE   AGE
+nginx-web   3/3     3            3           40s
+```
+
+Ensuite on créer un service Nginx en exposant le port 80 :
+
+```bash
+kubectl run nginx-web --image=httpd --port=80
+kubectl expose pod nginx-web --name=http-service --port=80 --type=NodePort
+```
+
+On peux vérifier le services avec :
+```bash
+kubectl get service http-service
+```
+
+La commande doit retourner :
+```bash
+NAME           TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+http-service   NodePort   10.100.217.87   <none>        80:30784/TCP   2s
+```
+
+Pour obtenir des informations sur le service "http-service" un éxécute la commande :
+```bash
+kubectl describe service http-service
+```
+
+Qui nous retourner :
+```bash
+NAME           TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+http-service   NodePort   10.100.217.87   <none>        80:30784/TCP   2s
+root@K8Smaster:/home/zatoufly# kubectl describe service http-service
+Name:                     http-service
+Namespace:                default
+Labels:                   run=nginx-web
+Annotations:              <none>
+Selector:                 run=nginx-web
+Type:                     NodePort
+IP Family Policy:         SingleStack
+IP Families:              IPv4
+IP:                       10.100.217.87
+IPs:                      10.100.217.87
+Port:                     <unset>  80/TCP
+TargetPort:               80/TCP
+NodePort:                 <unset>  30784/TCP
+Endpoints:                172.16.145.199:80
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
+```
+
+On peux voir les pods actif via la commande :
+```bash
+kubectl get pods nginx-web -o wide
+
+```
+
