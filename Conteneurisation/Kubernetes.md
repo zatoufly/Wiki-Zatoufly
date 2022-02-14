@@ -2,7 +2,7 @@
 title: Kubernetes
 description: 
 published: true
-date: 2022-02-14T16:37:51.451Z
+date: 2022-02-14T16:52:11.992Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T10:33:28.625Z
@@ -307,6 +307,5 @@ Events:                   <none>
 On peux voir les pods actif via la commande :
 ```bash
 kubectl get pods nginx-web -o wide
-
 ```
 
