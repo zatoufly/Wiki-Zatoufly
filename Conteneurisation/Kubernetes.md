@@ -2,7 +2,7 @@
 title: Kubernetes
 description: 
 published: true
-date: 2022-02-14T19:08:50.435Z
+date: 2022-02-18T14:48:54.255Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T10:33:28.625Z
@@ -392,6 +392,12 @@ Maintenat on la scale :
 kubectl scale deploy mynginx --replicas=2
 ```
 
+Pour revenir un un seul replicas :
+```bash
+kubectl scale deploy mynginx --replicas=1
+```
+
+
 On peux voit que le pod c'est dupliquer :
 ```bash
 kubectl get pod
@@ -406,5 +412,25 @@ kubectl exec -ti mynginx-6b78685d4d-thq2g /bin/bash
 echo "Instance 2" > /usr/share/nginx/html/index.html
 ```
 
+# Debug / Informations
+|  Cluster   |     |
+| --- | --- |
+| `kubectl get nodes` | Liste nos serveurs |
+| `kubectl get nodes -o wide` | Liste nos serveurs avec plus d'informations |
+| `kubectl describe nodes monnode` | Affiche beaucoup d'informations concernant le noeud |
+| `kubectl get componentstatuses` | Affiche l'état de santé du noeud |
+| `kubectl get daemonsets -n kube-system` | Liste les pods fonctionnent en arrière plan |
 
 
+|  Pods et services   |     |
+| --- | --- |
+| `kubectl get pods` | Liste les pods |
+| `kubectl get services` | Liste les services |
+| `kubectl get deploy` | Liste les deployment |
+| `kubectl get all` | Liste les pods, servies, deployment |
+| `-o wide` | affiche plus d'informations |
+| `-n kube-system` | Affiche des infos du système (namespace système) |
+| `kubectl describe pods monpod` | Affiche la configuration du pods |
+| `kubectl describe services monservices` | Affiche la configuration du services |
+| `kubectl describe deploy mon deploy` | Affiche la configuration du deployment |
+| `kubectl logs monpods` | Affiche les logs du pods |
