@@ -2,10 +2,10 @@
 title: Conteneurisation
 description: 
 published: true
-date: 2022-01-17T10:25:55.863Z
+date: 2022-02-18T14:17:15.583Z
 tags: 
 editor: markdown
-dateCreated: 2022-01-17T09:27:23.500Z
+dateCreated: 2022-01-18T11:57:41.193Z
 ---
 
 # Introduction
@@ -18,3 +18,4 @@ Un Hyperviseur virtualise du matérielle hardware avec un système d'exploitatio
 - [:whale: Docker *Installation, Commandes, Docker-Compose*](/Conteneurisation/Docker)
 {.links-list}
 - [:package: LXC/LXD *Installation, Commandes*](/Conteneurisation/LXC_LXD)
+- [Kubernetes](/Conteneurisation/Kubernetes)
