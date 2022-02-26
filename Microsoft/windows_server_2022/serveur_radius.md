@@ -2,14 +2,14 @@
 title: Serveur RADIUS
 description: 
 published: true
-date: 2022-02-26T21:45:57.922Z
+date: 2022-02-26T21:54:26.314Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-26T21:45:57.922Z
 ---
 
 # Introduction
-**RADIUS** (Remote Authentication Dial-In User Service) est un protocole d'authentification client/serveur.  
+**RADIUS** (Remote Authentication Dial-In User Service) est un protocole d'authentification client/serveur qui permet la centralisation des données d'authentification. Il va avoir pour rôle de définir les accès d'utilisateurs distans à un réseau.
  
 # Prérequis
 - un domaine Active Directory fonctionnel
