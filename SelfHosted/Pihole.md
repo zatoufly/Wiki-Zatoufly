@@ -1,11 +1,11 @@
 ---
 title: Pihole
 description: 
-published: 1
-date: 2021-12-12T09:53:27.889Z
+published: true
+date: 2022-03-09T09:13:26.141Z
 tags: 
 editor: markdown
-dateCreated: 2021-12-05T09:39:39.388Z
+dateCreated: 2022-01-18T11:59:52.672Z
 ---
 
 ![pihole-banner.png](/wiki-assets/pihole-banner.png){.align-center}
@@ -97,7 +97,7 @@ services:
       TZ: 'Europe/Paris'
       WEBPASSWORD: 'password' # mot de passe de l'interface web
     volumes:
-      - '/path/to//etc-pihole:/etc/pihole/'
+      - '/path/to/etc-pihole:/etc/pihole/'
       - '/path/to/etc-dnsmasq.d:/etc/dnsmasq.d/'
 		cap_add: # recommandé si utilisation du dhcp
       - NET_ADMIN
