@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2022-04-09T13:49:20.937Z
+date: 2022-04-19T10:06:22.708Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -20,7 +20,7 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [WatchTower *Vos conteneurs à jours*](/SelfHosted/WatchTower)
 - [Diun *Mettre à jour vos conteneurs*](/SelfHosted/diun)
 - [DuckDNS *Le DDNS Domestique*](/SelfHosted/DuckDNS)
-- [vaultwarden](/SelfHosted/vaultwarden)
+- [Vaultwarden *Gestionnaire de mot de passe*](/SelfHosted/vaultwarden)
 {.links-list}
 
 # Website
@@ -33,5 +33,4 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [Umami *Google Analytics respectueux*](/SelfHosted/umami)
 - [Uptime Kuma *Monitoring simple et complet*](/SelfHosted/Uptime-Kuma)
 - [Nginx Proxy Manager *Exposez vos services facilement, en toute sécurité*](/SelfHosted/Nginx-Proxy-Manager)
-
 {.links-list}
