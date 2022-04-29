@@ -2,7 +2,7 @@
 title: Outils
 description: 
 published: true
-date: 2022-04-11T09:13:08.639Z
+date: 2022-04-29T08:30:13.316Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-25T20:07:49.136Z
@@ -26,6 +26,11 @@ dateCreated: 2022-03-25T20:07:49.136Z
 
 > Permet de lire et extraire les données d'un disque au format Apple sur Windows
 [Site Officiel](https://catacombae.org/hfsexplorer/) / [Téléchargement](https://catacombae.org/hfsexplorer/)
+
+## Clonezilla
+<kbd>Open Source</kbd>
+> Permet de cloner des disques
+[Site Officiel](https://clonezilla.org) / [Téléchargement](https://clonezilla.org/downloads/download.php?branch=stable)
 
 # Utilitaires
 ## OCCT
