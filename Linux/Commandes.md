@@ -2,7 +2,7 @@
 title: Commandes de bases
 description: 
 published: true
-date: 2022-01-31T10:42:49.926Z
+date: 2022-06-23T17:15:45.712Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:32.113Z
@@ -15,6 +15,7 @@ dateCreated: 2022-01-18T11:58:32.113Z
 | `-a` | voir les fichiers cachés |
 | `-h` | affiche la taille du fichier lisible par un humain |
 | `-l` | voir plus de propriétés du fichiers (propriétaires, droit appliqués) |
+| `lsusb` | voir les périphériques USB |
  
  
 |     |     |
