@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: true
-date: 2022-10-01T20:12:52.415Z
+date: 2022-10-01T20:13:57.378Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:59:52.672Z
@@ -21,7 +21,7 @@ Site officiel : [pi-hole.net](https://pi-hole.net/)
 # Tabs {.tabset}
 ## Bare Metal
 
-Connectez vous au serveur et installer l'outils curl pour récupèrer le script d'installation officiel de pihole
+Connectez vous au serveur et installer l'outil curl pour récupérer le script d'installation officiel de pihole
 
 ```bash
 apt install curl -y
@@ -40,11 +40,11 @@ Le script devrait automatiquement s'exécuter. Plus tard, pihole affiche un mess
 
 ![pihole-installation-2.jpg](/self-hosted/pihole/pihole-installation-2.jpg =60%x)
 
-Un message pour vous avertir que pihole à besoin d'une adresse ip static pour correctement fonctionner. 
+Un message pour vous avertir que pihole à besoin d'une adresse ip statique pour correctement fonctionner. 
 
 ![pihole-installation-3.jpg](/self-hosted/pihole/pihole-installation-3.jpg =60%x)
 
-Ensuite sélectionnez quel provider DNS vous souhaitez utiliser pour ma part je prend Quad 9
+Ensuite sélectionnez quel provider DNS vous souhaitez utiliser pour ma part je prends Quad 9
 
 ![pihole-installation-4.jpg](/self-hosted/pihole/pihole-installation-4.jpg =60%x)
 
@@ -60,7 +60,7 @@ Installer le serveur web lighttpd pour que l'interface web fonctionne.
 
 ![pihole-installation-7.jpg](/self-hosted/pihole/pihole-installation-7.jpg =60%x)
 
-Ici sélectionnez si vous souhaitez avoir les log ou non, je vous conseille de les désactiver si vous avez installé pihole sur une carte SD, pour éviter de trop l'user à terme
+Ici sélectionnez si vous souhaitez avoir les logs ou non, je vous conseille de les désactiver si vous avez installé pihole sur une carte SD, pour éviter de trop l'user à terme
 
 ![pihole-installation-8.jpg](/self-hosted/pihole/pihole-installation-8.jpg =60%x)
 
@@ -72,7 +72,7 @@ Pihole va terminer sa configuration et vous affichera quelques informations util
 
 ![pihole-installation-10.jpg](/self-hosted/pihole/pihole-installation-10.jpg =60%x)
 
-Maintenant rendez vous sur votre navigateur pour accéder à l'interface web de pihole à l'addresse http://ip-serveur/admin
+Maintenant rendez-vous sur votre navigateur pour accéder à l'interface web de pihole à l'adresse http://ip-serveur/admin
 
 ![pihole-installation-11.jpg](/self-hosted/pihole/pihole-installation-11.jpg =80%x)
 
@@ -104,7 +104,7 @@ services:
     restart: unless-stopped
 ```
 > Pour des raisons de sécurité, changer le port de l'interface web ainsi que le mot de passe.
-> Si vous comptez pas utiliser pihole en tant que dhcp, enlever le port 67 de la configuration
+> Si vous ne comptez pas utiliser pihole en tant que dhcp, enlever le port 67 de la configuration
 {.is-warning}
 ## Docker cli
 ```bash
@@ -122,14 +122,14 @@ docker run -d \
   pihole/pihole:latest
 ```
 > Pour des raisons de sécurité, changer le port de l'interface web ainsi que le mot de passe.
-> Si vous comptez pas utiliser pihole en tant que dhcp, enlever le port 67 de la configuration
+> Si vous ne comptez pas utiliser pihole en tant que dhcp, enlever le port 67 de la configuration.
 {.is-warning}
 
 # Configurations 
 
 ## Changer mot de passe
 
-Pour changer de mot de passe tapez la commande suivante sur le serveur où est installer pihole :
+Pour changer de mot de passe tapez la commande suivante sur le serveur où est installé pihole :
 
 ```bash
 pihole -a -p
