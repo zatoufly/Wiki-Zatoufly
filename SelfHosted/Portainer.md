@@ -2,7 +2,7 @@
 title: Portainer
 description: 
 published: true
-date: 2022-10-01T19:28:45.095Z
+date: 2022-10-01T19:30:38.862Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:59:56.767Z
@@ -18,7 +18,7 @@ Site officiel : [portainer.io](https://www.portainer.io/)
 
 # Installation
 # Tabs {.tabset}
-## Docker-Compose
+## Docker Compose
 ```yaml
 version: '3.3'
 services:
@@ -33,7 +33,7 @@ services:
         restart: unless-stopped
         image: portainer/portainer-ce
 ```
-## Docker cli
+## Docker CLI
 ```bash
 docker run -d \
 	--name portainer \
