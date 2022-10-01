@@ -1,11 +1,11 @@
 ---
 title: Portainer
 description: 
-published: 1
-date: 2021-12-11T23:30:35.985Z
+published: true
+date: 2022-10-01T11:18:16.220Z
 tags: 
 editor: markdown
-dateCreated: 2021-12-04T14:50:20.934Z
+dateCreated: 2022-01-18T11:59:56.767Z
 ---
 
 ![portainer_banner.png](/wiki-assets/portainer_banner.png)
@@ -17,7 +17,7 @@ Site officiel : [portainer.io](https://www.portainer.io/)
 **portainer** est un outil très populaire sur docker car il permet de donner une interface web à docker. Vous pouvais créer et gérer vos containers docker sur votre navigateur web. C'est un outil très complet et très pratique au quotidien.
 
 # Installation
-## Docker-Compose ([Plus d'informations](https://docs.linuxserver.io/general/docker-compose))
+## Docker-Compose
 ```yaml
 version: '3.3'
 services:
@@ -32,7 +32,7 @@ services:
         restart: unless-stopped
         image: portainer/portainer-ce
 ```
-## Docker cli ([Plus d'informations](https://docs.docker.com/engine/reference/commandline/cli/))
+## Docker cli
 ```bash
 docker run -d \
 	--name portainer \
@@ -42,4 +42,19 @@ docker run -d \
 	-v /path/to/data:/data \
 	--restart=unless-stopped \
 	portainer/portainer-ce
+```
+
+# Portainer-Agent
+```bash
+version: '3.3'
+services:
+  agent:
+    ports:
+      - '9001:9001'
+    container_name: portainer_agent
+    restart: always
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+      - '/var/lib/docker/volumes:/var/lib/docker/volumes'
+    image: 'portainer/agent:latest'
 ```
