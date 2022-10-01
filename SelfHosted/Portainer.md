@@ -2,7 +2,7 @@
 title: Portainer
 description: 
 published: true
-date: 2022-10-01T19:31:12.411Z
+date: 2022-10-01T19:31:38.483Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:59:56.767Z
@@ -16,7 +16,7 @@ Site officiel : [portainer.io](https://www.portainer.io/)
 
 **portainer** est un outil très populaire sur docker car il permet de donner une interface web à docker. Vous pouvais créer et gérer vos containers docker sur votre navigateur web. C'est un outil très complet et très pratique au quotidien.
 
-# Installation
+# Portainer
 # Tabs {.tabset}
 ## Docker Compose
 ```yaml
