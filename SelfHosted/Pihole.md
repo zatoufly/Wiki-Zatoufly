@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: true
-date: 2022-03-09T09:13:26.141Z
+date: 2022-10-01T20:10:57.979Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:59:52.672Z
@@ -99,7 +99,7 @@ services:
     volumes:
       - '/path/to/etc-pihole:/etc/pihole/'
       - '/path/to/etc-dnsmasq.d:/etc/dnsmasq.d/'
-		cap_add: # recommandé si utilisation du dhcp
+    cap_add: # recommandé si utilisation du dhcp
       - NET_ADMIN
     restart: unless-stopped
 ```
