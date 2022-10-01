@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: true
-date: 2022-10-01T20:13:57.378Z
+date: 2022-10-01T20:14:12.137Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:59:52.672Z
@@ -104,7 +104,7 @@ services:
     restart: unless-stopped
 ```
 > Pour des raisons de sécurité, changer le port de l'interface web ainsi que le mot de passe.
-> Si vous ne comptez pas utiliser pihole en tant que dhcp, enlever le port 67 de la configuration
+> Si vous ne comptez pas utiliser pihole en tant que dhcp, enlever le port 67 de la configuration.
 {.is-warning}
 ## Docker cli
 ```bash
