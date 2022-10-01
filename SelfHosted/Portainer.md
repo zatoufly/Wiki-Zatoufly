@@ -2,7 +2,7 @@
 title: Portainer
 description: 
 published: true
-date: 2022-10-01T19:30:38.862Z
+date: 2022-10-01T19:31:12.411Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:59:56.767Z
@@ -46,6 +46,8 @@ docker run -d \
 ```
 
 # Portainer-Agent
+# Tabs {.tabset}
+## Docker Compose
 ```bash
 version: '3.3'
 services:
