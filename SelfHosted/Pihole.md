@@ -2,7 +2,7 @@
 title: Pihole
 description: 
 published: true
-date: 2022-10-01T20:10:57.979Z
+date: 2022-10-01T20:12:52.415Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:59:52.672Z
@@ -133,4 +133,9 @@ Pour changer de mot de passe tapez la commande suivante sur le serveur où est i
 
 ```bash
 pihole -a -p
+```
+## Mettre à jour
+
+```bash
+pihole -up
 ```
