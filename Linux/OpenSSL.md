@@ -2,7 +2,7 @@
 title: OpenSSL
 description: 
 published: true
-date: 2022-02-14T08:55:36.354Z
+date: 2022-10-07T07:05:17.903Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-14T08:55:36.353Z
@@ -13,14 +13,19 @@ dateCreated: 2022-02-14T08:55:36.353Z
 # Générer le CA
 Le CA ou "Certificate Authority" permet de signer nos certificats.
  
-On peut générer la clé privée. Il vous sera demandé une pass phrase, qui permettra plus tard de certifier notre certificat.
+On peut générer la clé privée. Il vous sera demandé une passphrase, qui permettra plus tard de certifier notre certificat.
 ```bash
 openssl genrsa -des3 -out zatouflyCA.key 4096
 ```
  
 On génère le certificat racine au format .pem à partir de la clé précédemment créée.
-Il vous sera demandé ces information :
- 
+Il vous sera demandé ces informations :
+
+```bash
+openssl req -x509 -new -nodes -key zatouflyCA.key -sha256 -days 10000 -out zatouflyCA.pem
+```
+
+Output:
 ```
 Enter pass phrase for linuxtricksCA.key:
 You are about to be asked to enter information that will be incorporated
@@ -39,10 +44,7 @@ Common Name (e.g. server FQDN or YOUR name) []:ZatouflyCA
 Email Address []:
 ```
 Hormis le Common Name à renseigner, le reste n'a pas d'importance.
- 
-```bash
-openssl req -x509 -new -nodes -key zatouflyCA.key -sha256 -days 10000 -out zatouflyCA.pem
-```
+
  
 Puis on le génère maintenant pour avoir un format en .crt
 ```bash
@@ -54,36 +56,9 @@ On a 3 fichiers :
 - zatouflyCA.pem : Certificat racine au format pem
 - zatouflyCA.crt : Certificat racine au format crt
  
-Il vous faudra dans le cas d'un poste windows d'importer le fichier .crt dans le magasin.
-# Importer le CRT
-# Tabs {.tabset}
-## Windows
-Sur votre machine Windows, créer un fichier du même nom que votre Certificat racune au format crt. Je créer zatouflyCA.crt
- 
-Sur votre machine linux où à été créer le certificat, afficher son contenue via cat.
-```bash
-cat zatouflyCA.crt
-```
- 
-Copier le contenue du fichier dans le fichier créer sur la machine Windows
- 
-Enregistrez le et ouvrez le fichier avec "Extensions noyau de chiffrement"
- 
-Installer le certificat
-![openssl-windows01.jpg](/linux/openssl/openssl-windows01.jpg)
- 
-Installez le dans l'ordinateur local
-![openssl-windows02.jpg](/linux/openssl/openssl-windows02.jpg)
- 
-Placer le certificat manuellement  et cliquez sur "Parcourir..."
-![openssl-windows03.jpg](/linux/openssl/openssl-windows03.jpg)
- 
-Séléctionnez le second dossier "Autorités de certication racines de confiance"
-![openssl-windows04.jpg](/linux/openssl/openssl-windows04.jpg)
- 
-Suivez les étapes restantes, votre certificat devrait s'exporter dans le magasin 
- 
-# Créer une certificat pour un hôte
+Il vous faudra dans le cas d'un poste Windows d'importer le fichier .crt dans le magasin.
+
+# Créer un certificat pour un hôte
  
 Pour des raisons de simplicité, nous allons créer un certificat "wildcard" qui pourra se greffer à n'importe quel sous-domaine. Cela nous évite de générer un certificat pour chaque sous-domaine.
  
@@ -97,7 +72,7 @@ générer le csr (Certificate Signing Request) :
 openssl req -new -key wildcard.local.key -out wildcard.zatoufly.csr
 ```
  
-Il vous sera demander des informations, attention au paramètre "Common Name" c'est ici que l'on met notre sous domaine à certifier.
+Il vous sera demandé des informations, attention au paramètre "Common Name" c'est ici que l'on met nos sous domaine à certifier.
  
 Dans notre cas on met un "*" à la place du sous domaine
 ```bash
@@ -125,7 +100,7 @@ Ensuite créer un fichier certifica.ini,
 ```bash
 nano certifica.ini
 ```
-et copier le code ci dessous :
+et copier le code ci-dessous :
 ```bash
 authorityKeyIdentifier=keyid,issuer
 basicConstraints=CA:FALSE
@@ -134,7 +109,7 @@ subjectAltName = @alt_names
 [alt_names]
 DNS.2 = *.zatoufly.local # modifier avec votre nom de domaine local
 ```
-Enregistrez le.
+Enregistrez-le.
  
 Enfin signer votre certificat avec la clé CA crée au début du tuto :
 ```bash
@@ -147,3 +122,32 @@ Nous avons ces fichiers :
 - certifica.ini => Fichier de configuration du sous domaine
  
 Il vous reste qu'à configurer le certificat sur un serveur web ou un reverse proxy.
+
+# Importer le CRT
+# Tabs {.tabset}
+## Windows
+Sur votre machine Windows, créer un fichier du même nom que votre Certificat racine au format crt. Je crée zatouflyCA.crt
+ 
+Sur votre machine linux où a été créer le certificat, afficher sont contenus via cat.
+```bash
+cat zatouflyCA.crt
+```
+ 
+Copier le contenu du fichier dans le fichier créé sur la machine Windows
+ 
+Enregistrez le et ouvrez le fichier avec "Extensions noyau de chiffrement"
+ 
+Installer le certificat
+![openssl-windows01.jpg](/linux/openssl/openssl-windows01.jpg)
+ 
+Installez-le dans l'ordinateur local
+![openssl-windows02.jpg](/linux/openssl/openssl-windows02.jpg)
+ 
+Placer le certificat manuellement  et cliquez sur "Parcourir..."
+![openssl-windows03.jpg](/linux/openssl/openssl-windows03.jpg)
+ 
+Séléctionnez le second dossier "Autorités de certication racines de confiance"
+![openssl-windows04.jpg](/linux/openssl/openssl-windows04.jpg)
+ 
+Suivez les étapes restantes, votre certificat devrait s'exporter dans le magasin 
+ 
