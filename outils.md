@@ -2,7 +2,7 @@
 title: Outils
 description: 
 published: true
-date: 2022-11-24T15:45:16.075Z
+date: 2022-11-24T16:26:16.458Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-25T20:07:49.136Z
@@ -50,3 +50,7 @@ dateCreated: 2022-03-25T20:07:49.136Z
 > Lecteur PDF léger
 [Site Officiel](https://www.sumatrapdfreader.org/free-pdf-reader) / [Téléchargement](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
 
+## UserDiag
+
+>Benchmark / Inventaire des composants de la machine
+[Site Officiel](https://userdiag.com/) / [Téléchargement](https://userdiag.com/)
