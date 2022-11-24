@@ -2,7 +2,7 @@
 title: Outils
 description: 
 published: true
-date: 2022-04-29T08:30:13.316Z
+date: 2022-11-24T15:45:16.075Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-25T20:07:49.136Z
@@ -43,4 +43,10 @@ dateCreated: 2022-03-25T20:07:49.136Z
 > Permet de créer des Clé USB Bootable avec plusieurs ISO
 [Site Officiel](https://ventoy.net/en/) / [Téléchargement](https://ventoy.net/en/download.html)
 
+
+## SumatraPDF
+<kbd>Open Source</kbd>
+
+> Lecteur PDF léger
+[Site Officiel](https://www.sumatrapdfreader.org/free-pdf-reader) / [Téléchargement](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
 
