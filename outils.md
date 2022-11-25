@@ -2,7 +2,7 @@
 title: Outils
 description: 
 published: true
-date: 2022-11-24T16:26:16.458Z
+date: 2022-11-25T08:53:46.459Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-25T20:07:49.136Z
@@ -54,3 +54,8 @@ dateCreated: 2022-03-25T20:07:49.136Z
 
 >Benchmark / Inventaire des composants de la machine
 [Site Officiel](https://userdiag.com/) / [Téléchargement](https://userdiag.com/)
+
+## Espanso
+
+> Utilitaire qui permet de créer des templates de textes
+[Site Officiel](https://espanso.org/)
