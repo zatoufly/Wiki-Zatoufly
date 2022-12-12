@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2022-06-07T09:48:40.814Z
+date: 2022-12-12T09:45:42.166Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -22,6 +22,7 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 - [DuckDNS *Le DDNS Domestique*](/SelfHosted/DuckDNS)
 - [Vaultwarden *Gestionnaire de mot de passe*](/SelfHosted/vaultwarden)
 - [Etherpad *bloc-note collaboratif*](/SelfHosted/etherpad)
+- [GLPI *Gestion de ticket et de parc IT*](/SelfHosted/GLPI)
 {.links-list}
 
 # Website
