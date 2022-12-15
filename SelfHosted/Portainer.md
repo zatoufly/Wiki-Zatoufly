@@ -2,7 +2,7 @@
 title: Portainer
 description: 
 published: true
-date: 2022-10-01T19:31:38.483Z
+date: 2022-12-15T13:50:56.970Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:59:56.767Z
@@ -25,20 +25,23 @@ services:
     portainer-ce:
         container_name: portainer
         ports:
-            - '9000:9000' # port http
-            - '9443:9443' # port https
+            - 9443:9443
+            - 9000:9000
         volumes:
-            - '/var/run/docker.sock:/var/run/docker.sock'
-            - '/path/to/data:/data'
-        restart: unless-stopped
-        image: portainer/portainer-ce
+            - /var/run/docker.sock:/var/run/docker.sock
+            - data:/data
+        restart: always
+        image: portainer/portainer-ce:latest
+ 
+volumes:
+  data:
 ```
 ## Docker CLI
 ```bash
 docker run -d \
 	--name portainer \
-	-p 9000:9000 `# port http` \ 
-	-p 9443:9443 `# port https` \ 
+	-p 9000:9000 \ 
+	-p 9443:9443 \ 
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v /path/to/data:/data \
 	--restart=unless-stopped \
