@@ -2,13 +2,15 @@
 title: SelfHosted
 description: 
 published: true
-date: 2022-12-12T09:45:42.166Z
+date: 2022-12-16T09:02:28.306Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
 ---
 
 Ici vous trouverez des procédures d'installations de diverses solutions SelfHosted (héberger chez soit). Installation en Bare Metal, Docker, Docker Compose. Ainsi que quelques manipulations, configurations, astuces pour bien prendre en main l'outil en question, avec des liens vers mes vidéos Youtube.
+
+Présentation de stack docker dans le but de découvrir des services accompagné d'une démonstration vidéo
 
 - [Funkwhale *Une plateforme sociale pour apprécier et partager la musique*](/SelfHosted/Funkwhale)
 - [Portainer *Docker avec une interface web*](/SelfHosted/Portainer)
