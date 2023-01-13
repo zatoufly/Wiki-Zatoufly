@@ -1,17 +1,17 @@
 ---
 title: Wordpress
 description: 
-published: 1
-date: 2022-01-14T11:14:34.244Z
+published: true
+date: 2023-01-13T15:08:33.723Z
 tags: 
 editor: markdown
-dateCreated: 2021-12-01T21:59:11.694Z
+dateCreated: 2022-01-18T12:00:16.414Z
 ---
 
  
 ![wordpress-banner.png](/wiki-assets/wordpress-banner.png)
 # Présentation
-**Wordpress** On ne le présente plus, le CMS le plus populaire de ces dernières années, il fait tourner la moitié des sites web qui existent. Sa réputation n'est pas volée car grâce à ses nombreux thèmes et plugins, il est extrêmement modulaire. Vous pourrez faire à peu prêt n'importe quel projet avec cette solution.
+**Wordpress** on ne le présente plus, le CMS le plus populaire de ces dernières années, il fait tourner la moitié des sites web qui existent. Sa réputation n'est pas volée car grâce à ses nombreux thèmes et plugins, il est extrêmement modulaire. Vous pourrez faire à peu prêt n'importe quel projet avec cette solution.
  
 Il a le sérieux avantage d'avoir une très grande communauté, également francophone. Vous trouverez toujours un tutoriel pour arriver à vos fins.
  
@@ -31,7 +31,6 @@ Dans ce tutoriel :
 J’effectue l’installation sur une debian 11 
 Je serais en utilisateur root
 J’utilise l’éditeur de texte vim
-J’installe Wordpress 5.8
  
 ### Prérequis
 - Serveur LAMP
@@ -39,14 +38,14 @@ J’installe Wordpress 5.8
  
 ### Installation de Wordpress
  
-Avant de commencer, on met à jour nos dépôt et notre système.
+On met à jour nos dépôt et notre système.
  
 ```bash
 apt update && apt full-upgrade -y
 ```
- 
+
 On télécharge Wordpress et on le décompresse dans /var/www
- 
+
 ```bash
 cd /tmp
 wget https://wordpress.org/latest.tar.gz
@@ -56,7 +55,8 @@ tar xvf latest.tar.gz -C /var/www
 Ensuite je donne les permissions à apache sur wordpress
  
 ```bash
-chown -R www-data.www-data /var/www/html/wordpress/
+chown -R www-data.www-data /var/www/wordpress/
+chmod 775 -R /var/www/wordpress
 ```
  
 ### Création de la base de données
@@ -80,7 +80,7 @@ exit;
 Je modifie le fichier de conf "wp-config" pour renseigner notre base de données précédemment créée.
  
 ```bash
-cd /var/www/html/wordpress
+cd /var/www/wordpress
 mv wp-config-sample.php wp-config.php
 vim wp-config.php
 ```
@@ -135,9 +135,7 @@ Et je renseigne quelques informations, et je retiens bien de mdp fournis, il nou
  
 ## Docker-Compose 
 ```yaml
----
 version: "2"
- 
 services:
    wordpress-db:
      container_name: wordpress-db
