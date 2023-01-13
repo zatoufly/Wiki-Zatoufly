@@ -2,7 +2,7 @@
 title: Wordpress
 description: 
 published: true
-date: 2023-01-13T16:25:40.802Z
+date: 2023-01-13T18:38:47.703Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T12:00:16.414Z
@@ -71,8 +71,8 @@ Dans la console MariaDB :
  
 ```SQL
 create database wordpress;
-create user ‘votreuser’@’localhost’ identified by ‘votremdp’;
-grant all privileges on wordpress.* to ‘zatoufly’@’localhost’;
+create user user@localhost identified by 'votremdp';
+grant all privileges on wordpress.* to user@localhost;
 flush privileges;
 exit;
 ```
