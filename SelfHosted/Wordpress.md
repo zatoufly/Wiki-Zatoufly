@@ -2,7 +2,7 @@
 title: Wordpress
 description: 
 published: true
-date: 2023-01-13T15:48:31.218Z
+date: 2023-01-13T16:25:40.802Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T12:00:16.414Z
@@ -67,12 +67,12 @@ On va créer une base de données avec un utilisateur qui aura les permission su
 mysql -u root
 ```
  
-Dans la console de mariadb :
+Dans la console MariaDB :
  
 ```SQL
 create database wordpress;
 create user ‘votreuser’@’localhost’ identified by ‘votremdp’;
-grant all privileges on wordpress. * to ‘zatoufly’@’localhost’;
+grant all privileges on wordpress.* to ‘zatoufly’@’localhost’;
 flush privileges;
 exit;
 ```
