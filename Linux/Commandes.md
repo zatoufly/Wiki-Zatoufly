@@ -2,7 +2,7 @@
 title: Commandes de bases
 description: 
 published: true
-date: 2022-06-23T17:15:45.712Z
+date: 2023-01-13T17:55:57.870Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:32.113Z
@@ -116,6 +116,8 @@ dateCreated: 2022-01-18T11:58:32.113Z
 | `-o [nouveau nom]` | change le nom du fichier récupérer |
 | `ssh [user]@[ip ou dns]` | se connecter en ssh |
 | `-p` | spécifier le port |
+| `hostnamectl set-hostname NAME` | Définir le nom de la machine |
+ 
  
 # 5. Processus
 |     |     |
