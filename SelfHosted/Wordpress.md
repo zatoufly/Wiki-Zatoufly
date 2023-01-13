@@ -2,7 +2,7 @@
 title: Wordpress
 description: 
 published: true
-date: 2023-01-13T18:38:47.703Z
+date: 2023-01-13T18:46:38.566Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T12:00:16.414Z
@@ -107,8 +107,8 @@ On va y mettre :
         DocumentRoot "/var/www/wordpress/"
         ServerName domain.com
  
-        ErrorLog ${APACHE_LOG_DIR}/nextcloud.error
-        CustomLog ${APACHE_LOG_DIR}/nextcloud.access combined
+        ErrorLog ${APACHE_LOG_DIR}/wordpress.error
+        CustomLog ${APACHE_LOG_DIR}/wordpress.access combined
  
 </VirtualHost>
 ```
