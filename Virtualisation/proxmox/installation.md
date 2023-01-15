@@ -2,7 +2,7 @@
 title: Proxmox - Installation
 description: 
 published: true
-date: 2022-01-21T10:16:24.996Z
+date: 2023-01-15T13:33:03.160Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T12:01:20.532Z
@@ -13,7 +13,7 @@ dateCreated: 2022-01-18T12:01:20.532Z
 # Introdution
 Proxmox est un hyperviseur open source, très populaire des particuliers grâce à sa grande combabitilité avec du matériel grand public.
 
-Dans ce tutoriel, je l'installe en version 6. La procédure n'a pas changer pour la version 7.
+Dans ce tutoriel, j'installe Proxmox en version 6. La procédure n'a pas changer pour la version 7.
 
 # Prérequis
 
@@ -113,7 +113,7 @@ Enfin allez dans "option internet" sur windows et importer le certifiat .pem
 
 # Problèmes connue
 ## Accès impossible à l'interface web après import de certificat
-Pour résoudre ce problème, connecter vous en ssh sur votre node proxmox.
+Pour résoudre ce problème, connectez-vous en ssh sur votre node proxmox.
 
 Supprimer les CA et regénérer les :
 ```bash
@@ -123,3 +123,35 @@ pvecm updatecerts -f
 ```
 
 redémarrer votre proxmox et le problème devrait être résolu. (supprimer les fichier CA proxy si celà fonctionne toujours pas)
+
+# Cluster
+## Supprimer un node d'un cluster
+Migrer les VMs du node à supprimer du cluster sur un autre node du cluster.
+Éteignez le node à supprimer du cluster
+
+Sur le shell d'un autre node que celui à supprimer :
+
+Lister les nodes du cluster :
+```bash
+pvecm nodes
+```
+Supprimer le node :
+```bash
+pvecm delnode NODE_NAME 
+```
+
+Si vous avez une erreur lors de la suppression :
+```bash
+systemctl stop pve-cluster
+systemctl stop corosync
+
+pmxcfs -l
+
+rm /etc/pve/corosync.conf
+rm -r /etc/corosync/*
+
+killall pmxcfs
+systemctl start pve-cluster
+
+pvecm delnode NODE_NAME
+```
