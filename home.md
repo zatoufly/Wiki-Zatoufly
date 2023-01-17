@@ -2,20 +2,26 @@
 title: Accueil
 description: 
 published: true
-date: 2022-12-03T20:44:50.313Z
+date: 2023-01-17T20:47:41.169Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:08.318Z
 ---
 
 ![wiki-banner.png](/wiki-banner.png){.align-center}
- 
- 
+
+
 ## Nos rédacteurs
  - Zatoufly https://zatoufly.fr
  - Tenchigreed https://tenchigreed.fr
  {.grid-list}
 
+Vous souhaiter créer sur wiki.zatoufly.fr ? Contacter moi !
+
+## Me retrouver
+- [🔗 Mes réseaux *et services*](https://link.zatoufly.fr)
+{.links-list}
+<!---
 ## Mes autres sites
 - [Zatoufly.fr *Mon site officiel*](https://zatoufly.fr)
 - [FreshRSS *Les actualités tech*](https://news.zatoufly.fr)
@@ -33,3 +39,4 @@ dateCreated: 2022-01-18T11:58:08.318Z
 ## Me soutenir
 - [💲Paypal *Merci de me soutenir dans mes projets*](https://www.paypal.com/paypalme/zatoufly?locale.x=fr_FR)
 {.links-list}
+-->
