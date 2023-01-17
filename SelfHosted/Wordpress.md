@@ -2,7 +2,7 @@
 title: Wordpress
 description: 
 published: true
-date: 2023-01-13T18:46:38.566Z
+date: 2023-01-17T20:08:39.744Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T12:00:16.414Z
@@ -33,7 +33,7 @@ Je serais en utilisateur root
 J’utilise l’éditeur de texte vim
  
 ### Prérequis
-- Serveur LAMP
+- [Serveur LAMP](https://zatoufly.fr/installer-un-serveur-lamp-sur-debian)
 - Adresse ip fixe
  
 ### Installation de Wordpress
