@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2023-01-17T20:56:30.601Z
+date: 2023-01-23T20:44:43.284Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -43,4 +43,8 @@ Présentation de stack docker dans le but de découvrir des services accompagné
 {.links-list}
 ### Wiki
 - [:star: WikiJS *Le plus puissant des Wiki open source*](/SelfHosted/WikiJS)
+{.links-list}
+
+# Dashboard
+- [Homarr](/SelfHosted/Homarr)
 {.links-list}
