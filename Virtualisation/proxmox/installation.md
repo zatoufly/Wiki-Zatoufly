@@ -2,7 +2,7 @@
 title: Proxmox - Installation
 description: 
 published: true
-date: 2023-01-15T13:33:03.160Z
+date: 2023-03-05T10:39:33.917Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T12:01:20.532Z
@@ -155,3 +155,7 @@ systemctl start pve-cluster
 
 pvecm delnode NODE_NAME
 ```
+
+## Convertir un disque .qcow2 en .vmdk
+- [:link: *Convertir un disque .qcow2 en .vmdk*](https://zatoufly.fr/proxmox-convertir-un-disque-qcow2-en-vmdk/)
+{.links-list}
