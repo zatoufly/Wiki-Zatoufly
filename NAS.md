@@ -2,10 +2,10 @@
 title: NAS
 description: 
 published: true
-date: 2022-01-16T20:57:05.505Z
+date: 2023-04-02T12:59:30.047Z
 tags: 
 editor: markdown
-dateCreated: 2022-01-14T20:20:13.912Z
+dateCreated: 2022-01-18T11:57:56.653Z
 ---
 
 # QNAP
@@ -16,4 +16,8 @@ dateCreated: 2022-01-14T20:20:13.912Z
 - [iSCSI *Créer un cible iSCSI*](/NAS/OpenMediaVault/iSCSI)
 {.links-list}
 - [Docker *Installer docker sur OMV*](/NAS/OpenMediaVault/docker) 
+{.links-list}
+
+# TrueNAS
+- [:camera: *Installer TrueNAS en passthrought sur Proxmox*](https://youtu.be/va99DvC2rdk)
 {.links-list}
