@@ -2,7 +2,7 @@
 title: Proxmox - Installation
 description: 
 published: true
-date: 2023-03-05T10:39:33.917Z
+date: 2023-04-23T15:33:20.494Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T12:01:20.532Z
@@ -125,37 +125,7 @@ pvecm updatecerts -f
 redémarrer votre proxmox et le problème devrait être résolu. (supprimer les fichier CA proxy si celà fonctionne toujours pas)
 
 # Cluster
-## Supprimer un node d'un cluster
-Migrer les VMs du node à supprimer du cluster sur un autre node du cluster.
-Éteignez le node à supprimer du cluster
-
-Sur le shell d'un autre node que celui à supprimer :
-
-Lister les nodes du cluster :
-```bash
-pvecm nodes
-```
-Supprimer le node :
-```bash
-pvecm delnode NODE_NAME 
-```
-
-Si vous avez une erreur lors de la suppression :
-```bash
-systemctl stop pve-cluster
-systemctl stop corosync
-
-pmxcfs -l
-
-rm /etc/pve/corosync.conf
-rm -r /etc/corosync/*
-
-killall pmxcfs
-systemctl start pve-cluster
-
-pvecm delnode NODE_NAME
-```
-
-## Convertir un disque .qcow2 en .vmdk
+- [:link: *Supprimer un Node d'un Cluster*](https://zatoufly.fr/supprimer-un-node-dun-cluster-proxmox)
+{.links-list}
 - [:link: *Convertir un disque .qcow2 en .vmdk*](https://zatoufly.fr/proxmox-convertir-un-disque-qcow2-en-vmdk/)
 {.links-list}
