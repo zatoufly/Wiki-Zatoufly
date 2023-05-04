@@ -2,14 +2,16 @@
 title: Virtualisation
 description: 
 published: true
-date: 2022-01-16T20:46:00.733Z
+date: 2023-05-04T20:37:45.979Z
 tags: 
 editor: markdown
-dateCreated: 2022-01-14T20:20:22.215Z
+dateCreated: 2022-01-18T11:58:04.482Z
 ---
 
 # Proxmox
-- [Installation *+ astuces utiles*](/Virtualisation/proxmox/installation)
+- [:link: Installer Proxmox *NOT AVAILABLE*](https://zatoufly.fr)
+- [:link: Supprimer un Node d'un Cluster](https://zatoufly.fr/supprimer-un-node-dun-cluster-proxmox)
+- [:link: Convertir un disque .qcow2 en .vmdk](https://zatoufly.fr/proxmox-convertir-un-disque-qcow2-en-vmdk/)
 {.links-list}
 
 # ESXi
