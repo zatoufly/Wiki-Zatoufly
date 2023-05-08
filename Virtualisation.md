@@ -2,14 +2,14 @@
 title: Virtualisation
 description: 
 published: true
-date: 2023-05-04T20:37:45.979Z
+date: 2023-05-08T09:03:05.878Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:04.482Z
 ---
 
 # Proxmox
-- [:link: Installer Proxmox *NOT AVAILABLE*](https://zatoufly.fr)
+- [:link: Installer Proxmox](https://zatoufly.fr/comment-installer-proxmox-virtual-environnement/)
 - [:link: Supprimer un Node d'un Cluster](https://zatoufly.fr/supprimer-un-node-dun-cluster-proxmox)
 - [:link: Convertir un disque .qcow2 en .vmdk](https://zatoufly.fr/proxmox-convertir-un-disque-qcow2-en-vmdk/)
 {.links-list}
