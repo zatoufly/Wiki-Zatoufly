@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2023-01-23T20:44:43.284Z
+date: 2023-05-08T10:10:16.028Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -13,13 +13,13 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 Présentation de stack docker dans le but de découvrir des services accompagné d'une démonstration vidéo
 
 # Management IT
-- [:star: Portainer *Docker avec une interface web*](/SelfHosted/Portainer)
+- [Portainer *Docker avec une interface web*](/SelfHosted/Portainer)
 - [WatchTower *Vos conteneurs à jours*](/SelfHosted/WatchTower)
 - [Diun *Mettre à jour vos conteneurs*](/SelfHosted/diun)
 {.links-list}
 ### Réseaux
-- [DuckDNS *Le DDNS Domestique*](/SelfHosted/DuckDNS)
-- [:star: Nginx Proxy Manager *Exposez vos services facilement, en toute sécurité*](/SelfHosted/Nginx-Proxy-Manager)
+- [:link: DuckDNS *Le DDNS Domestique*](https://zatoufly/deployer-duckdns-avec-docker)
+- [Nginx Proxy Manager *Exposez vos services facilement, en toute sécurité*](/SelfHosted/Nginx-Proxy-Manager)
 - [Pihole *Le DNS bloqueur de pub*](/SelfHosted/Pihole)
 - [Uptime Kuma *Monitoring simple et complet*](/SelfHosted/Uptime-Kuma)
 {.links-list}
@@ -30,10 +30,10 @@ Présentation de stack docker dans le but de découvrir des services accompagné
 - [Nextcloud *Le cloud chez soi*](/SelfHosted/Nextcloud)
 - [Serveur Minecraft *Votre propre serveur vanilla*](/SelfHosted/Serveur-Minecraft)
 - [LibreSpeed *Tester votre connexion*](/SelfHosted/LibreSpeed)
-- [:star: Vaultwarden *Gestionnaire de mot de passe*](/SelfHosted/vaultwarden)
+- [Vaultwarden *Gestionnaire de mot de passe*](/SelfHosted/vaultwarden)
 - [Etherpad *bloc-note collaboratif*](/SelfHosted/etherpad)
 - [GLPI *Gestion de ticket et de parc IT*](/SelfHosted/GLPI)
-- [:star: FreshRSS *Un agrégateur RSS... probablement le meilleur!*](/SelfHosted/FreshRSS)
+- [FreshRSS *Un agrégateur RSS... probablement le meilleur!*](/SelfHosted/FreshRSS)
 - [Umami *Google Analytics respectueux*](/SelfHosted/umami)
 {.links-list}
 
@@ -42,7 +42,7 @@ Présentation de stack docker dans le but de découvrir des services accompagné
 - [Joomla *CMS*](/SelfHosted/Joomla)
 {.links-list}
 ### Wiki
-- [:star: WikiJS *Le plus puissant des Wiki open source*](/SelfHosted/WikiJS)
+- [WikiJS *Le plus puissant des Wiki open source*](/SelfHosted/WikiJS)
 {.links-list}
 
 # Dashboard
