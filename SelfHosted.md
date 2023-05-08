@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2023-05-08T10:10:16.028Z
+date: 2023-05-08T10:11:18.761Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -18,7 +18,7 @@ Présentation de stack docker dans le but de découvrir des services accompagné
 - [Diun *Mettre à jour vos conteneurs*](/SelfHosted/diun)
 {.links-list}
 ### Réseaux
-- [:link: DuckDNS *Le DDNS Domestique*](https://zatoufly/deployer-duckdns-avec-docker)
+- [:link: DuckDNS *Le DDNS Domestique*](https://zatoufly.fr/deployer-duckdns-avec-docker)
 - [Nginx Proxy Manager *Exposez vos services facilement, en toute sécurité*](/SelfHosted/Nginx-Proxy-Manager)
 - [Pihole *Le DNS bloqueur de pub*](/SelfHosted/Pihole)
 - [Uptime Kuma *Monitoring simple et complet*](/SelfHosted/Uptime-Kuma)
