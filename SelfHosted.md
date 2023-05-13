@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2023-05-09T17:48:46.418Z
+date: 2023-05-13T08:18:14.214Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -13,7 +13,7 @@ Ici vous trouverez des procédures d'installations de diverses solutions SelfHos
 Présentation de stack docker dans le but de découvrir des services accompagné d'une démonstration vidéo
 
 # Management IT
-- [Portainer *Docker avec une interface web*](/SelfHosted/Portainer)
+- [:link: Portainer *Docker avec une interface web*](https://zatoufly.fr/installer-docker-et-portainer-sur-linux/)
 - [WatchTower *Vos conteneurs à jours*](/SelfHosted/WatchTower)
 - [Diun *Mettre à jour vos conteneurs*](/SelfHosted/diun)
 {.links-list}
