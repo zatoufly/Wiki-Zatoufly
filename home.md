@@ -2,7 +2,7 @@
 title: Accueil
 description: 
 published: true
-date: 2023-01-17T20:47:41.169Z
+date: 2023-05-19T20:29:09.840Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:08.318Z
@@ -10,17 +10,20 @@ dateCreated: 2022-01-18T11:58:08.318Z
 
 ![wiki-banner.png](/wiki-banner.png){.align-center}
 
-
-## Nos rédacteurs
- - Zatoufly https://zatoufly.fr
- - Tenchigreed https://tenchigreed.fr
- {.grid-list}
+> Les articles du site sont progrevissement migrer vers https://zatoufly.fr.
+> Les :link:avant chaque article vous redigirega automatique vers le nouvel article !
+{.is-warning}
 
 Vous souhaiter créer sur wiki.zatoufly.fr ? Contacter moi !
 
 ## Me retrouver
 - [🔗 Mes réseaux *et services*](https://link.zatoufly.fr)
 {.links-list}
+
+
+
+
+
 <!---
 ## Mes autres sites
 - [Zatoufly.fr *Mon site officiel*](https://zatoufly.fr)
