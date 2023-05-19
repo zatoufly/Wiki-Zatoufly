@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2023-05-19T20:24:39.622Z
+date: 2023-05-19T20:25:18.478Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -30,7 +30,7 @@ Présentation de stack docker dans le but de découvrir des services accompagné
 - [Nextcloud *Le cloud chez soi*](/SelfHosted/Nextcloud)
 - [Serveur Minecraft *Votre propre serveur vanilla*](/SelfHosted/Serveur-Minecraft)
 - [LibreSpeed *Tester votre connexion*](/SelfHosted/LibreSpeed)
-- [Vaultwarden *Gestionnaire de mot de passe*](/SelfHosted/vaultwarden)
+- [:link: Vaultwarden *Gestionnaire de mot de passe*](https://zatoufly.fr/creer-son-serveur-vaultwarden-avec-docker/)
 - [:link: Etherpad *bloc-note collaboratif*](https://zatoufly.fr/installer-etherpad-avec-docker-bloc-note-sur-le-web/)
 - [GLPI *Gestion de ticket et de parc IT*](/SelfHosted/GLPI)
 - [:link: FreshRSS *Un agrégateur RSS... probablement le meilleur!*](https://zatoufly.fr/installer-freshrss-avec-docker/)
