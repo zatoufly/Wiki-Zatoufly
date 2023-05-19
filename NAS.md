@@ -2,7 +2,7 @@
 title: NAS
 description: 
 published: true
-date: 2023-04-02T12:59:30.047Z
+date: 2023-05-19T20:37:54.245Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:57:56.653Z
@@ -19,5 +19,5 @@ dateCreated: 2022-01-18T11:57:56.653Z
 {.links-list}
 
 # TrueNAS
-- [:camera: *Installer TrueNAS en passthrought sur Proxmox*](https://youtu.be/va99DvC2rdk)
+- [:link: *Installer TrueNAS en passthrought sur Proxmox*](https://youtu.be/va99DvC2rdk)
 {.links-list}
