@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2023-05-19T20:22:08.364Z
+date: 2023-05-19T20:24:39.622Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -33,7 +33,7 @@ Présentation de stack docker dans le but de découvrir des services accompagné
 - [Vaultwarden *Gestionnaire de mot de passe*](/SelfHosted/vaultwarden)
 - [:link: Etherpad *bloc-note collaboratif*](https://zatoufly.fr/installer-etherpad-avec-docker-bloc-note-sur-le-web/)
 - [GLPI *Gestion de ticket et de parc IT*](/SelfHosted/GLPI)
-- [FreshRSS *Un agrégateur RSS... probablement le meilleur!*](/SelfHosted/FreshRSS)
+- [:link: FreshRSS *Un agrégateur RSS... probablement le meilleur!*](https://zatoufly.fr/installer-freshrss-avec-docker/)
 - [Umami *Google Analytics respectueux*](/SelfHosted/umami)
 {.links-list}
 
