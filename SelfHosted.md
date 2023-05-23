@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2023-05-23T05:55:21.070Z
+date: 2023-05-23T05:58:29.303Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -38,7 +38,7 @@ Présentation de stack docker dans le but de découvrir des services accompagné
 {.links-list}
 
 # CMS
-- [Wordpress *Le CMS le plus populaire*](/SelfHosted/Wordpress)
+- [:link: Wordpress *Le CMS le plus populaire*](https://zatoufly.fr/installer-wordpress-avec-docker-compose/)
 - [Joomla *CMS*](/SelfHosted/Joomla)
 {.links-list}
 ### Wiki
