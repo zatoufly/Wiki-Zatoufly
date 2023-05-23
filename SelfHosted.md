@@ -2,7 +2,7 @@
 title: SelfHosted
 description: 
 published: true
-date: 2023-05-19T20:31:19.544Z
+date: 2023-05-23T05:55:21.070Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T11:58:00.614Z
@@ -27,7 +27,7 @@ Présentation de stack docker dans le but de découvrir des services accompagné
 # En vrac
 - [Funkwhale *Une plateforme sociale pour apprécier et partager la musique*](/SelfHosted/Funkwhale)
 - [Jellyfin *Le système multimédia du logiciel libre*](/SelfHosted/Jellyfin)
-- [Nextcloud *Le cloud chez soi*](/SelfHosted/Nextcloud)
+- [:link: Nextcloud *Le cloud chez soi*](https://zatoufly.fr/nextcloud-et-docker-le-duo-parfait-pour-votre-hebergement-de-fichiers-en-ligne/)
 - [Serveur Minecraft *Votre propre serveur vanilla*](/SelfHosted/Serveur-Minecraft)
 - [LibreSpeed *Tester votre connexion*](/SelfHosted/LibreSpeed)
 - [:link: Vaultwarden *Gestionnaire de mot de passe*](https://zatoufly.fr/creer-son-serveur-vaultwarden-avec-docker/)
